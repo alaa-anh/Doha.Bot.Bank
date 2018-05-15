@@ -16,7 +16,6 @@ namespace Doha.Bot.Bank.Dialogs
 
 
 
-
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
