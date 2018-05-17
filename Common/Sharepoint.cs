@@ -154,11 +154,6 @@ namespace Common
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
-
-               
-
-
-
                 if (pdfPath != string.Empty)
                 {
                     byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
@@ -167,7 +162,6 @@ namespace Common
                     //aci.ContentStream = mStream;
                     //aci.FileName = Path.GetFileName(pdfPath);// "AttachmentFile"; // attachEntity.FileName;
                     //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-                   
                 }
 
                 oListItem.Update();
