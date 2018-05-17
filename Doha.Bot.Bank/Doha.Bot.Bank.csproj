@@ -161,8 +161,6 @@
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Dialogs\BankBotTeamDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
-    <Compile Include="FormFlow\Option.cs" />
-    <Compile Include="FormFlow\SPFormFlow.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
