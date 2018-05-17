@@ -356,7 +356,13 @@ namespace Doha.Bot.Bank.Dialogs
             var confirmation = await result;
             if (confirmation == true)
             {
-                Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "Yes", "Anonymous");
+                if (context.UserData.TryGetValue<string>("UserName", out userName))
+                {
+                    string EncrebtedUsernme = Encrypt(userName);
+                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "Yes", EncrebtedUsernme);
+                }
+
+               // Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "Yes", "Anonymous");
             }
             else
             {
@@ -364,8 +370,8 @@ namespace Doha.Bot.Bank.Dialogs
 
                 if (context.UserData.TryGetValue<string>("UserName", out userName))
                 {
-                   string EncrebtedUsernme= Encrypt(userName);
-                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "No", EncrebtedUsernme);
+                 //  string EncrebtedUsernme= Encrypt(userName);
+                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "No", userName);
                 }
             }
 
