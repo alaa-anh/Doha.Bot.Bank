@@ -361,16 +361,11 @@ namespace Doha.Bot.Bank.Dialogs
                     string EncrebtedUsernme = Encrypt(userName);
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "Yes", EncrebtedUsernme);
                 }
-
-               // Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "Yes", "Anonymous");
             }
             else
             {
-
-
                 if (context.UserData.TryGetValue<string>("UserName", out userName))
                 {
-                 //  string EncrebtedUsernme= Encrypt(userName);
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", "", "No", userName);
                 }
             }

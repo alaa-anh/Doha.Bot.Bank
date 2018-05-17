@@ -150,10 +150,9 @@ namespace Common
 
                 if(Desc != "")
                     oListItem["Description"] = Desc;
-           //     if(Usertype !="")
-                    oListItem["Anonymous"] = Usertype;
-             //   if(SubmittedBy!="")
-                    oListItem["Submitted_x0020_By"] = SubmittedBy;
+
+                oListItem["Anonymous"] = Usertype;
+                oListItem["Submitted_x0020_By"] = SubmittedBy;
 
 
                
@@ -162,8 +161,7 @@ namespace Common
 
                 if (pdfPath != string.Empty)
                 {
-
-                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    //byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
                     //MemoryStream mStream = new MemoryStream(bytes);
                     //AttachmentCreationInformation aci = new AttachmentCreationInformation();
                     //aci.ContentStream = mStream;
