@@ -163,7 +163,7 @@ namespace Common
                 if (pdfPath != string.Empty)
                 {
 
-                    //byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
                     //MemoryStream mStream = new MemoryStream(bytes);
                     //AttachmentCreationInformation aci = new AttachmentCreationInformation();
                     //aci.ContentStream = mStream;
