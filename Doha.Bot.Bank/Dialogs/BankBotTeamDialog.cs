@@ -106,8 +106,6 @@ namespace Doha.Bot.Bank.Dialogs
                 context.UserData.SetValue("UserName", userName);
                 context.UserData.SetValue("Password", password);
                 context.UserData.SetValue("UserLoggedInName", UserLoggedInName);
-
-
                 var message = $"You are currently Logged In. Please Enjoy Using our App. **{UserLoggedInName}**.";
                 await context.PostAsync(message);
                 PromptDialog.Choice(context, this.AfterSelectOption, new string[] { "Idea", "Suggestion", "Complaint", "Incident" , "Exit" }, "Hello, How can I help you today?Do you want to submit:");
