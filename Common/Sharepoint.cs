@@ -156,22 +156,22 @@ namespace Common
                     oListItem["Submitted_x0020_By"] = SubmittedBy;
 
 
-                oListItem.Update();
+               
 
 
 
                 if (pdfPath != string.Empty)
                 {
 
-                    //byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                    //MemoryStream mStream = new MemoryStream(bytes);
-                   
+                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    MemoryStream mStream = new MemoryStream(bytes);
+
                     //AttachmentCreationInformation aci = new AttachmentCreationInformation();
                     //aci.ContentStream = mStream;
                     //aci.FileName = Path.GetFileName(pdfPath);// "AttachmentFile"; // attachEntity.FileName;
                     //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-                    //oListItem.Update();
                 }
+                oListItem.Update();
                 ctx.ExecuteQuery();
 
             }
