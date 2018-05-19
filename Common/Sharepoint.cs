@@ -156,8 +156,8 @@ namespace Common
 
                 if (pdfPath != string.Empty)
                 {
-                    if (pdfPath.IndexOf("\\") > 0)
-                        pdfPath = pdfPath.Replace("\\" , @"\");
+                  //  if (pdfPath.IndexOf("\\") > 0)
+                  //      pdfPath = pdfPath.Replace("\\" , @"\");
                     byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
                     //MemoryStream mStream = new MemoryStream(bytes);
                     //AttachmentCreationInformation aci = new AttachmentCreationInformation();
