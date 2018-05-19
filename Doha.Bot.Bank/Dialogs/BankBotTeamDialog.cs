@@ -231,9 +231,13 @@ namespace Doha.Bot.Bank.Dialogs
             {
                 //update
                 if (InputQuestionType == "Text")
-                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response , "" , "" , "");
+                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
-                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption,"", response , "" , "");
+                {
+                    byte[] bytes = System.IO.File.ReadAllBytes(response);
+
+                    Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
+                }
             }
 
             currentQ = NextQ;
