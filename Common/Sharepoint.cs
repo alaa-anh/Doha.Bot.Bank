@@ -156,9 +156,10 @@ namespace Common
 
                 if (pdfPath != string.Empty)
                 {
-                  //  if (pdfPath.IndexOf("\\") > 0)
-                  //      pdfPath = pdfPath.Replace("\\" , @"\");
-//                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    //  if (pdfPath.IndexOf("\\") > 0)
+                    //      pdfPath = pdfPath.Replace("\\" , @"\");
+                    System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
+                    //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
                     //MemoryStream mStream = new MemoryStream(bytes);
                     //AttachmentCreationInformation aci = new AttachmentCreationInformation();
                     //aci.ContentStream = mStream;

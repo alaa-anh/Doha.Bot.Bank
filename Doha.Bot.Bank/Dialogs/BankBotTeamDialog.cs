@@ -234,7 +234,7 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                    byte[] bytes = System.IO.File.ReadAllBytes(response);
+                    //byte[] bytes = System.IO.File.ReadAllBytes(response);
 
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
                 }
