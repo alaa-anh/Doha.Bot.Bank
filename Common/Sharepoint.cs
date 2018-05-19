@@ -158,7 +158,7 @@ namespace Common
                 {
                     byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
                     MemoryStream mStream = new MemoryStream(bytes);
-                    //AttachmentCreationInformation aci = new AttachmentCreationInformation();
+                    AttachmentCreationInformation aci = new AttachmentCreationInformation();
                     //aci.ContentStream = mStream;
                     //aci.FileName = Path.GetFileName(pdfPath);
                     //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
