@@ -8,7 +8,6 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net;
 
 namespace Common
 {
@@ -156,108 +155,82 @@ namespace Common
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
-               
 
+                Web currentWeb = ctx.Web;
+                ctx.Load(currentWeb);
+                ctx.ExecuteQuery();
 
                 if (pdfPath != string.Empty)
                 {
+                    String fileToUpload = @"C:\Alaa\New Text Document.txt";
 
-                   // FileStream fs = new FileStream(pdfPath, FileMode.Open);
+                    using (FileStream fs = new FileStream(fileToUpload, FileMode.Open))
+                    {
+                        Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/DemoDocs/New Text Document.txt", fs, true);
+                    }
 
-                   // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
-                   // {
-                        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                        //attInfo.FileName = fs.Name;
-                        //attInfo.ContentStream = fs;
-                        //oListItem.AttachmentFiles.Add(attInfo);
-                        //oListItem.Update();
-                       // ctx.ExecuteQuery();
-                   // }
-
-                   
-                    //   string attachmentpath = "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/New Text Document.txt";
-
-                    //   FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
-
-                    //   //  if (pdfPath.IndexOf("\\") > 0)
-                    //   //      pdfPath = pdfPath.Replace("\\" , @"\");
-                    // //  System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
-                    //   //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                    //   //MemoryStream mStream = new MemoryStream(bytes);
-                    //   AttachmentCreationInformation aci = new AttachmentCreationInformation();
-                    //   //aci.ContentStream = mStream;
-                    //   aci.ContentStream.CopyTo(oFileStream);
-                    //   aci.FileName = Path.GetFileName(pdfPath);
-                    //   Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-
-                    ////   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
+                    //  if (pdfPath.IndexOf("\\") > 0)
+                    //      pdfPath = pdfPath.Replace("\\" , @"\");
+                    //   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
+                    //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    //MemoryStream mStream = new MemoryStream(bytes);
+                    //AttachmentCreationInformation aci = new AttachmentCreationInformation();
+                    //aci.ContentStream = mStream;
+                    //aci.FileName = Path.GetFileName(pdfPath);
+                    //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
                 }
+
                 oListItem.Update();
                 ctx.ExecuteQuery();
-
             }
 
         }
 
-        public static void Uploadattchment(int AnswerRecordID , string filePath)
+
+
+        public static void UploadAttachments(int AnswerRecordID, string pdfPath)
         {
+
+            String fileToUpload = @"C:\Alaa\New Text Document.txt";
+            // WORKS 
+            ClientContext context = new ClientContext(_serverURL);
+            //WORKS 
+            //ClientContext context = new ClientContext("http://ws.chi.com"); 
             SecureString passWord = new SecureString();
-            foreach (char c in _userPasswordAdmin.ToCharArray()) passWord.AppendChar(c);
-            SharePointOnlineCredentials credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            var webUri = new Uri(_serverURL);
-            using (var client = new WebClient())
+            foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+            context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+
+            Web currentWeb = context.Web;
+            context.Load(currentWeb);
+            context.ExecuteQuery();
+            using (FileStream fs = new FileStream(fileToUpload, FileMode.Open))
             {
-                client.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
-                client.Credentials = credentials;
-                client.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
-                client.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
-
-
-                var fileContent = System.IO.File.ReadAllBytes(filePath);
-                var fileName = System.IO.Path.GetFileName(filePath);
-                var endpointUrl = string.Format("{0}/_api/web/lists/GetByTitle('{1}')/items({2})/AttachmentFiles/add(FileName='{3}')", _serverURL, "Submitted Data", AnswerRecordID, fileName);
-
-                //client.UploadFile(new Uri(endpointUrl), fileContent);
-
-
-                //    if (GetUserGroupAPI("Project Managers (Project Web App Synchronized)"))
-                //    {
-                //        endpointUri = new Uri(webUri + PMAPI);
-                //        var responce = client.DownloadString(endpointUri);
-                //        var t = JToken.Parse(responce);
-                //        JObject results = JObject.Parse(t["d"].ToString());
-
-
-                //        List<JToken> jArrays = ((Newtonsoft.Json.Linq.JContainer)((Newtonsoft.Json.Linq.JContainer)t["d"]).First).First.ToList();
-                //        reply = GetAllProjects(dialogContext, jArrays, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
-
-
-
-                //    }
-                //    else
-                //    {
-                //        endpointUri = new Uri(webUri + AdminAPI);
-                //        var responce = client.DownloadString(endpointUri);
-                //        var t = JToken.Parse(responce);
-                //        JObject results = JObject.Parse(t["d"].ToString());
-
-
-                //        List<JToken> jArrays = ((Newtonsoft.Json.Linq.JContainer)((Newtonsoft.Json.Linq.JContainer)t["d"]).First).First.ToList();
-                //        reply = GetAllProjects(dialogContext, jArrays, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
-
-                //        // reply = GetAllProjects(dialogContext, context, projectDetails, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
-
-                //    }
-
-                //    Counter = ProjectCounter;
-
-
+                Microsoft.SharePoint.Client.File.SaveBinaryDirect(context, "/DemoDocs/New Text Document.txt", fs, true);
             }
+
+            //using (ClientContext ctx = new ClientContext(_serverURL))
+            //{
+            //    SecureString passWord = new SecureString();
+            //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+            //    ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+
+            //    using (FileStream fs = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open))
+            //    {
+            //        Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", fs, true);
+            //    }
+
+            //    //using (FileStream strm = new FileInfo(@"C:\Alaa\New Text Document.txt").Open(FileMode.Open))
+            //    //{
+            //    //    Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", strm, true);
+            //    //}
+
+            //    // List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
+            //    // FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
+            //    // string attachmentpath = "/Lists/Submitted Data/Attachments/"+ AnswerRecordID + "/New Text Document.txt";
+            //    //// ctx.Load(oList);
+            //    // //ctx.ExecuteQuery();
+            //    // Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
+            //}
         }
-
-
-
-
-
     }
 }
