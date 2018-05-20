@@ -162,16 +162,15 @@ namespace Common
                 if (pdfPath != string.Empty)
                 {
 
-                    //using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
-                    //{
-                       
+                    using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
+                    {
                     //    //AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
                     //    //attInfo.FileName = fs.Name;
                     //    //attInfo.ContentStream = fs;
                     //    //oListItem.AttachmentFiles.Add(attInfo);
                     //    //oListItem.Update();
                     //    //ctx.ExecuteQuery();
-                    //}
+                    }
 
                     //   string attachmentpath = "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/New Text Document.txt";
 
