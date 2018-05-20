@@ -8,6 +8,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace Common
 {
@@ -160,7 +161,13 @@ namespace Common
 
                 if (pdfPath != string.Empty)
                 {
-                         FileStream fs = new FileStream(pdfPath, FileMode.Open);
+
+                    WebClient client = new WebClient();
+                    Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
+                    StreamReader reader = new StreamReader(stream);
+                    String content = reader.ReadToEnd();
+
+                    //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
                     //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
                     //    // {
@@ -181,7 +188,7 @@ namespace Common
                     //    ////aci.ContentStream = mStream;
                     //    ////aci.FileName = Path.GetFileName(pdfPath);
                     //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-                 }
+                }
 
                     oListItem.Update();
                 ctx.ExecuteQuery();
