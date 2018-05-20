@@ -156,18 +156,21 @@ namespace Common
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
 
-                Web currentWeb = ctx.Web;
-                ctx.Load(currentWeb);
-                ctx.ExecuteQuery();
+               
 
                 if (pdfPath != string.Empty)
                 {
-                    String fileToUpload = @"C:\Alaa\New Text Document.txt";
+                    // FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
-                    using (FileStream fs = new FileStream(fileToUpload, FileMode.Open))
-                    {
-                        Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/DemoDocs/New Text Document.txt", fs, true);
-                    }
+                    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
+                    // {
+                    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                    //attInfo.FileName = fs.Name;
+                    //attInfo.ContentStream = fs;
+                    //oListItem.AttachmentFiles.Add(attInfo);
+                    //oListItem.Update();
+                    // ctx.ExecuteQuery();
+                    // }
 
                     //  if (pdfPath.IndexOf("\\") > 0)
                     //      pdfPath = pdfPath.Replace("\\" , @"\");
