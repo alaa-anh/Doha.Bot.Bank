@@ -167,6 +167,7 @@ namespace Common
                     StreamReader reader = new StreamReader(stream);
                     String content = reader.ReadToEnd();
 
+
                     //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
                     //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
