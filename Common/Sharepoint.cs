@@ -8,6 +8,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace Common
 {
@@ -161,11 +162,11 @@ namespace Common
                 if (pdfPath != string.Empty)
                 {
 
-                    FileStream fs = new FileStream(pdfPath, FileMode.Open);
+                   // FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
                    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
                    // {
-                        //AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
                         //attInfo.FileName = fs.Name;
                         //attInfo.ContentStream = fs;
                         //oListItem.AttachmentFiles.Add(attInfo);
@@ -198,8 +199,65 @@ namespace Common
 
         }
 
+        public static void Uploadattchment(int AnswerRecordID , string filePath)
+        {
+            SecureString passWord = new SecureString();
+            foreach (char c in _userPasswordAdmin.ToCharArray()) passWord.AppendChar(c);
+            SharePointOnlineCredentials credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+            var webUri = new Uri(_serverURL);
+            using (var client = new WebClient())
+            {
+                client.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
+                client.Credentials = credentials;
+                client.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
+                client.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
 
 
-        
+                var fileContent = System.IO.File.ReadAllBytes(filePath);
+                var fileName = System.IO.Path.GetFileName(filePath);
+                var endpointUrl = string.Format("{0}/_api/web/lists/GetByTitle('{1}')/items({2})/AttachmentFiles/add(FileName='{3}')", _serverURL, "Submitted Data", AnswerRecordID, fileName);
+
+                //client.UploadFile(new Uri(endpointUrl), fileContent);
+
+
+                //    if (GetUserGroupAPI("Project Managers (Project Web App Synchronized)"))
+                //    {
+                //        endpointUri = new Uri(webUri + PMAPI);
+                //        var responce = client.DownloadString(endpointUri);
+                //        var t = JToken.Parse(responce);
+                //        JObject results = JObject.Parse(t["d"].ToString());
+
+
+                //        List<JToken> jArrays = ((Newtonsoft.Json.Linq.JContainer)((Newtonsoft.Json.Linq.JContainer)t["d"]).First).First.ToList();
+                //        reply = GetAllProjects(dialogContext, jArrays, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
+
+
+
+                //    }
+                //    else
+                //    {
+                //        endpointUri = new Uri(webUri + AdminAPI);
+                //        var responce = client.DownloadString(endpointUri);
+                //        var t = JToken.Parse(responce);
+                //        JObject results = JObject.Parse(t["d"].ToString());
+
+
+                //        List<JToken> jArrays = ((Newtonsoft.Json.Linq.JContainer)((Newtonsoft.Json.Linq.JContainer)t["d"]).First).First.ToList();
+                //        reply = GetAllProjects(dialogContext, jArrays, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
+
+                //        // reply = GetAllProjects(dialogContext, context, projectDetails, SIndex, showCompletion, ProjectDates, PDuration, projectManager, out ProjectCounter);
+
+                //    }
+
+                //    Counter = ProjectCounter;
+
+
+            }
+        }
+
+
+
+
+
     }
 }
