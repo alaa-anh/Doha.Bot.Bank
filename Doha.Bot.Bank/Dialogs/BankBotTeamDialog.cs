@@ -234,24 +234,6 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                    GetLocalFileAttachment();
-                    //Microsoft.Bot.Connector.Attachment attachment = new HeroCard
-                    //{
-                    //    Title = "Click to download Report",
-                    //    Buttons = new List<CardAction>()
-                    //    {
-                    //        new CardAction()
-                    //        {
-                    //            Title = "Get Started",
-                    //            Type = ActionTypes.OpenUrl,                               
-                    //            Value = "C:\\Alaa\\New Text Document.txt"
-
-                    //        }
-                    //    }
-                    //}.ToAttachment();
-                    //var reply = context.MakeMessage();
-                    //reply.Attachments.Add(attachment);
-
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
                     // Common.Sharepoint.UploadAttachments(AnswerRecordID, response);
                 }
@@ -306,15 +288,15 @@ namespace Doha.Bot.Bank.Dialogs
         }
 
 
-        public static Microsoft.Bot.Connector.Attachment GetLocalFileAttachment()
-        {
-            var pdfPath = HttpContext.Current.Server.MapPath("~/File/BotFramework.pdf");
-            Microsoft.Bot.Connector.Attachment attachment = new Microsoft.Bot.Connector.Attachment();
-            attachment.ContentType = "application/pdf";
-            attachment.ContentUrl = @"C:\Alaa\New Text Document.txt";// pdfPath;
-            attachment.Name = "Local Microsoft Bot Framework Best Practices";
-            return attachment;
-        }
+        //public static Microsoft.Bot.Connector.Attachment GetLocalFileAttachment()
+        //{
+        //    var pdfPath = HttpContext.Current.Server.MapPath("~/File/BotFramework.pdf");
+        //    Microsoft.Bot.Connector.Attachment attachment = new Microsoft.Bot.Connector.Attachment();
+        //    attachment.ContentType = "application/pdf";
+        //    attachment.ContentUrl = @"C:\Alaa\New Text Document.txt";// pdfPath;
+        //    attachment.Name = "Local Microsoft Bot Framework Best Practices";
+        //    return attachment;
+        //}
 
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
