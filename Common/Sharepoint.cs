@@ -170,17 +170,17 @@ namespace Common
                     oListItem.AttachmentFiles.Add(attInfo);
                    // oListItem.Update();
                    // ctx.ExecuteQuery();
-                    // }
+                    //// }
 
-                    //  if (pdfPath.IndexOf("\\") > 0)
-                    //      pdfPath = pdfPath.Replace("\\" , @"\");
-                    //   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
-                    //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                    //MemoryStream mStream = new MemoryStream(bytes);
-                    //AttachmentCreationInformation aci = new AttachmentCreationInformation();
-                    //aci.ContentStream = mStream;
-                    //aci.FileName = Path.GetFileName(pdfPath);
-                    //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
+                    ////  if (pdfPath.IndexOf("\\") > 0)
+                    ////      pdfPath = pdfPath.Replace("\\" , @"\");
+                    ////   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
+                    ////                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    ////MemoryStream mStream = new MemoryStream(bytes);
+                    ////AttachmentCreationInformation aci = new AttachmentCreationInformation();
+                    ////aci.ContentStream = mStream;
+                    ////aci.FileName = Path.GetFileName(pdfPath);
+                    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
                 }
 
                 oListItem.Update();
