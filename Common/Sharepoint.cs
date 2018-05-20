@@ -160,16 +160,16 @@ namespace Common
 
                 if (pdfPath != string.Empty)
                 {
-                    // FileStream fs = new FileStream(pdfPath, FileMode.Open);
+                     FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
                     // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
                     // {
                     AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                    //attInfo.FileName = fs.Name;
-                    //attInfo.ContentStream = fs;
-                    //oListItem.AttachmentFiles.Add(attInfo);
-                    //oListItem.Update();
-                    // ctx.ExecuteQuery();
+                    attInfo.FileName = fs.Name;
+                    attInfo.ContentStream = fs;
+                    oListItem.AttachmentFiles.Add(attInfo);
+                    oListItem.Update();
+                    ctx.ExecuteQuery();
                     // }
 
                     //  if (pdfPath.IndexOf("\\") > 0)
@@ -193,6 +193,10 @@ namespace Common
 
         public static void UploadAttachments(int AnswerRecordID, string pdfPath)
         {
+
+           
+
+
 
             String fileToUpload = @"C:\Alaa\New Text Document.txt";
             // WORKS 

@@ -234,8 +234,25 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                  //  Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
-                    Common.Sharepoint.UploadAttachments(AnswerRecordID, response);
+                    //Microsoft.Bot.Connector.Attachment attachment = new HeroCard
+                    //{
+                    //    Title = "Click to download Report",
+                    //    Buttons = new List<CardAction>()
+                    //    {
+                    //        new CardAction()
+                    //        {
+                    //            Title = "Get Started",
+                    //            Type = ActionTypes.OpenUrl,
+                    //            Value = "C:\\Alaa\\New Text Document.txt"
+                    //        }
+                    //    }
+                    //}.ToAttachment();
+
+                    //var reply = context.MakeMessage();
+                    //reply.Attachments.Add(attachment);
+
+                      Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
+                   // Common.Sharepoint.UploadAttachments(AnswerRecordID, response);
                 }
             }
 
