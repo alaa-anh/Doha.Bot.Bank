@@ -155,23 +155,26 @@ namespace Common
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
-                oListItem.Update();
+               
            //     ctx.ExecuteQuery();
 
 
                 if (pdfPath != string.Empty)
                 {
 
-                    using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
-                    {
-                    //    //AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                    //    //attInfo.FileName = fs.Name;
-                    //    //attInfo.ContentStream = fs;
-                    //    //oListItem.AttachmentFiles.Add(attInfo);
-                    //    //oListItem.Update();
-                    //    //ctx.ExecuteQuery();
-                    }
+                    FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
+                   // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
+                   // {
+                        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                        attInfo.FileName = fs.Name;
+                        attInfo.ContentStream = fs;
+                        oListItem.AttachmentFiles.Add(attInfo);
+                        //oListItem.Update();
+                       // ctx.ExecuteQuery();
+                   // }
+
+                   
                     //   string attachmentpath = "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/New Text Document.txt";
 
                     //   FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
@@ -189,8 +192,9 @@ namespace Common
 
                     ////   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
                 }
+                oListItem.Update();
+                ctx.ExecuteQuery();
 
-               
             }
 
         }
