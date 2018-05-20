@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Configuration;
 using System.IO;
+using SP = Microsoft.SharePoint.Client;
 using System.Linq;
 using System.Security;
 using System.Text;
@@ -154,23 +155,108 @@ namespace Common
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
+                oListItem.Update();
+           //     ctx.ExecuteQuery();
+
+
                 if (pdfPath != string.Empty)
                 {
-                    //  if (pdfPath.IndexOf("\\") > 0)
-                    //      pdfPath = pdfPath.Replace("\\" , @"\");
-                    System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
-                    //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                    //MemoryStream mStream = new MemoryStream(bytes);
-                    //AttachmentCreationInformation aci = new AttachmentCreationInformation();
-                    //aci.ContentStream = mStream;
-                    //aci.FileName = Path.GetFileName(pdfPath);
-                    //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
+
+                    using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
+                    {
+                       
+                        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                        attInfo.FileName = fs.Name;
+                        attInfo.ContentStream = fs;
+                        oListItem.AttachmentFiles.Add(attInfo);
+                        oListItem.Update();
+                        ctx.ExecuteQuery();
+                    }
+
+                    //   string attachmentpath = "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/New Text Document.txt";
+
+                    //   FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
+
+                    //   //  if (pdfPath.IndexOf("\\") > 0)
+                    //   //      pdfPath = pdfPath.Replace("\\" , @"\");
+                    // //  System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
+                    //   //                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                    //   //MemoryStream mStream = new MemoryStream(bytes);
+                    //   AttachmentCreationInformation aci = new AttachmentCreationInformation();
+                    //   //aci.ContentStream = mStream;
+                    //   aci.ContentStream.CopyTo(oFileStream);
+                    //   aci.FileName = Path.GetFileName(pdfPath);
+                    //   Attachment attachment = oListItem.AttachmentFiles.Add(aci);
+
+                    ////   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
                 }
 
-                oListItem.Update();
-                ctx.ExecuteQuery();
+                //oListItem.Update();
+                //ctx.ExecuteQuery();
             }
 
         }
+
+
+
+        //public static void UploadAttachments(int AnswerRecordID, string pdfPath)
+        //{
+
+        //    String fileToUpload = @"C:\Alaa\New Text Document.txt";
+        //    // WORKS 
+        //    ClientContext context = new ClientContext(_serverURL);
+        //    //WORKS 
+        //    //ClientContext context = new ClientContext("http://ws.chi.com"); 
+        //    SecureString passWord = new SecureString();
+        //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+        //    context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+
+
+        //    Web currentWeb = context.Web;
+        //    context.Load(currentWeb);
+        //    context.ExecuteQuery();
+
+        //    List oList = context.Web.Lists.GetByTitle("Submitted Data");
+        //    FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
+        //    string attachmentpath = "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/New Text Document.txt";
+        //    context.Load(oList);
+        //    context.ExecuteQuery();
+
+        //    //AttachmentCreationInformation aci = new AttachmentCreationInformation();
+        //    //aci.ContentStream = mStream;
+        //    //aci.FileName = Path.GetFileName(pdfPath);
+        //    //Attachment attachment = oListItem.AttachmentFiles.Add(aci);
+
+        //    //   Microsoft.SharePoint.Client.File.SaveBinaryDirect(context, attachmentpath, oFileStream, true);
+
+
+        //    //using (FileStream fs = new FileStream(fileToUpload, FileMode.Open))
+        //    //{
+        //    //    //Microsoft.SharePoint.Client.File.SaveBinaryDirect(context, "/DemoDocs/New Text Document.txt", fs, true);
+        //    //    Microsoft.SharePoint.Client.File.SaveBinaryDirect(context, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", fs, true);
+
+        //    //}
+
+        //    //using (ClientContext ctx = new ClientContext(_serverURL))
+        //    //{
+
+        //    //    using (FileStream fs = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open))
+        //    //    {
+        //    //        Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", fs, true);
+        //    //    }
+
+        //    //    //using (FileStream strm = new FileInfo(@"C:\Alaa\New Text Document.txt").Open(FileMode.Open))
+        //    //    //{
+        //    //    //    Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", strm, true);
+        //    //    //}
+
+        //    //    // List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
+        //    //    // FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
+        //    //    // string attachmentpath = "/Lists/Submitted Data/Attachments/"+ AnswerRecordID + "/New Text Document.txt";
+        //    //    //// ctx.Load(oList);
+        //    //    // //ctx.ExecuteQuery();
+        //    //    // Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
+        //    //}
+        //}
     }
 }
