@@ -159,43 +159,43 @@ namespace Common
 
 
 
-                if (pdfPath != string.Empty)
-                {
+                //if (pdfPath != string.Empty)
+                //{
 
-                  //  WebClient client = new WebClient();
-                 //   Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
-                 //  
-                 //   StreamReader reader = new StreamReader(stream);
+                //  //  WebClient client = new WebClient();
+                // //   Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
+                // //  
+                // //   StreamReader reader = new StreamReader(stream);
                     
-                 //   String content = reader.ReadToEnd();
+                // //   String content = reader.ReadToEnd();
 
-                    var textFromFile = (new WebClient()).DownloadString("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
+                //    var textFromFile = (new WebClient()).DownloadString("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
 
 
-                    //   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "Document.docx", stream, true);
+                //    //   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "Document.docx", stream, true);
 
-                    //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
+                //    //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
-                    //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
-                    //    // {
-                    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                        //attInfo.FileName = Path.GetFileName( .Name;
-                    //    attInfo.ContentStream = textFromFile;
-                    oListItem.AttachmentFiles.Add(attInfo);
-                    //   // oListItem.Update();
-                    //   // ctx.ExecuteQuery();
-                    //    //// }
+                //    //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
+                //    //    // {
+                //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                //        //attInfo.FileName = Path.GetFileName( .Name;
+                //    //    attInfo.ContentStream = textFromFile;
+                //    oListItem.AttachmentFiles.Add(attInfo);
+                //    //   // oListItem.Update();
+                //    //   // ctx.ExecuteQuery();
+                //    //    //// }
 
-                    //    ////  if (pdfPath.IndexOf("\\") > 0)
-                    //    ////      pdfPath = pdfPath.Replace("\\" , @"\");
-                    //    ////   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
-                    //    ////                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                    //    ////MemoryStream mStream = new MemoryStream(bytes);
-                    //    ////AttachmentCreationInformation aci = new AttachmentCreationInformation();
-                    //    ////aci.ContentStream = mStream;
-                    //    ////aci.FileName = Path.GetFileName(pdfPath);
-                    //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-                }
+                //    //    ////  if (pdfPath.IndexOf("\\") > 0)
+                //    //    ////      pdfPath = pdfPath.Replace("\\" , @"\");
+                //    //    ////   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
+                //    //    ////                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
+                //    //    ////MemoryStream mStream = new MemoryStream(bytes);
+                //    //    ////AttachmentCreationInformation aci = new AttachmentCreationInformation();
+                //    //    ////aci.ContentStream = mStream;
+                //    //    ////aci.FileName = Path.GetFileName(pdfPath);
+                //    //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
+                //}
 
                     oListItem.Update();
                 ctx.ExecuteQuery();
