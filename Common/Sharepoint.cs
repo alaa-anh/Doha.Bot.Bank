@@ -197,11 +197,9 @@ namespace Common
                 //    //    ////aci.FileName = Path.GetFileName(pdfPath);
                 //    //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
                 //}
-
                 oListItem.Update();
                 ctx.ExecuteQuery();
             }
-
         }
 
 
