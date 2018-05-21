@@ -192,7 +192,7 @@ namespace Common
             Context.ExecuteQuery();
 
             AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            newAtt.FileName = filename;// "myAttachment.txt";
+        //    newAtt.FileName = filename;// "myAttachment.txt";
             string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
             System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
             byte[] buffer = enc.GetBytes(fileContent);
@@ -200,12 +200,35 @@ namespace Common
             ListItem itm = list.GetItemById(itemID);
             Context.Load(itm);
             newAtt.ContentStream = new MemoryStream(buffer);
-            itm.AttachmentFiles.Add(newAtt);
-            AttachmentCollection attachments = itm.AttachmentFiles;
-            Context.Load(attachments);
+            newAtt.FileName = filename;   
+            Attachment attachment = itm.AttachmentFiles.Add(newAtt);
+            Context.Load(attachment);
             Context.ExecuteQuery();
+            
+            // itm.AttachmentFiles.Add(newAtt);
+            //  AttachmentCollection attachments = itm.AttachmentFiles;
+            //    Context.Load(attachments);
+            //   Context.ExecuteQuery();
+
+
+
+            //ListItem item = list.GetItemById(itemID);
+            //Context.Load(item);
+            //Context.ExecuteQuery();
+            //if (item != null)
+            //{
+            //    FileStream fileStream = new FileStream(filePath, FileMode.Open);
+            //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+            //    attInfo.ContentStream = fileStream;
+            //    attInfo.FileName = fileStream.Name;
+            //    Attachment attachment = item.AttachmentFiles.Add(attInfo);
+            //    Context.Load(attachment);
+            //    Context.ExecuteQuery();
+            //    fileStream.Close();
+            //}
+
         }
 
-        
+
     }
 }
