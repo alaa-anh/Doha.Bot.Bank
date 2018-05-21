@@ -196,7 +196,7 @@ namespace Common
             AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
             newAtt.ContentStream = new MemoryStream(buffer);
             newAtt.FileName = filename;   
-            //Attachment attachment = itm.AttachmentFiles.Add(newAtt);
+            Attachment attachment = itm.AttachmentFiles.Add(newAtt);
             //Context.Load(attachment);
             //Context.ExecuteQuery();
             
