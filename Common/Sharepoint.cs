@@ -209,54 +209,44 @@ namespace Common
             WebClient webClient = new WebClient();
 
             SecureString passWord = new SecureString();
-                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+            foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
             webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            
-               
-                webClient.Headers.Add("Accept: text/html, application/xhtml+xml, application/pdf, */*");
-             webClient.Headers.Add("User-Agent: Other");
-            //   webClient.Headers.Add("Accept-Encoding: gzip, deflate, br");
-            //     webClient.Headers.Add("Accept-Language: en-US,en;q=0.9");
-            //       webClient.Headers.Add("Cache-Control: no-cache");
-            //         webClient.Headers.Add("Upgrade-Insecure-Requests: 1");
+
+            webClient.Headers.Add("Accept: text/html, application/xhtml+xml, application/pdf, */*");
+            webClient.Headers.Add("User-Agent: Other");
             webClient.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
             webClient.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
-
             webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+            MainContent = webClient.DownloadString("https://m365x565281.sharepoint.com/DemoDocs/New%20Text%20Document.txt");
 
-                MainContent = webClient.DownloadString("https://m365x565281.sharepoint.com/DemoDocs/New%20Text%20Document.txt");
 
+            ClientContext Context = new ClientContext(_serverURL);
+            Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+            var list = Context.Web.Lists.GetByTitle("Submitted Data");
+            Context.Load(list);
+            Context.ExecuteQuery();
 
-            //using (ClientContext Context = new ClientContext(_serverURL))
-            //{
-            //    SecureString passWord = new SecureString();
-            //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-            //    Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            //    var list = Context.Web.Lists.GetByTitle("Submitted Data");
-            //    Context.Load(list);
-            //    Context.ExecuteQuery();
+            AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
+            newAtt.FileName = "myAttachment.txt";
+            // create a file stream
+            string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
+            System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
+            byte[] buffer = enc.GetBytes(fileContent);
+            //newAtt.ContentStream = new MemoryStream(buffer);
 
-            //    AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            //    newAtt.FileName = "myAttachment.txt";
-            //    // create a file stream
-            //    string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
-            //    System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
-            //    byte[] buffer = enc.GetBytes(fileContent);
-            //    newAtt.ContentStream = new MemoryStream(buffer);
-
-            //    // att new item or get existing one
-            //    ListItem itm = list.GetItemById(itemID);
-            //    Context.Load(itm);
-            //    // do not execute query, otherwise a "version conflict" exception is rised, but the file         is uploaded
-            //    // add file to attachment collection
-            //    newAtt.ContentStream = new MemoryStream(buffer);
-            //    itm.AttachmentFiles.Add(newAtt);
-            //    AttachmentCollection attachments = itm.AttachmentFiles;
-            //    Context.Load(attachments);
-            //    Context.ExecuteQuery();
-            //    // see all attachments for list item
-            //    // this snippet works if the list item has no attachments
+            // att new item or get existing one
+            ListItem itm = list.GetItemById(itemID);
+            Context.Load(itm);
+            // do not execute query, otherwise a "version conflict" exception is rised, but the file         is uploaded
+            // add file to attachment collection
+            newAtt.ContentStream = new MemoryStream(buffer);
+            itm.AttachmentFiles.Add(newAtt);
+            AttachmentCollection attachments = itm.AttachmentFiles;
+            Context.Load(attachments);
+            Context.ExecuteQuery();
+            // see all attachments for list item
+            // this snippet works if the list item has no attachments
 
 
             //    //ListItem item = list.GetItemById(itemID);
