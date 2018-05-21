@@ -22,15 +22,5 @@ namespace Common.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://m365x565281.sharepoint.com/_vti_bin/lists.asmx")]
-        public string Common_objLists_Lists {
-            get {
-                return ((string)(this["Common_objLists_Lists"]));
-            }
-        }
     }
 }

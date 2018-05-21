@@ -244,6 +244,9 @@ namespace Common
                 Context.ExecuteQuery();
 
 
+                string text = System.IO.File.ReadAllText(@"C:\Alaa\New Text Document.txt");
+
+
                 AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
                 newAtt.FileName = "myAttachment.txt";
                 // create a file stream
