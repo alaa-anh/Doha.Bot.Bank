@@ -38,7 +38,6 @@ namespace Doha.Bot.Bank.Dialogs
         public async Task StartAsync(IDialogContext context)
         {
             context.Wait(MessageReceivedAsync);
-
         }
 
         public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)

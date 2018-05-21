@@ -205,32 +205,23 @@ namespace Common
 
         public static void addAttachmentToListItem(int itemID, string filePath)
         {
+            string MainContent = string.Empty;
+            using (var client = new WebClient())
+            {
+                client.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
 
+                SecureString passWord = new SecureString();
+                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+                client.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
 
+                client.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
+                client.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
 
-            // objLists.Lists objLists = new objLists.Lists();
-            // SecureString passWord = new SecureString();
-            // foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-            //// ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+                client.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
 
-            // objLists.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            // objLists.Url = Utility..ConcatUrls(targetWebUrl, "/_vti_bin/lists.asmx");
+                MainContent = client.DownloadString("https://m365x565281.sharepoint.com/DemoDocs/New%20Text%20Document.txt");
+            }
 
-            // foreach (string attachment in sourceItem.Attachments)
-            // {
-            //     string fileUrl = SPUtility.ConcatUrls(sourceItem.Attachments.UrlPrefix, attachment);
-            //     SPFile file = sourceItem.Web.GetFile(fileUrl);
-            //     byte[] fileContent = file.OpenBinary(SPOpenBinaryOptions.SkipVirusScan);
-            //     objLists.AddAttachment(targetListName, targetItem.Id.ToString(), file.Name, fileContent);
-            // }
-
-
-            //WebClient client = new WebClient();
-            //Stream stream = client.OpenRead(filePath);
-
-            //StreamReader reader = new StreamReader(stream);
-
-            //String content = reader.ReadToEnd();
 
             using (ClientContext Context = new ClientContext(_serverURL))
             {
@@ -240,12 +231,11 @@ namespace Common
                 var list = Context.Web.Lists.GetByTitle("Submitted Data");
                 Context.Load(list);
                 Context.ExecuteQuery();
-                string text = System.IO.File.ReadAllText(@"C:\Alaa\New Text Document.txt");
 
                 AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
                 newAtt.FileName = "myAttachment.txt";
                 // create a file stream
-                string fileContent = "This file is was ubloaded by client object meodel ";
+                string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
                 System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
                 byte[] buffer = enc.GetBytes(fileContent);
                 newAtt.ContentStream = new MemoryStream(buffer);
