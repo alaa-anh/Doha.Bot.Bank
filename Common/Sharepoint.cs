@@ -166,7 +166,7 @@ namespace Common
                 // //   Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
                 // //  
                 // //   StreamReader reader = new StreamReader(stream);
-                    
+
                 // //   String content = reader.ReadToEnd();
 
                 //    var textFromFile = (new WebClient()).DownloadString("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
@@ -197,7 +197,7 @@ namespace Common
                 //    //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
                 //}
 
-                    oListItem.Update();
+                oListItem.Update();
                 ctx.ExecuteQuery();
             }
 
