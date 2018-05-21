@@ -180,6 +180,8 @@ namespace Common
             MainContent = webClient.DownloadString(filePath);
 
             string Filename = filePath.Substring(filePath.LastIndexOf('/') + 1);
+            if (Filename.IndexOf("%20") > 0)
+                Filename = Filename.Replace("%20" , " "); 
 
             ClientContext Context = new ClientContext(_serverURL);
             Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
@@ -188,7 +190,7 @@ namespace Common
             Context.ExecuteQuery();
 
             AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            newAtt.FileName = "myAttachment.txt";
+            newAtt.FileName = Filename;// "myAttachment.txt";
             string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
             System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
             byte[] buffer = enc.GetBytes(fileContent);
