@@ -199,7 +199,8 @@ namespace Common
             Attachment attachment = itm.AttachmentFiles.Add(newAtt);
             //Context.Load(attachment);
             //Context.ExecuteQuery();
-            
+            list.Update();
+            Context.ExecuteQuery();
            
 
         }
