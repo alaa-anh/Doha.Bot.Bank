@@ -162,7 +162,7 @@ namespace Common
         }
 
 
-        public static void addAttachmentToListItem(int itemID, string filePath)
+        public static void addAttachmentToListItem(int itemID, string filePath , string filename)
         {
             string MainContent = string.Empty;
             WebClient webClient = new WebClient();
@@ -180,10 +180,10 @@ namespace Common
             MainContent = webClient.DownloadString(filePath);
 
 
-            int countStart = filePath.LastIndexOf('/') + 1;
-            string FNname = "New Text Document.txt";// filePath.Substring(filePath.LastIndexOf('/') + 1);
-            if (FNname.IndexOf("%20") > 0)
-                FNname = FNname.Replace("%20" , " "); 
+            //int countStart = filePath.LastIndexOf('/') + 1;
+            //string FNname = "New Text Document.txt";// filePath.Substring(filePath.LastIndexOf('/') + 1);
+            //if (FNname.IndexOf("%20") > 0)
+            //    FNname = FNname.Replace("%20" , " "); 
 
             ClientContext Context = new ClientContext(_serverURL);
             Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
@@ -192,7 +192,7 @@ namespace Common
             Context.ExecuteQuery();
 
             AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            newAtt.FileName = FNname;// "myAttachment.txt";
+            newAtt.FileName = filename;// "myAttachment.txt";
             string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
             System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
             byte[] buffer = enc.GetBytes(fileContent);

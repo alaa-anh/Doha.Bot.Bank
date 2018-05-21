@@ -229,7 +229,7 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                    Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, response);
+                    Common.Sharepoint.addAttachmentToListItem(AnswerRecordID , InputAttachmentPath, response);
                 }
             }
 
@@ -288,7 +288,7 @@ namespace Doha.Bot.Bank.Dialogs
                 NextQ = NextQYes;
                 PromptDialog.Text(
                     context: context,
-                    resume: ResomeLoadAnswers,
+                    resume: ResumeAfterConfirmationAttachmentName,
                     prompt: "Please add the file path");
             }
             else
@@ -296,6 +296,20 @@ namespace Doha.Bot.Bank.Dialogs
                 currentQ = NextQNo;
                 ResomeLoadAnswers2(context);            
             }
+        }
+
+
+        public virtual async Task ResumeAfterConfirmationAttachmentName(IDialogContext context, IAwaitable<string> answer)
+        {
+
+            var filename = await answer;
+
+            InputAttachmentPath = filename;
+
+            PromptDialog.Text(
+                    context: context,
+                    resume: ResomeLoadAnswers,
+                    prompt: "Please add the file name");
         }
 
         private void ResomeLoadAnswers2(IDialogContext context)
