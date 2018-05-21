@@ -179,53 +179,28 @@ namespace Common
             webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
             MainContent = webClient.DownloadString(filePath);
 
-
-            //int countStart = filePath.LastIndexOf('/') + 1;
-            //string FNname = "New Text Document.txt";// filePath.Substring(filePath.LastIndexOf('/') + 1);
-            //if (FNname.IndexOf("%20") > 0)
-            //    FNname = FNname.Replace("%20" , " "); 
-
             ClientContext Context = new ClientContext(_serverURL);
             Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
             var list = Context.Web.Lists.GetByTitle("Submitted Data");
             Context.Load(list);
             Context.ExecuteQuery();
 
-            AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-        //    newAtt.FileName = filename;// "myAttachment.txt";
+            ListItem itm = list.GetItemById(itemID);
+            Context.Load(itm);
+          
+            //    newAtt.FileName = filename;// "myAttachment.txt";
             string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
             System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
             byte[] buffer = enc.GetBytes(fileContent);
 
-            ListItem itm = list.GetItemById(itemID);
-            Context.Load(itm);
+            AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
             newAtt.ContentStream = new MemoryStream(buffer);
             newAtt.FileName = filename;   
-            Attachment attachment = itm.AttachmentFiles.Add(newAtt);
-            Context.Load(attachment);
-            Context.ExecuteQuery();
-            
-            // itm.AttachmentFiles.Add(newAtt);
-            //  AttachmentCollection attachments = itm.AttachmentFiles;
-            //    Context.Load(attachments);
-            //   Context.ExecuteQuery();
-
-
-
-            //ListItem item = list.GetItemById(itemID);
-            //Context.Load(item);
+            //Attachment attachment = itm.AttachmentFiles.Add(newAtt);
+            //Context.Load(attachment);
             //Context.ExecuteQuery();
-            //if (item != null)
-            //{
-            //    FileStream fileStream = new FileStream(filePath, FileMode.Open);
-            //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-            //    attInfo.ContentStream = fileStream;
-            //    attInfo.FileName = fileStream.Name;
-            //    Attachment attachment = item.AttachmentFiles.Add(attInfo);
-            //    Context.Load(attachment);
-            //    Context.ExecuteQuery();
-            //    fileStream.Close();
-            //}
+            
+           
 
         }
 
