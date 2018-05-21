@@ -9,6 +9,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using Microsoft.SharePoint.Client.Utilities;
 
 namespace Common
 {
@@ -206,6 +207,33 @@ namespace Common
 
         public static void addAttachmentToListItem(int itemID, string filePath)
         {
+
+
+
+            // objLists.Lists objLists = new objLists.Lists();
+            // SecureString passWord = new SecureString();
+            // foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+            //// ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+
+            // objLists.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+            // objLists.Url = Utility..ConcatUrls(targetWebUrl, "/_vti_bin/lists.asmx");
+
+            // foreach (string attachment in sourceItem.Attachments)
+            // {
+            //     string fileUrl = SPUtility.ConcatUrls(sourceItem.Attachments.UrlPrefix, attachment);
+            //     SPFile file = sourceItem.Web.GetFile(fileUrl);
+            //     byte[] fileContent = file.OpenBinary(SPOpenBinaryOptions.SkipVirusScan);
+            //     objLists.AddAttachment(targetListName, targetItem.Id.ToString(), file.Name, fileContent);
+            // }
+
+
+            //WebClient client = new WebClient();
+            //Stream stream = client.OpenRead(filePath);
+
+            //StreamReader reader = new StreamReader(stream);
+
+            //String content = reader.ReadToEnd();
+
             using (ClientContext Context = new ClientContext(_serverURL))
             {
                 SecureString passWord = new SecureString();
@@ -215,20 +243,43 @@ namespace Common
                 Context.Load(list);
                 Context.ExecuteQuery();
 
-                ListItem item = list.GetItemById(itemID);
-                Context.Load(item);
+
+                AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
+                newAtt.FileName = "myAttachment.txt";
+                // create a file stream
+                string fileContent = "This file is was ubloaded by client object meodel ";
+                System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
+                byte[] buffer = enc.GetBytes(fileContent);
+                newAtt.ContentStream = new MemoryStream(buffer);
+
+                // att new item or get existing one
+                ListItem itm = list.GetItemById(itemID);
+                Context.Load(itm);
+                // do not execute query, otherwise a "version conflict" exception is rised, but the file         is uploaded
+                // add file to attachment collection
+                newAtt.ContentStream = new MemoryStream(buffer);
+                itm.AttachmentFiles.Add(newAtt);
+                AttachmentCollection attachments = itm.AttachmentFiles;
+                Context.Load(attachments);
                 Context.ExecuteQuery();
-                if (item != null)
-                {
-                    FileStream fileStream = new FileStream(filePath, FileMode.Open);
-                    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                    attInfo.ContentStream = fileStream;
-                    attInfo.FileName = fileStream.Name;
-                    Attachment attachment = item.AttachmentFiles.Add(attInfo);
-                    Context.Load(attachment);
-                    Context.ExecuteQuery();
-                    fileStream.Close();
-                }
+                // see all attachments for list item
+                // this snippet works if the list item has no attachments
+
+
+                //ListItem item = list.GetItemById(itemID);
+                //Context.Load(item);
+                //Context.ExecuteQuery();
+                //if (item != null)
+                //{
+                //    FileStream fileStream = new FileStream(filePath, FileMode.Open);
+                //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                //    attInfo.ContentStream = fileStream;
+                //    attInfo.FileName = fileStream.Name;
+                //    Attachment attachment = item.AttachmentFiles.Add(attInfo);
+                //    Context.Load(attachment);
+                //    Context.ExecuteQuery();
+                //    fileStream.Close();
+                //}
             }
         }
 
