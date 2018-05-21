@@ -162,19 +162,25 @@ namespace Common
                 if (pdfPath != string.Empty)
                 {
 
-                    WebClient client = new WebClient();
-                    Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
-                    StreamReader reader = new StreamReader(stream);
-                    String content = reader.ReadToEnd();
+                  //  WebClient client = new WebClient();
+                 //   Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
+                 //  
+                 //   StreamReader reader = new StreamReader(stream);
+                    
+                 //   String content = reader.ReadToEnd();
 
+                    var textFromFile = (new WebClient()).DownloadString("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
+
+
+                    //   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "Document.docx", stream, true);
 
                     //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
 
                     //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
                     //    // {
-                        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
                         //attInfo.FileName = Path.GetFileName( .Name;
-                        attInfo.ContentStream = stream;
+                    //    attInfo.ContentStream = textFromFile;
                     oListItem.AttachmentFiles.Add(attInfo);
                     //   // oListItem.Update();
                     //   // ctx.ExecuteQuery();
@@ -198,11 +204,38 @@ namespace Common
         }
 
 
+        public static void addAttachmentToListItem(int itemID, string filePath)
+        {
+            using (ClientContext Context = new ClientContext(_serverURL))
+            {
+                SecureString passWord = new SecureString();
+                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+                Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+                var list = Context.Web.Lists.GetByTitle("Submitted Data");
+                Context.Load(list);
+                Context.ExecuteQuery();
+
+                ListItem item = list.GetItemById(itemID);
+                Context.Load(item);
+                Context.ExecuteQuery();
+                if (item != null)
+                {
+                    FileStream fileStream = new FileStream(filePath, FileMode.Open);
+                    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                    attInfo.ContentStream = fileStream;
+                    attInfo.FileName = fileStream.Name;
+                    Attachment attachment = item.AttachmentFiles.Add(attInfo);
+                    Context.Load(attachment);
+                    Context.ExecuteQuery();
+                    fileStream.Close();
+                }
+            }
+        }
 
         ////public static void UploadAttachments(int AnswerRecordID, string pdfPath)
         ////{
 
-           
+
 
 
 
