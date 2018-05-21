@@ -240,10 +240,7 @@ namespace Common
                 var list = Context.Web.Lists.GetByTitle("Submitted Data");
                 Context.Load(list);
                 Context.ExecuteQuery();
-
-
                 string text = System.IO.File.ReadAllText(@"C:\Alaa\New Text Document.txt");
-
 
                 AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
                 newAtt.FileName = "myAttachment.txt";
