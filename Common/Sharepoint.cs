@@ -156,47 +156,6 @@ namespace Common
 
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
-
-
-
-
-                //if (pdfPath != string.Empty)
-                //{
-
-                //  //  WebClient client = new WebClient();
-                // //   Stream stream = client.OpenRead("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
-                // //  
-                // //   StreamReader reader = new StreamReader(stream);
-
-                // //   String content = reader.ReadToEnd();
-
-                //    var textFromFile = (new WebClient()).DownloadString("https://teams.microsoft.com/_#/docx/viewer/recent/https%3A~2F~2Fm365x892385.sharepoint.com~2Fsites~2Fpwa~2FJCB%2520demo~2FShared%2520Documents~2FDocument.docx");
-
-
-                //    //   Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "Document.docx", stream, true);
-
-                //    //  FileStream fs = new FileStream(pdfPath, FileMode.Open);
-
-                //    //    // using (FileStream fs = new FileStream(pdfPath, FileMode.Open))
-                //    //    // {
-                //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                //        //attInfo.FileName = Path.GetFileName( .Name;
-                //    //    attInfo.ContentStream = textFromFile;
-                //    oListItem.AttachmentFiles.Add(attInfo);
-                //    //   // oListItem.Update();
-                //    //   // ctx.ExecuteQuery();
-                //    //    //// }
-
-                //    //    ////  if (pdfPath.IndexOf("\\") > 0)
-                //    //    ////      pdfPath = pdfPath.Replace("\\" , @"\");
-                //    //    ////   System.IO.StreamReader file =new System.IO.StreamReader(@"C:\Alaa\New Text Document.txt");
-                //    //    ////                    byte[] bytes = System.IO.File.ReadAllBytes(pdfPath);
-                //    //    ////MemoryStream mStream = new MemoryStream(bytes);
-                //    //    ////AttachmentCreationInformation aci = new AttachmentCreationInformation();
-                //    //    ////aci.ContentStream = mStream;
-                //    //    ////aci.FileName = Path.GetFileName(pdfPath);
-                //    //    ////Attachment attachment = oListItem.AttachmentFiles.Add(aci);
-                //}
                 oListItem.Update();
                 ctx.ExecuteQuery();
             }
@@ -218,8 +177,9 @@ namespace Common
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
             webClient.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
             webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            MainContent = webClient.DownloadString("https://m365x565281.sharepoint.com/DemoDocs/New%20Text%20Document.txt");
+            MainContent = webClient.DownloadString(filePath);
 
+            string Filename = filePath.Substring(filePath.LastIndexOf('/') + 1);
 
             ClientContext Context = new ClientContext(_serverURL);
             Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
@@ -228,92 +188,20 @@ namespace Common
             Context.ExecuteQuery();
 
             AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            newAtt.FileName = "myAttachment.txt";
-            // create a file stream
+            newAtt.FileName = Filename;// "myAttachment.txt";
             string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
             System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
             byte[] buffer = enc.GetBytes(fileContent);
-            //newAtt.ContentStream = new MemoryStream(buffer);
 
-            // att new item or get existing one
             ListItem itm = list.GetItemById(itemID);
             Context.Load(itm);
-            // do not execute query, otherwise a "version conflict" exception is rised, but the file         is uploaded
-            // add file to attachment collection
             newAtt.ContentStream = new MemoryStream(buffer);
             itm.AttachmentFiles.Add(newAtt);
             AttachmentCollection attachments = itm.AttachmentFiles;
             Context.Load(attachments);
             Context.ExecuteQuery();
-            // see all attachments for list item
-            // this snippet works if the list item has no attachments
-
-
-            //    //ListItem item = list.GetItemById(itemID);
-            //    //Context.Load(item);
-            //    //Context.ExecuteQuery();
-            //    //if (item != null)
-            //    //{
-            //    //    FileStream fileStream = new FileStream(filePath, FileMode.Open);
-            //    //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-            //    //    attInfo.ContentStream = fileStream;
-            //    //    attInfo.FileName = fileStream.Name;
-            //    //    Attachment attachment = item.AttachmentFiles.Add(attInfo);
-            //    //    Context.Load(attachment);
-            //    //    Context.ExecuteQuery();
-            //    //    fileStream.Close();
-
-            //    //}
-            //}
         }
 
-        ////public static void UploadAttachments(int AnswerRecordID, string pdfPath)
-        ////{
-
-
-
-
-
-        ////    String fileToUpload = @"C:\Alaa\New Text Document.txt";
-        ////    // WORKS 
-        ////    ClientContext context = new ClientContext(_serverURL);
-        ////    //WORKS 
-        ////    //ClientContext context = new ClientContext("http://ws.chi.com"); 
-        ////    SecureString passWord = new SecureString();
-        ////    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-        ////    context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-
-        ////    Web currentWeb = context.Web;
-        ////    context.Load(currentWeb);
-        ////    context.ExecuteQuery();
-        ////    using (FileStream fs = new FileStream(fileToUpload, FileMode.Open))
-        ////    {
-        ////        Microsoft.SharePoint.Client.File.SaveBinaryDirect(context, "/DemoDocs/New Text Document.txt", fs, true);
-        ////    }
-
-        ////    //using (ClientContext ctx = new ClientContext(_serverURL))
-        ////    //{
-        ////    //    SecureString passWord = new SecureString();
-        ////    //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-        ////    //    ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-
-        ////    //    using (FileStream fs = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open))
-        ////    //    {
-        ////    //        Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", fs, true);
-        ////    //    }
-
-        ////    //    //using (FileStream strm = new FileInfo(@"C:\Alaa\New Text Document.txt").Open(FileMode.Open))
-        ////    //    //{
-        ////    //    //    Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, "/Lists/Submitted Data/Attachments/" + AnswerRecordID + "/" + "New Text Document.txt", strm, true);
-        ////    //    //}
-
-        ////    //    // List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
-        ////    //    // FileStream oFileStream = new FileStream(@"C:\Alaa\New Text Document.txt", FileMode.Open);
-        ////    //    // string attachmentpath = "/Lists/Submitted Data/Attachments/"+ AnswerRecordID + "/New Text Document.txt";
-        ////    //    //// ctx.Load(oList);
-        ////    //    // //ctx.ExecuteQuery();
-        ////    //    // Microsoft.SharePoint.Client.File.SaveBinaryDirect(ctx, attachmentpath, oFileStream, true);
-        ////    //}
-        ////}
+        
     }
 }

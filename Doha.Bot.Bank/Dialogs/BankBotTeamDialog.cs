@@ -78,8 +78,6 @@ namespace Doha.Bot.Bank.Dialogs
 
         }
 
-
-
         public virtual async Task ResumeGetPassword(IDialogContext context, IAwaitable<string> UserEmail)
         {
             string response = await UserEmail;
@@ -146,8 +144,6 @@ namespace Doha.Bot.Bank.Dialogs
                 context.Wait(MessageReceivedAsync);
             }
         }
-
-
 
         private async Task AfterSelectOption(IDialogContext context, IAwaitable<string> result)
         {
@@ -234,8 +230,6 @@ namespace Doha.Bot.Bank.Dialogs
                 else if (InputQuestionType == "Attachment")
                 {
                     Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, response);
-                    //Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, "", response, "", "");
-                    // Common.Sharepoint.UploadAttachments(AnswerRecordID, response);
                 }
             }
 
@@ -283,20 +277,7 @@ namespace Doha.Bot.Bank.Dialogs
 
                 }
             }
-
-
-        }
-
-
-        //public static Microsoft.Bot.Connector.Attachment GetLocalFileAttachment()
-        //{
-        //    var pdfPath = HttpContext.Current.Server.MapPath("~/File/BotFramework.pdf");
-        //    Microsoft.Bot.Connector.Attachment attachment = new Microsoft.Bot.Connector.Attachment();
-        //    attachment.ContentType = "application/pdf";
-        //    attachment.ContentUrl = @"C:\Alaa\New Text Document.txt";// pdfPath;
-        //    attachment.Name = "Local Microsoft Bot Framework Best Practices";
-        //    return attachment;
-        //}
+        }      
 
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
