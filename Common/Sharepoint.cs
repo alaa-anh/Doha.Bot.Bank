@@ -179,6 +179,8 @@ namespace Common
             webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
             MainContent = webClient.DownloadString(filePath);
 
+
+            int countStart = filePath.LastIndexOf('/') + 1;
             string FNname = "New Text Document.txt";// filePath.Substring(filePath.LastIndexOf('/') + 1);
             if (FNname.IndexOf("%20") > 0)
                 FNname = FNname.Replace("%20" , " "); 
