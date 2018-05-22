@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using Microsoft.SharePoint.Client.Utilities;
+using System.Web;
 
 namespace Common
 {
@@ -162,22 +163,16 @@ namespace Common
         }
 
 
-        public static void addAttachmentToListItem(int itemID, string filePath , string filename)
+        public static void addAttachmentToListItem(int itemID, string filePath, string filename)
         {
-            string MainContent = string.Empty;
-            WebClient webClient = new WebClient();
+
+            var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/small-image.png");
+           // var imageData = Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath));
+            FileStream fs = new FileStream(imagePath, FileMode.Open);
+
 
             SecureString passWord = new SecureString();
             foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-            webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-
-            webClient.Headers.Add("Accept: text/html, application/xhtml+xml, application/pdf, */*");
-            webClient.Headers.Add("User-Agent: Other");
-            webClient.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
-            webClient.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
-            webClient.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
-            webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            MainContent = webClient.DownloadString(filePath);
 
             ClientContext Context = new ClientContext(_serverURL);
             Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
@@ -185,25 +180,62 @@ namespace Common
             Context.Load(list);
             Context.ExecuteQuery();
 
-            ListItem itm = list.GetItemById(itemID);
-            Context.Load(itm);
-          
-            //    newAtt.FileName = filename;// "myAttachment.txt";
-            string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
-            System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
-            byte[] buffer = enc.GetBytes(fileContent);
+            ListItem oListItem = list.GetItemById(itemID);
+            Context.Load(oListItem);
 
-            AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
-            newAtt.ContentStream = new MemoryStream(buffer);
-            newAtt.FileName = filename;   
-            Attachment attachment = itm.AttachmentFiles.Add(newAtt);
-            //Context.Load(attachment);
-            //Context.ExecuteQuery();
-            list.Update();
+
+            AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+            attInfo.FileName = fs.Name;
+            attInfo.ContentStream = fs;
+            oListItem.AttachmentFiles.Add(attInfo);
+            oListItem.Update();
             Context.ExecuteQuery();
-           
+
 
         }
+
+        //public static void addAttachmentToListItem(int itemID, string filePath , string filename)
+        //{
+        //    string MainContent = string.Empty;
+        //    WebClient webClient = new WebClient();
+
+        //    SecureString passWord = new SecureString();
+        //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+        //    webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+
+        //    webClient.Headers.Add("Accept: text/html, application/xhtml+xml, application/pdf, */*");
+        //    webClient.Headers.Add("User-Agent: Other");
+        //    webClient.Headers.Add("X-FORMS_BASED_AUTH_ACCEPTED", "f");
+        //    webClient.Headers.Add(HttpRequestHeader.ContentType, "application/json;odata=verbose");
+        //    webClient.Headers.Add(HttpRequestHeader.Accept, "application/json;odata=verbose");
+        //    webClient.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+        //    MainContent = webClient.DownloadString(filePath);
+
+        //    ClientContext Context = new ClientContext(_serverURL);
+        //    Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+        //    var list = Context.Web.Lists.GetByTitle("Submitted Data");
+        //    Context.Load(list);
+        //    Context.ExecuteQuery();
+
+        //    ListItem itm = list.GetItemById(itemID);
+        //    Context.Load(itm);
+
+        //    //    newAtt.FileName = filename;// "myAttachment.txt";
+        //    string fileContent = MainContent;// "This file is was ubloaded by client object meodel ";
+        //    System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
+        //    byte[] buffer = enc.GetBytes(fileContent);
+
+        //    AttachmentCreationInformation newAtt = new AttachmentCreationInformation();
+        //    newAtt.ContentStream = new MemoryStream(buffer);
+        //    newAtt.FileName = filename;   
+        //    Attachment attachment = itm.AttachmentFiles.Add(newAtt);
+        //    //Context.Load(attachment);
+        //    //Context.ExecuteQuery();
+        //    list.Update();
+        //    Context.ExecuteQuery();
+
+
+        //}
 
 
     }
