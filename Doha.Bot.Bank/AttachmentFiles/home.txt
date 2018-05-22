@@ -1,0 +1,2458 @@
+
+
+<!DOCTYPE html >
+<html dir="ltr" lang="en-US">
+    <head><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" /><title>
+	
+            Cairo Ammman Bank Portal
+            
+            
+            ?????? ???????
+            
+        
+</title>
+        <link id="CssLink-2ffbdccb1b724e57a8e6fbaec573a6a0" rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/corev15.css?rev=rweKEBU%2FCw2wUUG5BFLsxA%3D%3DTAG630"/>
+<link id="CssLink-fed188eb94d34904a00df80ef165af91" rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/searchv15.css?rev=edSKWaSfyX0JxP2UcvfaVw%3D%3DTAG630"/>
+<link id="CssLink-7cbdf40768c14a85988688f966be9c63" rel="stylesheet" type="text/css" href="/sites/CAB/_catalogs/masterpage/CABbranding/css/defaultStyle.css"/>
+<link id="CssLink-ed6531149c9944169aa5c12e52198c78" rel="stylesheet" type="text/css" href="/sites/CAB/_catalogs/masterpage/CABbranding/css/animate.css"/>
+<style id="SPThemeHideForms" type="text/css">body {opacity:0 !important}</style>
+        <script type="text/javascript">// <![CDATA[ 
+
+var _initGlobalSnapShot = {};try {    if (Object.keys(_initGlobalSnapShot).length == 0) {       for (var memberIndex in window) {          if (Boolean(memberIndex)) {              _initGlobalSnapShot[memberIndex] = 1;         }      }   }} catch (ex) {};
+// ]]>
+</script>
+<script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={"554B13A3-7176-4AD9-A47E-C677A04616AC":1,"CC994644-9EBA-4F30-B4D5-BD31F117FFF6":1,"11C6A11F-BF20-4D69-B009-D34DBCDF1F08":1,"FB222E13-B74F-49B8-9E8F-13EEDBCD6DF4":1,"40273375-245F-4BA8-B42E-691CB459F705":1,"95AE6796-6EA9-43AF-8CA4-74FA57478678":1,"55E0C40D-7D70-4354-AE33-ADC1FDEF6005":1,"D7486693-8EA3-4164-94A9-41CE97145F53":1,"0DE06DE6-DF55-4324-A0F7-8799C81CFCB1":1,"3BDC2162-7C35-4FDE-AFD5-1C1F2AA622F6":1,"E16BD38F-C281-4F3F-9EA3-802DBFF0C2FF":1,"5F9B5EDC-5952-4446-A020-D9EADB8C42D8":1,"BFF2FCB1-696F-4B80-800A-F955B988143A":1,"9069237F-BE11-4F6B-833A-7A43A9BDDE22":1,"D8037234-CF6D-4255-AAB1-6A54E4908998":1,"69E23215-1C6B-45AE-B498-915B2900A28E":1,"6CFD4FE2-9D02-4408-9B04-DF0989C29F1E":1,"DD337724-346B-493E-8D1C-0DC62A9970C6":1,"67C98A94-846C-44A3-AEDC-48720DA38133":1,"519B0BBF-CBE5-46A6-ABC5-DAF3B6EF9E27":1,"20D1B705-EB25-4CD1-8073-7D2060786C0A":1,"91047E78-646A-4509-B4C2-D39215ACE2AD":1,"57561DB6-BCA9-455C-BAD6-607B954D788F":1,"9905B461-3995-4A29-9F3A-7B12EB440191":1,"2E925A82-D218-4A35-B9E7-060D377F4BBA":1,"FFA8DD9E-9835-464D-A820-4E69D0C24148":1,"0D82406D-E1C2-4F65-B303-23F3594FBDCE":1,"F7B777E2-1647-4EA4-93F8-FC7B449722AD":1,"90F9F43D-6D44-4A03-B2F3-E64FE99D7E64":1,"2BE0E3B6-397D-479B-ABF0-F0FCC7664969":1,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":1,"DFD5A79B-BCEB-470D-954E-D42FBCB29D13":1,"AD515929-42B5-44CD-B6AE-34E238B5E4BE":1,"D6F12B66-F059-4C61-85D6-6D458D7DA5A3":1,"7003730C-8D13-4D3C-8902-973146C2FE62":1,"77914FE7-96E1-4D4C-BC55-5DF6ACE0AF76":1,"CD0DD1EC-9BA4-45B2-BA6E-66B3FD0E6C21":1,"C93C7859-649A-42E4-A63E-329A0308343C":1,"07439006-F383-415D-A20D-F17FF64E8697":1,"8AA8B039-1707-4830-92E3-E63772486DEE":1,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":1,"84A79470-7F42-45E4-A2C8-E1F4DA4AA9C2":1,"5F88BA85-D880-463E-9A37-C0DBF18CF5E5":1,"F4CDE504-B8D2-4513-BB2A-C0DE12601EA4":1,"D9ECECE5-3CC1-413E-97B5-D45915FFAB65":1,"1383A8DA-0968-4C35-8CB3-1A9E88165F04":1,"D68D04D5-404C-40B6-BA29-78B5C4AF0290":1,"5934F9D6-8BF8-46BE-BED5-CD4C37C8874E":1,"5CD90AEA-1CC9-45A1-A69B-CCEB6D6C2B25":1,"F01AA7EA-4D1D-48CE-AC4A-9C96F7BA9AE3":1,"3EE87C74-3663-4CE9-B271-51A26E4CB1BC":1,"3387D7D2-8C88-42E7-AC37-DDBFF52EBA9B":1,"25E89BA8-EADA-4ECD-8FFD-489223A56056":1,"B77283F5-937A-4B93-AB8A-645D8ED43C61":1,"FBE7227D-81E3-4338-88E4-D94E4FE6A17C":1,"13762DBA-2F03-4B05-B77D-49D8966499F3":1,"413BF33F-D3E4-4123-A715-E76D3C55FC8B":1,"73D03011-223C-4456-A029-0522603BDAC5":1,"31C680C3-C87C-424E-94C5-98EE0250E861":1,"AB68EDC8-D283-4D4B-8DC6-714C08CCAB56":1,"27A521E9-BA59-43BC-A7B6-CF09A899FBD3":1,"50922D9D-F82C-472E-88AA-9442E9BF4729":1,"5AE3E7B5-206D-4ACD-BF9F-04ACFA3D3B1F":1,"86E6F70F-8EAD-4D69-B216-FD4146566AE5":1,"452C7C12-F071-4C4B-8849-1C8FF302D704":1,"F2F89B95-8448-449E-B2AE-DE31E731F443":1,"22E1A1AB-83DC-41FF-A58C-28CDCAED2700":1};
+// ]]>
+</script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/1033/initstrings.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/init.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/theming.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205//online/scripts/sposuitenav.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=IL6bSVejdXaE3ITng5R2MtX0Jy2CuoOd33rImKI6ZdWXShaUomfbsudi103e1C-fwWfcfQu7K3ZM9Mn_PdIIh75huHi-sz0cE71ZCCwPNVLFvsEhTUmMNGkLws45J7gJvu-RtIPnztDpJcw6AbStrZ_MxD2E5CyGPsWnzL7eirgRc2KgQa1jz196EoELUPDy0&amp;t=ffffffff85e60464"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/blank.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=fsQ93zqHnm3GYcJU-9H-osv-DAPyEc6kw-WtSASYl9TKPy6eMoQNUtYvLnJpeGqTVKIG4NQzfr4iLyTiPt2N-qdURBYsiVv1se2yWEbnAS-9McvXz0VlY7Mfq8VDpUZlKRGi6566DhNqpFwAiA2k7E-3qiH1i_ftG3S7iTXQnyxVpNVr_ijpkfWEqIlaQq0r0&amp;t=ffffffff85e60464"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/sp.init.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/clientrenderer.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/1033/srch.resources.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/search.clientcontrols.js"></script>
+<script type="text/javascript">RegisterSod("require.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002frequire.js");</script>
+<script type="text/javascript">RegisterSod("strings.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fstrings.js");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fsp.res.js");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.runtime.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.ui.dialog.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fcore.js");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fmenu.js");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fmquery.js");</script>
+<script type="text/javascript">RegisterSod("callout.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fcallout.js");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.core.js");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.strings.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fsharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsharedhovercard.js");RegisterSodDep("sharedhovercard.js", "sharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fclienttemplates.js");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsharing.js");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsuitelinks.js");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.search.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.search.js");RegisterSodDep("sp.search.js", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("ajaxtoolkit.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fajaxtoolkit.js");</script>
+<script type="text/javascript">RegisterSod("userprofile", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.userprofiles.js");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002ffollowingcommon.js");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fprofilebrowserscriptres.js");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.ui.mysitecommon.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fie55up.js");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("inplview", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002finplview.js");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "clienttemplates.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("offline.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002foffline.js");</script>
+<script type="text/javascript">RegisterSod("shell/shell15.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fshell\u002fshell15.js");</script>
+<script type="text/javascript">RegisterSod("cui.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fcui.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.ribbon.js");RegisterSodDep("ribbon", "strings.js");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("WPAdderClass", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fwpadder.js");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002fsp.ui.pub.ribbon.js");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.7428.1205\u002f1033\u002fsp.publishing.resources.js");</script>
+<link type="text/xml" rel="alternate" href="/sites/CAB/_vti_bin/spsdisco.aspx" />
+            
+            
+            
+            
+            
+            
+        
+            <link rel="canonical" href="https://cabjo.sharepoint.com:443/sites/CAB/Pages/CAB.aspx" />
+            
+            
+        <span id="DeltaSPWebPartManager">
+            
+        </span><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="/sites/CAB/_catalogs/masterpage/CABbranding/css/bootstrap-rtl.min.css" rel="stylesheet" /><link href="/sites/CAB/_catalogs/masterpage/CABbranding/css/font-awesome.css" rel="stylesheet" /><link rel="stylesheet" href="/sites/CAB/_catalogs/masterpage/CABbranding/css/master.css" /><link rel="stylesheet" href="/sites/CAB/_catalogs/masterpage/CABbranding/css/fullcalendar.min.css" /><link rel="stylesheet" href="/sites/CAB/_catalogs/masterpage/CABbranding/css/IEStyle.css" />
+
+         <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/jquery-2.1.4.min.js">//<![CDATA[
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/bootstrap.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/moment-2.2.1.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+                 <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/d3.min.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/xcharts.min.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/fullcalendar.min.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/list.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+        <script src="/sites/CAB/_catalogs/masterpage/CABbranding/js/list.fuzzysearch.js">//<![CDATA[
+
+                
+        
+        
+        //]]></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.SPServices/2014.02/jquery.SPServices-2014.02.js">//<![CDATA[
+                //]]></script>
+
+        <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js">//<![CDATA[
+        
+        //]]></script>
+        <script type="text/javascript" src="/_layouts/15/sp.runtime.js">//<![CDATA[
+        
+        //]]></script>
+        <script type="text/javascript" src="/_layouts/15/sp.js">//<![CDATA[
+        
+        //]]></script>
+        
+             
+         <link rel="manifest" href="https://cabjo.sharepoint.com/_layouts/15/SPAndroidAppManifest.aspx?ReferrerUrl=https%3A%2F%2Fcabjo%2Esharepoint%2Ecom%2Fsites%2FCAB%2FPages%2FCAB%2Easpx" /><meta name="apple-itunes-app" content="app-id=1091505266, app-argument=https://cabjo.sharepoint.com/sites/CAB/Pages/CAB.aspx, affiliate-data=ct=smartbanner&amp;pt=80423" /></head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><div id="imgPrefetch" style="display:none">
+<img src="/_layouts/15/images/spcommon.png?rev=44" />
+<img src="/_layouts/15/images/spcommon.png?rev=44#ThemeKey=spcommon" />
+</div>
+<form method="post" action="./CAB.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0x901240164CABA98439C59648F2420EBD1B894695F6161C6780EDF659DFB7EAF596913AA25DE46CDC59FBD3A1B3F71CEB93183E5F52A5673B905AAB41B5E8C967,11 Mar 2018 07:59:00 -0000" />
+<input type="hidden" name="MSOAuthoringConsole_FormContext" id="MSOAuthoringConsole_FormContext" value="" />
+<input type="hidden" name="MSOAC_EditDuringWorkflow" id="MSOAC_EditDuringWorkflow" value="" />
+<input type="hidden" name="InputComments" id="InputComments" value="" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="_maintainWorkspaceScrollPosition" id="_maintainWorkspaceScrollPosition" value="0" />
+<input type="hidden" name="SPPageStateContext_PreviousAuthoringVersion" id="SPPageStateContext_PreviousAuthoringVersion" value="42" />
+<input type="hidden" name="SPPageStateContext_PreviousAuthoringItemUser" id="SPPageStateContext_PreviousAuthoringItemUser" value="2" />
+<input type="hidden" name="MSOShowUnapproved_Xml" id="MSOShowUnapproved_Xml" value="" />
+<input type="hidden" name="SideBySideToken" id="SideBySideToken" value="16.0.7428.1205" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBgIBD2QWBgIFD2QWAmYPZBYCAgMPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTYuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAhEPZBYCAgMPZBYCZg9kFgJmDzwrAAYAZAITD2QWAgIBD2QWEgUmZ18wYWI1YWNiM19jMjMxXzQ2MmNfOWQyOV80MmFhMmVmOTM2YzMPZBYEZg8WAh4HVmlzaWJsZWhkAgEPFgIfAWhkBSZnX2ViNDE5ZWI5X2NkYzRfNDYzZl9iNmI0Xzg1NjY0NWNiZDc0OQ9kFgRmDxYCHwFoZAIBDxYCHwFoZAUmZ184ZDE2M2U3Y19iOWFkXzRiNzlfYjQ2YV8xZTBhOGU3MmViZjQPZBYEZg8WAh8BaGQCAQ8WAh8BaGQFJmdfZjA0OGYzZjZfMGI1Zl80YWQyX2EwN2FfMmE5MmE2NjIxNzRmD2QWBGYPFgIfAWhkAgEPFgIfAWhkBSZnX2MzNDBlN2Y3X2NmMDRfNGM5NF9hYjk1X2Y3NTAwMGEwMjIwMg9kFgRmDxYCHwFoZAIBDxYCHwFoZAUmZ18xMzlkNTVkZF84YWVlXzQ5NTBfYjZjZl81OTg0ZDhmNDUwOTEPZBYEZg8WAh8BaGQCAQ8WAh8BaGQFJmdfMjI3NjFkNTZfOTUxYl80ZTk3X2FmYjBfNjc3ZGRkN2EyODczD2QWBGYPFgIfAWhkAgEPFgIfAWhkBSZnXzY1NjFkNmM5XzQxY2NfNGIxY184YWU0XzQ4NWQzZjI2ZGY5Nw9kFgRmDxYCHwFoZAIBDxYCHwFoZAUmZ19lNDk5OWEyNV8xYzMyXzRjOWRfODQ5Zl9jNWFjMDM3YjUwYzcPZBYEZg8WAh8BaGQCAQ8WAh8BaGQCBQ9kFgICBA9kFgICAg9kFgQCAQ9kFgICAw9kFgJmD2QWBAIDD2QWCgIBDxYGHhNDbGllbnRPbkNsaWNrU2NyaXB0BYEBRW5zdXJlU2NyaXB0RnVuYygnc2hhcmluZy5qcycsICdEaXNwbGF5U2hhcmVkV2l0aERpYWxvZycsIGZ1bmN0aW9uICgpIHsgRGlzcGxheVNoYXJlZFdpdGhEaWFsb2coJ1x1MDAyZnNpdGVzXHUwMDJmQ0FCXHUwMDJmJyk7IH0pHihDbGllbnRPbkNsaWNrU2NyaXB0Q29udGFpbmluZ1ByZWZpeGVkVXJsBYEBRW5zdXJlU2NyaXB0RnVuYygnc2hhcmluZy5qcycsICdEaXNwbGF5U2hhcmVkV2l0aERpYWxvZycsIGZ1bmN0aW9uICgpIHsgRGlzcGxheVNoYXJlZFdpdGhEaWFsb2coJ1x1MDAyZnNpdGVzXHUwMDJmQ0FCXHUwMDJmJyk7IH0pHhhDbGllbnRPbkNsaWNrTmF2aWdhdGVVcmxkZAIDDxYIHwFoHwIFendpbmRvdy5sb2NhdGlvbiA9ICdqYXZhc2NyaXB0OkVuc3VyZUNoZWNrb3V0QW5kQ2hhbmdlTGF5b3V0TW9kZVRvRWRpdChcJ2Y2ZmQ4NTE4LTU1OWEtNGE2Yi05ZjgwLTQ4YTRiOTY3OWNjYVwnLDIsZmFsc2UpOyc7HwNkHwQFZWphdmFzY3JpcHQ6RW5zdXJlQ2hlY2tvdXRBbmRDaGFuZ2VMYXlvdXRNb2RlVG9FZGl0KFwnZjZmZDg1MTgtNTU5YS00YTZiLTlmODAtNDhhNGI5Njc5Y2NhXCcsMixmYWxzZSk7ZAIFDxYIHwFoHwIFE0dvVG9DcmVhdGVOZXdQYWdlKCkfBGQfAwUTR29Ub0NyZWF0ZU5ld1BhZ2UoKWQCCw8WAh8BaGQCEw9kFgJmDw8WBh4cUHJldmlvdXNBdXRob3JpbmdJdGVtVmVyc2lvbgUCNDIeGlByZXZpb3VzQXV0aG9yaW5nSXRlbU93bmVyBQEyHhxQcmV2aW91c0F1dGhvcmluZ0NvbnRyb2xNb2RlCysEAWRkAgQPDxYCHglBY2Nlc3NLZXkFAS9kZAIDD2QWAgIBD2QWAgIBD2QWCAIBDw8WBB4EXyFTQgICHghDc3NDbGFzcwUXbXMtcHJvbW90ZWRBY3Rpb25CdXR0b25kZAIDD2QWAmYPDxYEHwoFF21zLXByb21vdGVkQWN0aW9uQnV0dG9uHwkCAmRkAgUPDxYGHwoFF21zLXByb21vdGVkQWN0aW9uQnV0dG9uHwkCAh8BaGRkAgcPFgQeBkFjdGlvbgspigFNaWNyb3NvZnQuU2hhcmVQb2ludC5XZWJDb250cm9scy5QYWdlU3RhdGVBY3Rpb24sIE1pY3Jvc29mdC5TaGFyZVBvaW50LCBWZXJzaW9uPTE2LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTcxZTliY2UxMTFlOTQyOWMAHwFnZAIUD2QWAgIDDxYCHwALKwQBZGQEcxtWoKEABAd0v4F3NiBxZH+F6l/w6X/0zqMV1y6YPQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=YtV44tLd_gW5UlnzJ39p3fRed39_xmSoGAa0FP3gvnsFuHkZJNBoZptlKJn0BdYS8lMdI3qWy-qZozTfYmLYUUoIjzDP3sLaEPDFqXj7gZA1&amp;t=636288702966629520" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = true;
+var g_correlationId = 'eb63529e-30b8-5000-199b-43a43b807578';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = true;var g_wsaLCID = 1033;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'STS#0';
+var _spPageContextInfo={"webServerRelativeUrl":"/sites/CAB","webAbsoluteUrl":"https://cabjo.sharepoint.com/sites/CAB","viewId":"","listId":"{f6fd8518-559a-4a6b-9f80-48a4b9679cca}","listPermsMask":{"High":2147483647,"Low":4294967295},"listUrl":"/sites/CAB/Pages","listTitle":"Pages","listBaseTemplate":850,"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"cdnPrefix":"static.sharepointonline.com/bld","siteAbsoluteUrl":"https://cabjo.sharepoint.com/sites/CAB","siteId":"{cb9e77e6-8d0d-4cf5-a48b-0d6ee41512aa}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":"57bd64a8-dca6-4111-bcfd-9d776cf29a71","isMultiGeoTenant":false,"isSPO":true,"farmLabel":"EMEA_14_Content","serverRequestPath":"/sites/CAB/Pages/CAB.aspx","layoutsUrl":"_layouts/15","webId":"{aff1dfed-aa07-42be-ae8d-99af5cf26fbd}","webTitle":"Cairo Ammman Bank Portal","webTemplate":"1","webTemplateConfiguration":"STS#0","webDescription":"","tenantAppVersion":"1762219684","isAppWeb":false,"webLogoUrl":"_layouts/15/images/siteicon.png","webLanguage":1033,"currentLanguage":1033,"currentUICultureName":"en-US","currentCultureName":"en-US","currentCultureLCID":1033,"env":"prod","nid":101,"fid":15658,"serverTime":"2018-03-11T07:59:00.0533225Z","siteClientTag":"4269$$16.0.7428.1205","crossDomainPhotosEnabled":true,"openInClient":false,"webUIVersion":15,"webPermMasks":{"High":2147483647,"Low":4294967295},"pageListId":"{f6fd8518-559a-4a6b-9f80-48a4b9679cca}","pageItemId":2,"pagePermsMask":{"High":2147483647,"Low":4294967295},"pagePersonalizationScope":1,"userEmail":"CAB.SharePoint@CAB.Jo","userId":11,"userLoginName":"cab.sharepoint@cab.jo","userDisplayName":"CAB SharePoint","isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"systemUserKey":"i:0h.f|membership|10037ffe979aea6c@live.com","alertsEnabled":true,"siteServerRelativeUrl":"/sites/CAB","allowSilverlightPrompt":"True","themeCacheToken":"/sites/CAB::42:16.0.7428.1205","themedCssFolderUrl":null,"themedImageFileNames":null,"isSiteAdmin":true,"ExpFeatures":[-828392042,1901394761,621928149,-1749077985,865808185,-1801170304,113951254,55586079,273223718,-1659764736,3539856,-2080235367,67473920,545325400,2159492,1879474180,369116658,825921732,20206230,16,0,1345847296,-1481345386,-1812323898,-29982709,-529295871,-385777606,1209014537,-1056963103,-424694435,1102790973,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32768],"killSwitches":{"554B13A3-7176-4AD9-A47E-C677A04616AC":true,"CC994644-9EBA-4F30-B4D5-BD31F117FFF6":true,"11C6A11F-BF20-4D69-B009-D34DBCDF1F08":true,"FB222E13-B74F-49B8-9E8F-13EEDBCD6DF4":true,"40273375-245F-4BA8-B42E-691CB459F705":true,"95AE6796-6EA9-43AF-8CA4-74FA57478678":true,"55E0C40D-7D70-4354-AE33-ADC1FDEF6005":true,"D7486693-8EA3-4164-94A9-41CE97145F53":true,"0DE06DE6-DF55-4324-A0F7-8799C81CFCB1":true,"3BDC2162-7C35-4FDE-AFD5-1C1F2AA622F6":true,"E16BD38F-C281-4F3F-9EA3-802DBFF0C2FF":true,"5F9B5EDC-5952-4446-A020-D9EADB8C42D8":true,"BFF2FCB1-696F-4B80-800A-F955B988143A":true,"9069237F-BE11-4F6B-833A-7A43A9BDDE22":true,"D8037234-CF6D-4255-AAB1-6A54E4908998":true,"69E23215-1C6B-45AE-B498-915B2900A28E":true,"6CFD4FE2-9D02-4408-9B04-DF0989C29F1E":true,"DD337724-346B-493E-8D1C-0DC62A9970C6":true,"67C98A94-846C-44A3-AEDC-48720DA38133":true,"519B0BBF-CBE5-46A6-ABC5-DAF3B6EF9E27":true,"20D1B705-EB25-4CD1-8073-7D2060786C0A":true,"91047E78-646A-4509-B4C2-D39215ACE2AD":true,"57561DB6-BCA9-455C-BAD6-607B954D788F":true,"9905B461-3995-4A29-9F3A-7B12EB440191":true,"2E925A82-D218-4A35-B9E7-060D377F4BBA":true,"FFA8DD9E-9835-464D-A820-4E69D0C24148":true,"0D82406D-E1C2-4F65-B303-23F3594FBDCE":true,"F7B777E2-1647-4EA4-93F8-FC7B449722AD":true,"90F9F43D-6D44-4A03-B2F3-E64FE99D7E64":true,"2BE0E3B6-397D-479B-ABF0-F0FCC7664969":true,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":true,"DFD5A79B-BCEB-470D-954E-D42FBCB29D13":true,"AD515929-42B5-44CD-B6AE-34E238B5E4BE":true,"D6F12B66-F059-4C61-85D6-6D458D7DA5A3":true,"7003730C-8D13-4D3C-8902-973146C2FE62":true,"77914FE7-96E1-4D4C-BC55-5DF6ACE0AF76":true,"CD0DD1EC-9BA4-45B2-BA6E-66B3FD0E6C21":true,"C93C7859-649A-42E4-A63E-329A0308343C":true,"07439006-F383-415D-A20D-F17FF64E8697":true,"8AA8B039-1707-4830-92E3-E63772486DEE":true,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":true,"84A79470-7F42-45E4-A2C8-E1F4DA4AA9C2":true,"5F88BA85-D880-463E-9A37-C0DBF18CF5E5":true,"F4CDE504-B8D2-4513-BB2A-C0DE12601EA4":true,"D9ECECE5-3CC1-413E-97B5-D45915FFAB65":true,"1383A8DA-0968-4C35-8CB3-1A9E88165F04":true,"D68D04D5-404C-40B6-BA29-78B5C4AF0290":true,"5934F9D6-8BF8-46BE-BED5-CD4C37C8874E":true,"5CD90AEA-1CC9-45A1-A69B-CCEB6D6C2B25":true,"F01AA7EA-4D1D-48CE-AC4A-9C96F7BA9AE3":true,"3EE87C74-3663-4CE9-B271-51A26E4CB1BC":true,"3387D7D2-8C88-42E7-AC37-DDBFF52EBA9B":true,"25E89BA8-EADA-4ECD-8FFD-489223A56056":true,"B77283F5-937A-4B93-AB8A-645D8ED43C61":true,"FBE7227D-81E3-4338-88E4-D94E4FE6A17C":true,"13762DBA-2F03-4B05-B77D-49D8966499F3":true,"413BF33F-D3E4-4123-A715-E76D3C55FC8B":true,"73D03011-223C-4456-A029-0522603BDAC5":true,"31C680C3-C87C-424E-94C5-98EE0250E861":true,"AB68EDC8-D283-4D4B-8DC6-714C08CCAB56":true,"27A521E9-BA59-43BC-A7B6-CF09A899FBD3":true,"50922D9D-F82C-472E-88AA-9442E9BF4729":true,"5AE3E7B5-206D-4ACD-BF9F-04ACFA3D3B1F":true,"86E6F70F-8EAD-4D69-B216-FD4146566AE5":true,"452C7C12-F071-4C4B-8849-1C8FF302D704":true,"F2F89B95-8448-449E-B2AE-DE31E731F443":true,"22E1A1AB-83DC-41FF-A58C-28CDCAED2700":true},"CorrelationId":"eb63529e-30b8-5000-199b-43a43b807578","hasManageWebPermissions":true,"isNoScriptEnabled":true,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"hasPendingWebTemplateExtension":false,"isHubSite":false,"isWebWelcomePage":true,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":true,"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#757575","siteColor":"#757575","navigationInfo":null,"guestsEnabled":false,"MenuData":{"SettingsData":[{"Id":"SuiteMenu_zz8_MenuItemAddPage","Text":"Add a page","Url":"/sites/CAB/_layouts/15/CreateSitePage.aspx"},{"Id":"SuiteMenu_zz5_MenuItemCreate","Text":"Add an app","Url":"/sites/CAB/_layouts/15/addanapp.aspx"},{"Id":"SuiteMenu_zz6_MenuItem_ViewAllSiteContents","Text":"Site contents","Url":"/sites/CAB/_layouts/15/viewlsts.aspx"},null,{"Id":"SuiteMenu_zz7_MenuItem_Settings","Text":"Site settings","Url":"/sites/CAB/_layouts/15/settings.aspx"},null,{"Id":"GettingStarted","Text":"Getting started","Url":"/sites/CAB/GettingStarted.aspx"}],"SignOutUrl":"https://cabjo.sharepoint.com/sites/CAB/_layouts/15/SignOut.aspx"},"RecycleBinItemCount":-1,"PublishingFeatureOn":true,"PreviewFeaturesEnabled":true,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0x901240164CABA98439C59648F2420EBD1B894695F6161C6780EDF659DFB7EAF596913AA25DE46CDC59FBD3A1B3F71CEB93183E5F52A5673B905AAB41B5E8C967,11 Mar 2018 07:59:00 -0000","maximumFileSize":15360,"formDigestTimeoutSeconds":1800,"canUserCreateMicrosoftForm":false,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":{"Description":"(UTC-08:00) Pacific Time (US and Canada)","Bias":480,"Id":13,"DaylightBias":-60,"DaylightDate":{"Year":0,"Month":3,"DayOfWeek":0,"Day":2,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0},"StandardBias":0,"StandardDate":{"Year":0,"Month":11,"DayOfWeek":0,"Day":1,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0}},"webTime24":false,"webFirstDayOfWeek":0,"aadTenantId":"57bd64a8-dca6-4111-bcfd-9d776cf29a71","aadUserId":"81ff385e-9343-4e71-a187-32bc76bf68a7","aadInstanceUrl":"https://login.windows.net","msGraphEndpointUrl":"https://graph.microsoft.com","allowInfectedDownload":true};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}function CallServer_5041665(arg, context) {WebForm_DoCallback('ctl00$ctl20',arg,SP.UI.MyLinksRibbon.MyLinksRibbonPageComponent.ribbonActionCallback,context,null,false); }function _myLinksRibbonLoad2()
+{
+    var fnd = function () {
+        try {
+            mylinks_init.MyLinksInit('CallServer_5041665'); 
+        } 
+        catch (Ex)
+        { }
+    };
+    RegisterSod('mylinks_init', 'https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/sp.ui.mylinksribbon.js');
+    LoadSodByKey('mylinks_init', fnd);
+}
+
+function _myLinksRibbonLoad1()
+{
+    ExecuteOrDelayUntilScriptLoaded(_myLinksRibbonLoad2, 'SP.Ribbon.js');
+}
+
+_spBodyOnLoadFunctionNames.push('_myLinksRibbonLoad1');
+var L_Menu_BaseUrl="/sites/CAB";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="null";
+Flighting.ExpFeatures = [-828392042,1901394761,621928149,-1749077985,865808185,-1801170304,113951254,55586079,273223718,-1659764736,3539856,-2080235367,67473920,545325400,2159492,1879474180,369116658,825921732,20206230,16,0,1345847296,-1481345386,-1812323898,-29982709,-529295871,-385777606,1209014537,-1056963103,-424694435,1102790973,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32768]; (function()
+{
+    if(typeof(window.SP) == "undefined") window.SP = {};
+    if(typeof(window.SP.YammerSwitch) == "undefined") window.SP.YammerSwitch = {};
+
+    var ysObj = window.SP.YammerSwitch;
+    ysObj.IsEnabled = false;
+    ysObj.TargetYammerHostName = "www.yammer.com";
+} )(); var _spWebPartComponents = new Object();
+                var g_syncButtonUsePopup = true;
+                //]]>
+</script>
+
+<script src="https://static.sharepointonline.com/bld/_layouts/15/16.0.7428.1205/blank.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function ShowUnapprovedResourcesWithTimeout() { if (!browseris.ie6up && g_bResourcesAlreadyChecked) { alert('Before checking again, you will need to refresh this page.'); return false; } showConsoleMessage(l_ur_plsWait, false);window.setTimeout("ShowUnapprovedResourcesPage()",10); }l_chkResStatus = 'Checking page for unpublished items...';
+l_ur_plsWait = 'Please wait while checking for unpublished items...';
+l_ur_rfct = '__publishingReusableFragment';
+l_ur_wsurl = 'https:\u002f\u002fcabjo.sharepoint.com\u002fsites\u002fCAB\u002f_vti_bin\u002fPublishingService.asmx';
+l_ur_formname = 'aspnetForm';
+l_ur_fullreport = "Unpublished items are detected on the page.  View the <a href=\"#\" onclick=\"javascript:window.top.open('\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fUnapprovedResources.aspx', '_unapprovedResourcesReport', 'height=580,width=540,resizable=yes,status=no,location=no,toolbar=no,menubar=no,directories=no,scrollbars=no');\" title=\"Open a new window to view the full report\">full report</a> in a new window.";
+l_ur_fullreportnors = "Unpublished items are detected on the page.  View the <a href=\"#\" onclick=\"javascript:window.top.open('\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fUnapprovedResources.aspx', '_unapprovedResourcesReport', 'height=580,width=540,resizable=yes,status=no,location=no,toolbar=no,menubar=no,directories=no,scrollbars=no');\" title=\"Open a new window to view the full report\">full report</a> in a new window.  Before checking again, you will need to <a href=\"#\" onclick=\"g_bWarnBeforeLeave = false;theForm.submit();\">refresh this page</a>.";
+l_ur_recsready = 'No unpublished items detected on this page.';
+var g_ProcessedXml;
+var g_PageNameForDisplay = 'CAB.aspx';
+var g_PageFileVersionForDisplay = '0.8';
+var checkForDraft = {"checkForDraftFn":"ShowUnapprovedResourcesWithTimeout();HideServerGeneratedMessage()"};var workflowStatus = {"workflowStatusFn":"__doPostBack('ctl00$ctl52$ctl11$ctl10','workflowStatus')"};var g_previewRequested = false;var preview = {"inputPagePreviewClientId":null,"mobileChannels":null,"previewFn":"if(!g_previewRequested){g_previewRequested=true;__doPostBack('ctl00$ctl52$ctl11$ctl12','previewPage');}"};window.SPThemeUtils && SPThemeUtils.RegisterCssReferences([{"Url":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=rweKEBU\u00252FCw2wUUG5BFLsxA\u00253D\u00253DTAG630","OriginalUrl":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=rweKEBU\u00252FCw2wUUG5BFLsxA\u00253D\u00253DTAG630","Id":"CssLink-2ffbdccb1b724e57a8e6fbaec573a6a0","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fsearchv15.css?rev=edSKWaSfyX0JxP2UcvfaVw\u00253D\u00253DTAG630","OriginalUrl":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fsearchv15.css?rev=edSKWaSfyX0JxP2UcvfaVw\u00253D\u00253DTAG630","Id":"CssLink-fed188eb94d34904a00df80ef165af91","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002fsites\u002fCAB\u002f_catalogs\u002fmasterpage\u002fCABbranding\u002fcss\u002fdefaultStyle.css","OriginalUrl":"\u002fsites\u002fCAB\u002f_catalogs\u002fmasterpage\u002fCABbranding\u002fcss\u002fdefaultStyle.css","Id":"CssLink-7cbdf40768c14a85988688f966be9c63","ConditionalExpression":"","After":"System.String[]","RevealToNonIE":"false"},{"Url":"\u002fsites\u002fCAB\u002f_catalogs\u002fmasterpage\u002fCABbranding\u002fcss\u002fanimate.css","OriginalUrl":"\u002fsites\u002fCAB\u002f_catalogs\u002fmasterpage\u002fCABbranding\u002fcss\u002fanimate.css","Id":"CssLink-ed6531149c9944169aa5c12e52198c78","ConditionalExpression":"","After":"System.String[]","RevealToNonIE":"false"}]);
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingDocument', function() { FollowingDocument(); });
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingCallout', function() { FollowingCallout(); });
+        });
+    })();var _spRegionalSettings={adjustHijriDays:0,calendarType:1,firstDayOfWeek:0,firstWeekOfYear:0,localeId:1033,currentDateInLocalCalendar: new Date(2018, 2, 10),showWeeks:0,timeZone:'-08:00:00.0008140',timeZoneInHours:-8,workDayEnd:1020,workDayStart:480,workDays:'0111110',time24:0};Sys.CultureInfo.CurrentCulture = (function(a){return new Sys.CultureInfo(a.name,a.numberFormat,a.dateTimeFormat)})({"dateTimeFormat":{"AMDesignator":"AM","AbbreviatedDayNames":["S","M","T","W","T","F","S"],"AbbreviatedLeapMonthNames":null,"AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"Calendar":{"AlgorithmType":1,"CalendarType":1,"Eras":[1],"IsReadOnly":false,"MaxSupportedDateTime":"\/Date(253402300799999)\/","MinSupportedDateTime":"\/Date(-62135596800000)\/","TwoDigitYearMax":2029},"CalendarWeekRule":0,"DateSeparator":"\/","DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"FirstDayOfWeek":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","IsReadOnly":true,"LeapMonthNames":null,"LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"NativeCalendarName":"Gregorian Calendar","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'","ShortDatePattern":"M\/d\/yyyy","ShortTimePattern":"h:mm tt","ShortestDayNames":["S","M","T","W","T","F","S"],"SortableDateTimePattern":"yyyy'-'MM'-'dd'T'HH':'mm':'ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy'-'MM'-'dd HH':'mm':'ss'Z'","YearMonthPattern":"MMMM yyyy","eras":[1,"A.D.","AD",0]},"name":"en-US","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","CurrencyGroupSeparator":",","CurrencyGroupSizes":[3],"CurrencyNegativePattern":0,"CurrencyPositivePattern":0,"CurrencySymbol":"$","DigitSubstitution":1,"IsReadOnly":true,"NaNSymbol":"NaN","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","NumberGroupSizes":[3],"NumberNegativePattern":1,"PerMilleSymbol":"‰","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentGroupSizes":[3],"PercentNegativePattern":0,"PercentPositivePattern":0,"PercentSymbol":"%","PositiveInfinitySymbol":"Infinity","PositiveSign":"+"}});if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002fsites\u002fCAB', 1440000);
+                    var workspaceElem = GetCachedElement("s4-workspace");
+                    if (workspaceElem != null)
+                    {
+                        var scrollElem = GetCachedElement("_maintainWorkspaceScrollPosition");
+                        if (scrollElem != null)
+                        {
+                            scrollElem.value = workspaceElem.scrollTop;
+                        }
+                    };
+                if (typeof(SP) != 'undefined' && SP.Ribbon && SP.Ribbon.PageState && SP.Ribbon.PageState.PageStateHandler && SP.Ribbon.PageState.PageStateHandler.pageStateOnSubmit) SP.Ribbon.PageState.PageStateHandler.pageStateOnSubmit();if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9B43D126" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOIbgI86zJnoK06IafNaWRoulgCM8VS7JGSYU4hASXBYC8XWtDJ3dKnuc/taf0s1UzTo22Ow9JOOPM/D5e99p8lSeBNQ1qpZEI3FY2VzvtcOQ==" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', ['fctl00$ctl52$WebPartAdderUpdatePanel',''], [], ['ctl00$ctl52$WebPartAdder',''], 90, 'ctl00');
+//]]>
+</script>
+
+
+
+            <script type="text/javascript">//<![CDATA[
+    
+      $(document).ready(function() {
+   
+   var docHeight = $(window).height();
+   var footerHeight = $('.footer').height();
+   var footerTop = $('.footer').position().top + footerHeight;
+   
+   if (footerTop < docHeight) {
+    $('.footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+   }
+  });
+ 
+var currentSiteCollection;
+jQuery(document).ready(function () {
+
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection 	
+   	GetLookAndFeel();
+});
+
+
+function GetLookAndFeel()
+{
+debugger;
+var userId = _spPageContextInfo.userId;
+ 	//Ajax function to fetch data
+    var getLookAndFeeLData = jQuery.ajax({
+        url: currentSiteCollection + "/_api/lists/getbytitle('LookAndFeelUsers')/items?&$filter=AuthorId  eq " + userId +" &$top=5&$orderby=Created desc",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getLookAndFeeLData.done(LookAndFeelDataSuccess);
+    getLookAndFeeLData.fail(LookAndFeelDataFail);
+
+}
+function LookAndFeelDataSuccess(data) {
+debugger;
+    var result = data.d.results;
+    var link;
+	var quickLinksHtml="";
+	if(result.length != 0)
+	{
+    for (var i = 0; i < result.length; i++) {
+      		var _StylelinkId = result[i]["StyleLinkId"];
+		    
+    if (_StylelinkId == 1)
+    {         
+        $('head').append('<link rel="stylesheet" href="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/css/style.css" type="text/css" media="all" />');
+
+    }
+    else if(_StylelinkId == 2){
+    $('head').append('<link rel="stylesheet" href="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/css/colorFulstyle.css" type="text/css" media="all" />');
+
+    }
+ 
+    }
+    }
+    else{
+        $('head').append('<link rel="stylesheet" href="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/css/style.css" type="text/css" media="all" />');
+
+    }
+
+document.getElementById("hideAll").style.display = "block";
+}
+function LookAndFeelDataFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+//]]></script> 
+
+         
+        
+        
+        <div>
+	
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    Turn on more accessible mode
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    Turn off more accessible mode
+                </a>
+            </div>
+        
+</div>
+        <div id="ms-designer-ribbon">
+            
+<div>
+	
+<div id="suiteBarDelta" class="ms-dialogHidden ms-fullWidth noindex">
+		
+	<div id="suiteMenuData" class="ms-hide">
+	
+	 
+	<span style="display:none"><menu type='ServerMenu' id="zz1_ID_PersonalActionMenu" hideicons="true"><ie:menuitem id="zz2_ID_Logout" type="option" onMenuClick="STSNavigate2(event,&#39;/sites/CAB/_layouts/15/SignOut.aspx&#39;);" text="Sign Out" description="Logout of this site." menuGroupId="100"></ie:menuitem>
+		</menu></span>
+
+
+					   <span class="ms-siteactions-root" id="siteactiontd">
+					   
+						
+						
+						<span style="display:none"><menu type='ServerMenu' id="zz3_SiteActionsMenuMainData" hideicons="true"><ie:menuitem id="ctl00_ctl52_SiteActionsMenuMainData_ctl00_wsaHideMenu" type="option" iconSrc="/_layouts/15/images/RibbonHideHH.png?rev=44" onMenuClick="javascript:__doPostBack(&#39;ctl00$ctl52$SiteActionsMenuMainData$ctl00$wsaHideMenu_CmsActionControl&#39;,&#39;exitMenu&#39;)" text="Hide Ribbon" description="Hide the page status and ribbon for this page." menuGroupId="100"></ie:menuitem>
+		<ie:menuitem id="zz4_MenuItem_ShareThisSite" type="option" onMenuClick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharedWithDialog&#39;, function () { DisplaySharedWithDialog(&#39;\u002fsites\u002fCAB\u002f&#39;); })" text="Shared with..." description="See who&#39;s here and invite new people." menuGroupId="100"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl52_SiteActionsMenuMainData_ctl00_wsaEditPage" type="option" iconSrc="/_layouts/15/images/ActionsEditPage.gif?rev=44" onMenuClick="javascript:SP.SOD.executeFunc(&#39;sp.ui.pub.ribbon.js&#39;, &#39;Pub.Ribbon.PubCommands&#39;, function() {Pub.Ribbon.PubCommands.notifyProgress(SP.Publishing.Resources.notificationMessageLoading);if (document.forms[&#39;aspnetForm&#39;][&#39;MSOLayout_InDesignMode&#39;] != null) document.forms[&#39;aspnetForm&#39;][&#39;MSOLayout_InDesignMode&#39;].value = 1;if (document.forms[&#39;aspnetForm&#39;][&#39;MSOAuthoringConsole_FormContext&#39;] != null) document.forms[&#39;aspnetForm&#39;][&#39;MSOAuthoringConsole_FormContext&#39;].value = 1;if (document.forms[&#39;aspnetForm&#39;][&#39;MSOSPWebPartManager_DisplayModeName&#39;] != null) document.forms[&#39;aspnetForm&#39;][&#39;MSOSPWebPartManager_DisplayModeName&#39;].value = &#39;Design&#39;;__doPostBack(&#39;ctl05&#39;,&#39;edit&#39;)});" text="Edit page" description="Change the content and Web Parts on this page." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl52_SiteActionsMenuMainData_ctl00_wsaCreatePage" type="option" iconSrc="/_layouts/15/images/crtpage.gif?rev=44" onMenuClick="javascript:if (LaunchCreateHandler(&#39;PublishingPage&#39;)) { SP.SOD.executeFunc(&#39;sp.ui.dialog.js&#39;, &#39;SP.UI.ModalDialog.showModalDialog&#39;, function() { var dlgOptions = { url:&#39;\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fCreatePublishingPageDialog.aspx&#39;, autoSize: true, autoSizeStartWidth: 550 };  SP.UI.ModalDialog.showModalDialog(dlgOptions); }); };" text="Add a page" description="Create a page in this site." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="zz5_MenuItem_Create" type="option" onMenuClick="GoToPage(&#39;\u002fsites\u002fCAB\u002f_layouts\u002f15\u002faddanapp.aspx&#39;)" text="Add an app" description="Create other types of pages, lists, libraries, and sites." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="zz6_MenuItem_ViewAllSiteContents" type="option" iconSrc="/_layouts/15/images/allcontent32.png?rev=44" onMenuClick="STSNavigate2(event,&#39;/sites/CAB/_layouts/15/viewlsts.aspx&#39;);" text="Site contents" description="View all libraries and lists in this site." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl52_SiteActionsMenuMainData_ctl00_wsaDesignEditor" type="option" iconSrc="/_layouts/15/images/designer.png?rev=44" onMenuClick="STSNavigate2(event,&#39;/sites/CAB/_layouts/15/DesignSite.aspx&#39;);" text="Design Manager" description="Change the look and feel of this site." menuGroupId="300"></ie:menuitem>
+		<ie:menuitem id="zz7_MenuItem_Settings" type="option" iconSrc="/_layouts/15/images/settingsIcon.png?rev=44" onMenuClick="GoToPage(&#39;\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fsettings.aspx&#39;)" text="Site settings" description="Access all settings for this site." menuGroupId="300"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl52_SiteActionsMenuMainData_ctl00_ctl04" type="option" onMenuClick="STSNavigate2(event,&#39;/sites/CAB/GettingStarted.aspx&#39;);" text="Getting started" description="Get started with your site." menuGroupId="2147483647"></ie:menuitem>
+		</menu></span></span>
+	</div>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+		var g_navBarHelpDefaultKey = "HelpHome";
+	// ]]>
+</script>
+	<div id="suiteBarTop" class="ms-fullWidth ms-TopBarBackground-bgColor" style="height:50px; position:relative;">
+
+		</div><div id="SuiteNavUserName" style="display:none">CAB SharePoint</div><div class="wf-family-o365 o365wf" style="display:none">
+
+		</div>
+
+	</div>
+	<div id="s4-ribbonrow">
+		<div id="globalNavBox">
+	<div id="ribbonBox">
+	<div id="s4-ribboncont">
+		<div id="DeltaSPRibbon">
+		
+			<input id="RibbonContainer_activeTabId" name="ctl00$ctl52$ctl04" type="hidden" value=""/><div id='RibbonContainer'><div class="ms-cui-ribbon ms-cui-needIEFilter" id="Ribbon" unselectable="on" aria-describedby="ribboninstructions" role="toolbar"><span class="ms-cui-hidden" id="ribboninstructions" unselectable="on">To navigate through the Ribbon, use standard browser navigation keys. To skip between groups, use Ctrl+LEFT or Ctrl+RIGHT. To jump to the first Ribbon tab use Ctrl+[. To jump to the last selected command use Ctrl+]. To activate a command, use Enter.</span><div class="ms-cui-ribbonTopBars" unselectable="on"><div class="ms-cui-topBar1" unselectable="on" style="display:none"><div class="ms-cui-qat-container" unselectable="on"></div></div><div class="ms-cui-topBar2" unselectable="on"><div class="ms-cui-jewel-container" id="jewelcontainer" unselectable="on" style="display:none"></div><div class="ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden" id="RibbonContainer-TabRowLeft" unselectable="on">
+				</div><ul class="ms-cui-tts" unselectable="on" role="tablist"><li class="ms-cui-tt ms-browseTab ms-cui-tt-s" id="Ribbon.Read-title" unselectable="on" role="tab"><a class="ms-cui-tt-a" unselectable="on" href="javascript:;" onclick="_ribbonStartInit('Ribbon.Read',false, event);" title="Browse" onkeydown="if(event != null && event.keyCode == 13){ if(typeof(_ribbon) != 'undefined') _ribbon.launchedByKeyboard = true; _ribbonStartInit('Ribbon.Read',false, event);  }"><span class="ms-cui-tt-span" unselectable="on">Browse</span><span class="ms-cui-hidden" unselectable="on">Tab 1 of 3.</span></a></li><li class="ms-cui-tt" id="Ribbon.WikiPageTab-title" unselectable="on" role="tab"><a class="ms-cui-tt-a" unselectable="on" href="javascript:;" onclick="_ribbonStartInit('Ribbon.WikiPageTab',false, event);" title="Page" onkeydown="if(event != null && event.keyCode == 13){ if(typeof(_ribbon) != 'undefined') _ribbon.launchedByKeyboard = true; _ribbonStartInit('Ribbon.WikiPageTab',false, event);  }"><span class="ms-cui-tt-span" unselectable="on">Page</span><span class="ms-cui-hidden" unselectable="on">Tab 2 of 3.</span></a></li><li class="ms-cui-tt" id="Ribbon.PublishTab-title" unselectable="on" role="tab"><a class="ms-cui-tt-a" unselectable="on" href="javascript:;" onclick="_ribbonStartInit('Ribbon.PublishTab',false, event);" title="Publish" onkeydown="if(event != null && event.keyCode == 13){ if(typeof(_ribbon) != 'undefined') _ribbon.launchedByKeyboard = true; _ribbonStartInit('Ribbon.PublishTab',false, event);  }"><span class="ms-cui-tt-span" unselectable="on">Publish</span><span class="ms-cui-hidden" unselectable="on">Tab 3 of 3.</span></a></li></ul><div class="ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont" id="RibbonContainer-TabRowRight" unselectable="on">
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-91px&#39;; this.firstChild.firstChild.style.top=&#39;-232px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-200px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharingDialog&#39;, function(){DisplaySharingDialog(&#39;\u002fsites\u002fCAB&#39;)}); return false;" id="ctl00_ctl52_site_share_button" title="Give people access to this site." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl52$site_share_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=44#ThemeKey=spcommon" alt="Share" style="position:absolute;left:-200px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Share</span></a>
+					<a class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl52$ctl08&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"><span class="ms-promotedActionButton-text"></span></a>
+					
+					<a class="ms-rtefocus-invalid ms-promotedActionButton" id="ctl00_ctl52_PageStateActionButton" href="javascript:" onclick="CoreInvoke('PageActionClick', this);return false;" _action="edit" _editoffsetx="236" _editoffsety="84" _edithoveroffsetx="181" _edithoveroffsety="192" _saveoffsetx="0" _saveoffsety="433" _savehoveroffsetx="0" _savehoveroffsety="449" _edittooltip="Edit" _savetooltip="Save" title="Edit" onmouseover="this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsetx&#39;) : this.getAttribute(&#39;_savehoveroffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsety&#39;) : this.getAttribute(&#39;_savehoveroffsety&#39;)) + &#39;px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsetx&#39;) : this.getAttribute(&#39;_saveoffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsety&#39;) : this.getAttribute(&#39;_saveoffsety&#39;)) + &#39;px&#39;;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=44#ThemeKey=spcommon" style="position:absolute;left:-236px;top:-84px;" /></span><span class="ms-promotedActionButton-text">Edit</span></a>
+<span id="fullscreenmodebox" class="ms-qatbutton">
+	<span id="fullscreenmode">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl52_fullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../../../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=44#ThemeKey=spcommon" alt="Focus on Content" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+	</span>
+	<span id="exitfullscreenmode" style="display: none;">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl52_exitfullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../../../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=44#ThemeKey=spcommon" alt="Focus on Content" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+	</span>
+</span>
+
+
+				</div></div></div></div></div>
+		
+	</div>
+	</div>
+	<span id="DeltaSPNavigation">
+			<span id="ctl00_ctl52_ctl11_publishingRibbon"></span>
+
+	</span>
+</div>
+<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+		
+  <div id="WebPartAdderUpdatePanelContainer">
+	<div id="ctl00_ctl52_WebPartAdderUpdatePanel">
+			
+		<span id="ctl00_ctl52_WebPartAdder"></span>
+	  
+		</div>
+  </div>
+
+	</div>
+		</div>
+	</div>
+
+</div>
+
+            
+        </div>
+        
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+              <div id="hideAll">
+
+                <div class="content-top">
+               
+                    <div class="">
+                        <div class="">
+                            <div class="content-top-grids">
+                                <div data-name="ContentPlaceHolderMain">
+                                    
+                                    
+                                    <span id="DeltaPlaceHolderMain">
+                                        
+        
+<div class="header">
+				<div class="top-navigation">
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+													</div>
+							<div class="hedearLogo">
+							
+							<img style="    padding: 20px;" src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/cairo-amman-bank.png">
+
+							
+							</div>
+							
+							<div class="headerTitle">
+							<center>
+							<h2>??????? ??????????? ???? ??????? ????</h2>
+							</center>
+							</div>
+														
+
+							    <div class="HomePageSearch">
+                    <div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ9" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="a79c3685-50ec-4f9d-9dcf-ab33cec7bc62" HasPers="false" id="WebPartWPQ9" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div componentid="ctl00_ctl36_g_a79c3685_50ec_4f9d_9dcf_ab33cec7bc62_csr" id="ctl00_ctl36_g_a79c3685_50ec_4f9d_9dcf_ab33cec7bc62_csr"></div><noscript><div id="ctl00_ctl36_g_a79c3685_50ec_4f9d_9dcf_ab33cec7bc62_noscript">It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.</div></noscript><div id="ctl00_ctl36_g_a79c3685_50ec_4f9d_9dcf_ab33cec7bc62">
+
+			</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>                                          
+</div>
+<br>
+							<!-- Collect the nav links, forms, and other content for toggling 
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<!--	<ul class="nav navbar-nav">
+									<li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+									<li><a href="#"><i class="fa fa-cogs"></i>Services</a></li>
+									<li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+									<li><a href="#"><i class="fa fa-picture-o"></i>Gallery</a></li>
+									<li><a href="#"><i class="fa fa-pencil-square-o"></i>Blog</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Contact</a></li>
+								</ul>	-->
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+					</div>
+				</div>
+		
+            <div class="content-grids">
+        <div class="col-md-2 sidebarMenu sidebarHomeMenu">
+        <div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ10" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="e4999a25-1c32-4c9d-849f-c5ac037b50c7" HasPers="false" id="WebPartWPQ10" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field">   <style>
+  ul#navigation {
+       position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 160px;
+    left: 0px;
+    list-style: none;
+    z-index: 9999;
+    width: 36px;}
+ul#navigation li {
+    width: 100px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;    
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.6;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+ul#navigation .home a{
+        background: linear-gradient(to right, #22aaa1 0%,#399348 100%);
+        cursor:pointer !important;
+}
+ul#navigation .about a      {
+  background:  linear-gradient(to right, #ED5100  0%,#FFE607 100%); 
+   cursor:pointer !important;
+  
+}
+body{
+background-size: 100% !important;}
+   </style>
+   
+   <script>
+   var FeelAndlockId;
+   var currentSiteCollection;
+jQuery(document).ready(function () {
+
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection 	
+   //	ChangeLookAndFeel();
+   GetChange_background_image();
+});
+
+function ChangeLookAndFeel(lookid)
+{
+
+FeelAndlockId = lookid;
+var userId = _spPageContextInfo.userId;
+ 	//Ajax function to fetch data
+    var ChangeLookAndFeeLData = jQuery.ajax({
+        url: currentSiteCollection + "/_api/lists/getbytitle('LookAndFeelUsers')/items?&$filter=AuthorId  eq " + userId +" &$top=5&$orderby=Created desc",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    ChangeLookAndFeeLData.done(ChangeLookAndFeelDataSuccess);
+    ChangeLookAndFeeLData.fail(LookAndFeelDataFail);
+
+}
+function ChangeLookAndFeelDataSuccess(data) {
+
+    var result = data.d.results;
+    var link;
+	var quickLinksHtml="";
+	if(result.length != 0)
+	{
+    for (var i = 0; i < result.length; i++) {
+      		var _StylelinkId = result[i]["StyleLinkId"];
+      		var _ItemID= result[i]["Id"];
+		    
+    updateListItem(_ItemID);
+    }
+    }
+    else{
+    createListItem();
+    }
+}
+function LookAndFeelDataFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+function updateListItem(ItemID) {
+
+    var clientContext = new SP.ClientContext(currentSiteCollection);
+    var oList = clientContext.get_web().get_lists().getByTitle('LookAndFeelUsers');
+
+    this.oListItem = oList.getItemById(ItemID);
+
+    oListItem.set_item('StyleLink', FeelAndlockId );
+
+    oListItem.update();
+
+    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+}
+
+function onQuerySucceeded() {
+location.reload();
+    
+}
+
+function onQueryFailed(sender, args) {
+
+    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+function createListItem() {
+
+    var clientContext = new SP.ClientContext(currentSiteCollection);
+    var oList = clientContext.get_web().get_lists().getByTitle('LookAndFeelUsers');
+        
+    var itemCreateInfo = new SP.ListItemCreationInformation();
+    this.oListItem = oList.addItem(itemCreateInfo);
+        
+    this.oListItem.set_item('StyleLink', FeelAndlockId);
+ 
+        
+    this.oListItem.update();
+
+    clientContext.load(oListItem);
+        
+    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+}
+
+
+function onQueryFailed(sender, args) {
+
+    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}   
+</script>
+<script>
+ function openDialog() {
+        window.open('https://outlook.office365.com/ecp/PersonalSettings/EditAccount.aspx?chgPhoto=1&exsvurl=1&realm=CAB.Jo', 'Account Information', '_self,width=600, height=500');
+ 
+
+  }
+    $(document).ready(function () {
+        var listId = _spPageContextInfo.pageItemId;
+        var listId1 = _spPageContextInfo.pageListId;
+    
+      
+        
+        var CurrentUser = '';
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/currentUser",
+            method: "GET",
+            headers: { "Accept": "application/json; odata=verbose" },
+            success: function (data) {
+                CurrentUser = data.d.Email;
+                document.getElementById("CurrentUser").innerHTML = "<a onclick='openDialog()'><i style='    color: #37944E;' class='fa fa-cog' aria-hidden='true'></i></a><img class='userImage' src='https://outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email=" + CurrentUser + "&amp;size=HR240x240&amp;sc=1458035933342' style='width: 100%; top: 0px; display: inline;' aria-label='Contact photo' class='img-responsive'>";
+            }
+        })
+    })
+</script>
+<script type="text/javascript">
+            $(function() {
+      
+                $('#navigation a').stop().animate({'marginLeft':'-85px'},1000);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-85px'},200);
+                    }
+                );
+            });
+        </script>
+        
+<div class="sidebarMenu">
+			    <div class="profile-sidebar">
+			        <!-- SIDEBAR USERPIC -->
+		 <ul id="navigation">
+            <li class="home"><a onclick="ChangeLookAndFeel(1)" title="Default" ></a></li>
+            <li class="about"><a onclick="ChangeLookAndFeel(2)" href="" title="Color Ful"></a></li>
+                </ul>
+        
+			        <center>
+			            <div class="profile-userpic" id="CurrentUser">
+			            </div>
+			        </center>
+
+			        <!-- END SIDEBAR BUTTONS -->
+			        <!-- SIDEBAR MENU -->
+			        <div class="profile-usermenu">
+			            <ul class="nav">
+			                <li>
+			                    <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Pages/CAB.aspx">
+
+			                    </a>
+			                </li>
+			                <li class="list-item">
+			                 <a href="">
+                                                        <i class="fa fa-home">
+                                                        </i>
+                                                        <span>?????? ????????
+                                                        </span>
+                                                    </a>
+                                                    </li>
+			                <li class="list-item">
+			                    <a target="_blank" href="https://outlook.office365.com/">
+			                        <i class="fa fa-envelope"></i><span>?????? ?????????? </span>
+			                    </a>
+			                </li>
+
+			                <li class="list-item">
+			                       <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Lists/Event%20Calendar/calendar.aspx">
+                                                        <i class="fa fa-calendar">
+                                                        </i>
+                                                        <span>???????
+                                                        </span>
+                                                    </a>			                </li>
+			                <li class="list-item">
+			                   <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Pages/MeetingsHome.aspx">
+                                                        <i class="fa fa-list-alt">
+                                                        </i>
+                                                        <span>????? ??????</span>
+                                                    </a>			                </li>
+
+			            </ul>
+			        </div>
+			        <!-- END MENU -->
+			    </div>
+			    <div class="profile-sidebar" style="padding: 0 0 0 0;">
+
+			        <div class="profile-usermenu">
+			            <ul class="nav">
+
+
+			                <li class="list-item">
+			                   <a id="changebackgraundImage" target="_blank" href="">
+                                                        <i class="fa fa-search">
+                                                        </i>
+                                                        <span><strong>???? ?????? ????????
+                                                        </strong>
+                                                        </span>
+                                                    </a>			                </li>
+			                <li class="list-item">
+			                      <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Pages/SuggestionsComplaints.aspx">
+                                                    <i class="fa fa-envelope-o fa-1x">
+                                                        </i>
+                                                        <span>?????????? ? ???????
+                                                        </span>
+                                                    </a>			                </li>
+			             			                <li class="list-item">
+			                     <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Pages/gallery.aspx">
+                                                    <i class="fa fa-picture-o">
+                                                        </i>
+                                                        <span>????? ?????
+                                                        </span>
+                                                    </a>			                </li>
+                                                
+			                                        <li class="list-item dropdown"  id="dropdown">
+                                <a data-toggle="collapse" href="#dropdown-lvl22">
+                                    <i class="fa fa-link"></i><span>???????</span>  <i class="caret"></i>
+                                </a>
+                                <div id="dropdown-lvl22" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                               <li  class="list-item dropdown subLi" id="dropdown2">
+                                                <a data-toggle="collapse" href="#dropdown-lvl222">
+                                                    <i class="fa fa-link"></i><span>??????? ???????</span>  <i class="caret"></i>
+                                                </a>
+                                                <div id="dropdown-lvl222" class="panel-collapse collapse">
+                                                    <div class="panel-body subsublink">
+                                                        <ul class="nav navbar-nav">
+                                                        <li class="subLi"><a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/Pages/allemployeessurvey.aspx">???????</a></li>
+                                                            <li class="subLi"><a target="_blank" href="http://cabweb/menaitech/mename/index.php">HR System</a></li>
+                                                            <li class="subLi"><a target="_blank" href="https://192.168.10.22:8443/ARC-IB/servlet/BrowserServlet">Internet Banking</a></li>
+                                                            <li class="subLi"><a target="_blank" href="https://10.10.9.25/t24prod/servlet/BrowserServlet">T24 Banking System</a></li>
+                                                            <li class="subLi"><a target="_blank" href="http://cabapp/MenaTracks"> Help desk System</a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              <li  class="list-item dropdown subLi" id="dropdown2">
+                                                <a data-toggle="collapse" href="#dropdown-lvl2222">
+                                                    <i class="fa fa-link"></i><span>????? ??????</span>  <i class="caret"></i>
+
+                                                </a>
+                                                <div id="dropdown-lvl2222" class="panel-collapse collapse">
+                                                    <div class="panel-body subsublink">
+                                                        <ul class="nav navbar-nav">
+                                                            <li class="subLi"><a target="_blank" href="http://www.cbj.gov.jo/">????? ??????? ???????</a></li>
+                                                            <li class="subLi"><a target="_blank" href="http://www.cab.jo/">??? ??????? ????</a></li>
+                                                            <li class="subLi"><a target="_blank" href="http://www.ase.com.jo/">????? ????</a></li>
+
+ <li class="subLi"><a href=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            
+			                <li class="list-item">
+			                    <a target="_blank" href="https://cabjo.sharepoint.com/sites/CAB/DocumentsSite">
+			                        <i class="fa fa-book"></i>
+			                        <span>??????? ???????????</span>
+			                    </a>
+			                </li>
+			                <li class="list-item">
+			                    <a target="_blank" href="">
+			                        <i class="fa fa-building-o"></i>
+			                        <span>????? ??????</span>
+			                    </a>
+			                </li>
+			            </ul>
+			        </div>
+			        <!-- END MENU -->
+			    </div>
+			    <!--  <div class="socialMedia" >
+			    <center>
+			      <a target="_blank" href="https://www.facebook.com/CairoAmmanBank"><img src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/facebook.png"></a>
+			   			    <a target="_blank" href="https://twitter.com/CairoAmmanBank"><img src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/twitter.png"></a>
+			   			    <a target="_blank"  href="https://www.linkedin.com/company/cairoammanbank"><img src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/LinkedIn.png"></a>
+
+			    </center>
+			  
+
+
+ </div> -->
+			</div>
+			<script>
+function GetChange_background_image()
+{
+debugger;
+
+        var userId = _spPageContextInfo.userId;
+ 	    //Ajax function to fetch data
+        var ChangebackgroundImage = jQuery.ajax({
+        url: currentSiteCollection + "/_api/lists/getbytitle('background_Image')/items?&$filter=AuthorId  eq " + userId +" &$top=5&$orderby=Created desc",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    ChangebackgroundImage .done(ChangebackgroundDataSuccess);
+    ChangebackgroundImage .fail(LookAndFeelDataFail);
+
+}
+function ChangebackgroundDataSuccess(data) {
+debugger;
+
+    var result = data.d.results;
+    var link;
+	var quickLinksHtml="";
+	if(result.length != 0)
+	{
+    for (var i = 0; i < result.length; i++) {
+      	
+      		var _ItemID= result[i]["Id"];
+		  //  alert("test1");
+  //  updateListItem(_ItemID);
+  var linkUrl = "  https://cabjo.sharepoint.com/sites/CAB/Lists/background_Image/EditForm.aspx?ID=" + _ItemID;
+   var link = $('#changebackgraundImage');
+      link.attr('href', link.attr('href') +linkUrl );
+
+   Change_background_image(_ItemID);
+    }
+    }
+    else{
+      $('body').css({background : 'url(https://cabjo.sharepoint.com/sites/CabPortal/_catalogs/masterpage/assets/admin/layout4/img/CAB-logo-bg.png)'});
+       $('body').css('background-color', 'rgba(214, 214, 214, 0.56)');   
+       var link = $('#changebackgraundImage');
+      link.attr('href', link.attr('href') + 'https://cabjo.sharepoint.com/sites/CAB/Lists/background_Image/NewForm.aspx');
+         
+ }
+}
+function Change_background_image(ItemId)
+{
+debugger;
+ 	//Ajax function to fetch data
+    var ChangebackgroundImage = jQuery.ajax({
+        url: currentSiteCollection + "/_api/web/lists/getbytitle('background_Image')/items(" + ItemId+ ")/AttachmentFiles",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    ChangebackgroundImage  .done(ChangebackgroundImageSuccess);
+    ChangebackgroundImage  .fail(LookAndFeelDataFail);
+
+}
+function ChangebackgroundImageSuccess(data) {
+debugger;
+  if (data) {
+        $.each(data.d.results, function () {
+       var xx="https://cabjo.sharepoint.com" + data.d.results[0].ServerRelativeUrl ;
+        $(".testtest").append(xx);
+           $('body').css({background : 'url(' + xx + ')'});
+          
+            this.ServerRelativeUrl;
+        });
+    }
+  }
+
+</script></div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ1" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="0ab5acb3-c231-462c-9d29-42aa2ef936c3" HasPers="false" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><div class="Weatherbox">
+<div class="weather-left-info">
+                        <div class="weather-left-bottom-grids">
+                            <div class="weather-left-bottom-left wow bounceInLeft animated" style="float: right;" data-wow-delay=".5s">
+    <span class="todayDate"></span>                              
+ 
+                                <h4 style="font-weight: 600; padding-top: 11px;    padding-left: 12px;" id="description"></h4>
+                                 <h3 id="temperature"></h3>
+                            
+                              
+                            </div>
+                            <div class="weather-left-bottom-right wow bounceInRight animated" style="float: left;margin: 0px;" data-wow-delay=".5s">
+                                <span id="WeatherIcone"></span>
+                                <h5 style="font-weight: 600; color: #ffffff;" id="TodayDate"></h5>
+                            </div>
+                            
+                           
+                            <div class="clearfix"> </div>
+                        </div>
+                          <div class="WeatherDayBox">
+                            <div class="col-lg-4 WeatherDay  WeatherDay1">
+                             
+                            
+                          <center>
+                          <span class="day1"></span>
+                          </center>
+                             <center>
+                             <span class="tem1">  </span>
+                             <span class="img1"></span></center>
+                            </div>
+                             <div class="col-lg-4 WeatherDay">
+                            
+                              
+                             
+                            <center>
+                            <span class="day2"></span>
+                            </center>
+                           <center>
+                           <span class="tem2">  </span>
+                           <span class="img2"></span></center>
+                            
+
+                             </div>
+                              <div class="col-lg-4 WeatherDay">
+                               
+                           <center>
+                           
+                           <span class="day3"></span></center>
+                          <center>
+                           <span class="tem3">  </span>
+                          <span class="img3"></span></center>
+                              
+                              </div>
+                                                    </div>
+                    </div>
+                   
+                      
+                      </div>
+      <script src="../_catalogs/masterpage/Custom/weather/Weather.js" type="text/javascript"></script></div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>                                          
+            </div>
+              
+
+         <div class="col-md-10 HomePageContent">
+         
+       
+            
+            <div class="MultiWebpart col-md-9">
+            <div class="col-md-6 content-right right-zone">
+            <div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ4" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="f048f3f6-0b5f-4ad2-a07a-2a92a662174f" HasPers="false" id="WebPartWPQ4" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><link rel="stylesheet" type="text/css" href="//cabjo.sharepoint.com///www.fontstatic.com/f=jazeera,jazeera-light" />
+
+<div class="circularBox wow fadeInRight animated" data-wow-delay="1s">
+	<div class="follow-heading circularheder">
+		<h3>???????? ????????</h3>
+		<a target="_blank" href="../Lists/Circulars/AllItems.aspx" class="circularAdmin" style="display: none;">
+		<i class="fa fa-cog" aria-hidden="true"></i></a></div>
+	<div id="circularLinks">
+	</div>
+	<div class="circularfooter">
+		<a target="_blank" href="../Pages/allCirculars.aspx">??? ????
+		 <i class="fa fa-hand-o-left" style="font-size: 15px;padding-right: 5px;"></i></a> </div>
+</div>
+<div class="clearfix">
+</div>
+<div id="modal_form_horizontal" style="direction: rtl;" class="modal fadeInUp animated homepagepou">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×
+				</button>
+				<h3 class="modal-title" id="modalTitle"></h3>
+			</div>
+			<div action="#" class="form-horizontal">
+				<div class="modal-body" style="min-height: 175px;">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-1">
+								<img src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/file2.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-11">
+								<p class="Datepopup" id="modalDate"></p>
+								<p id="Details"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="text-align: left; padding: 10px;">
+				<a id="CircularCuery" target="_blank" class="btn btn-CAP " onclick="Hide()" >
+					??? ??????? </a>
+					<button type="button" class="btn btn-CAP " data-dismiss="modal">
+					?????</button>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var currentSiteCollection;
+jQuery(document).ready(function () {
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection
+    GetCirculars();
+});
+function GetCirculars()
+{
+	debugger;
+
+		circularUrl=currentSiteCollection + "/_api/lists/getbytitle('Circulars')/items?&$top=4&$orderby=Created desc";
+	
+	
+	//Ajax function to fetch data
+    var getCirculars = jQuery.ajax({
+        url: circularUrl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getUserGroup.done(checkUserGroup).done(function(){
+    	getCirculars.done(getCircularsSuccess);
+    });
+    getCirculars.fail(QuickLinksFail);
+
+}
+
+/*
+Function to display Quick links if ajax call is successful
+*/
+function getCircularsSuccess(data) {
+debugger;
+
+    var ciruclarresult = data.d.results;
+    var link;
+	var circularHtml="";
+	var show,itemsShown = 0;
+	var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    for (var i = 0; i < ciruclarresult.length; i++) {
+    	show = false;
+    	if(ciruclarresult[i].UsersId != null)
+    	{    	
+	    	for(var j=0;j< ciruclarresult[i].UsersId.results.length;j++)
+	    	{debugger;
+	    		if($.inArray(ciruclarresult[i].UsersId.results[j],userGroupArray) != -1)
+	    		{
+	    			show = true;
+	    			break;
+	    		}
+	    	}
+    	}
+    	if(show)
+    	{
+    		itemsShown++;
+	        var _circularTitle = ciruclarresult[i]["Title"];
+			var _itemDate= new Date(ciruclarresult[i]["Date"]);
+			var _itemID = ciruclarresult[i]["ID"];
+			var _detailLink= "/Lists/Circulars/DispForm.aspx?ID=" + _itemID;
+			var _cDate = month[_itemDate.getMonth()] + " " + _itemDate.getDate()+ ", " + _itemDate.getFullYear(); 
+			circularHtml+="<div class='post-grid1 CircularItem'><div class='post-pic'><img src='https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/file2.png' class='img-responsive' alt='' /></div><div class='post-pic-text'><a style='cursor:pointer;' onclick='OpenCircularPopup("+_itemID+")'>"+_circularTitle+"</a><p>"+_cDate+"</p></div><div class='clearfix'></div></div>";     
+		}
+    }
+	if(itemsShown == 0)
+	{
+		$("#circularLinks").html("?? ???? ?????? ??????");
+	}
+	else
+	{
+		$("#circularLinks").append(circularHtml);
+	}
+}
+
+function OpenCircularPopup(itemId)
+{
+	circularUrl=currentSiteCollection + "/_api/lists/getbytitle('Circulars')/items?&$filter=ID eq " + itemId ;
+	
+	//Ajax function to fetch data
+    var getCircularsDetail = jQuery.ajax({
+        url: circularUrl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    
+    getCircularsDetail.done(getCircularsDetailsSuccess);
+    getCircularsDetail.fail(QuickLinksFail);
+}
+
+
+function getCircularsDetailsSuccess(data) {
+
+
+    var ciruclarItemresult = data.d.results;
+    var link;
+	var circularItemHtml="";
+
+	var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    for (var i = 0; i < ciruclarItemresult.length; i++) {
+
+    		var _circularTitle = ciruclarItemresult[i]["Title"];
+			var _itemDate= new Date(ciruclarItemresult[i]["Date"]);
+			var _itemID = ciruclarItemresult[i]["ID"];
+
+			var _description = ciruclarItemresult[i]["Details"];
+			//var _detailLink= "/Lists/Circulars/DispForm.aspx?ID=" + _itemID;
+			var _cDate = month[_itemDate.getMonth()] + " " + _itemDate.getDate()+ ", " + _itemDate.getFullYear(); 
+			var _itemID = ciruclarItemresult[i]["ID"];
+			
+			
+			$('#modalTitle').text(_circularTitle);
+			$('#modalDate').text(_cDate);
+			$('#Details').text(_description);
+	        
+            $("#CircularCuery").attr("href","https://cabjo.sharepoint.com/sites/CAB/Pages/allCirculars.aspx?CirId="+ _itemID);
+			$('#modal_form_horizontal').modal('show');
+    }
+	
+		//$("#circularLinks").append(circularHtml);
+	
+}
+
+
+
+
+function QuickLinksFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+var userGroupArray = [];
+
+var getUserGroup = jQuery.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/currentuser/groups",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    function checkUserGroup(cdata){
+    debugger;
+    	userGroupArray.push(_spPageContextInfo.userId);
+    	
+    	for(var i=0;i<cdata.d.results.length;i++)
+    	{
+    		userGroupArray.push(cdata.d.results[i].Id);
+    	}
+    }
+</script>
+
+<script>
+function IsCurrentUserMemberOfGroupCirculars()
+{ 
+             var grpName="CircularsManagement";
+             var userInGroup;
+        var currentContext = new SP.ClientContext.get_current();
+        var currentWeb = currentContext.get_web();
+
+        var currentUser = currentContext.get_web().get_currentUser();
+        currentContext.load(currentUser);
+
+        var allGroups = currentWeb.get_siteGroups();
+        currentContext.load(allGroups);
+
+        var group = allGroups.getByName(grpName);
+        currentContext.load(group);
+
+        var groupUsers = group.get_users();
+        currentContext.load(groupUsers);
+
+        currentContext.executeQueryAsync(OnSuccessCirculars, OnFailureCirculars);
+
+        function OnSuccessCirculars(sender, args)
+         {
+
+            var groupUserEnumerator = groupUsers.getEnumerator();
+            while (groupUserEnumerator.moveNext()) 
+            {
+                var groupUser = groupUserEnumerator.get_current();
+                if (groupUser.get_id() == currentUser.get_id()) 
+                {
+                    userInGroup = true;
+                    break;
+                }
+            }
+            if (userInGroup) 
+            {
+            $(".circularAdmin").show();
+                       }
+
+            else
+             {
+                  $(".circularAdmin").hide();
+           }
+            
+        }
+
+        function OnFailureCirculars(sender, args)
+         {
+
+        }
+    }
+
+</script>
+<script>
+$(document).ready(function ()
+       {
+       ExecuteOrDelayUntilScriptLoaded(IsCurrentUserMemberOfGroupCirculars, "sp.js");
+         
+});
+</script>
+</div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ2" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="eb419eb9-cdc4-463f-b6b4-856645cbd749" HasPers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="//cabjo.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<div class="AnnouncementBox">
+  <div  class="follow-heading Announcementheder">
+                    <h3>?????????</h3>
+                    <a target="_blank" href="../Lists/Announcements/AllItems.aspx"  class="announcementsAdmin" style="display: none;"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                </div>	
+				
+				<div id="tabs">
+                   <ul >
+                     <li ><a href="#announcementsLinksHR">HR</a></li>
+                     <li ><a href="#announcementsLinks">Others </a></li>                    
+                   </ul>
+                   <div id="announcementsLinks">
+                     
+                   </div>
+                   <div id="announcementsLinksHR">
+                     
+                   </div>
+  
+                </div>			
+               
+                <div class="Announcementfooter">
+                <a target="_blank" href="../Pages/AllAnnouncements.aspx">
+              
+                ??? ????
+                  <i class="fa fa-hand-o-left" style="font-size: 15px;padding-right: 5px;"></i>
+</a>
+                </div>
+</div>
+
+<div id="ann_modal_form_horizontal" style="direction: rtl;" class="modal fadeInUp animated homepagepou">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title" id="annmodalTitle"></h3>
+                            </div>
+
+                            <div action="#" class="form-horizontal">
+                                <div class="modal-body" style="min-height: 175px;">
+								      <div class="col-lg-12">
+								      <div class="row">
+								      <div class="col-lg-1">
+								      <img src="https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/Announcement.jpg" class="img-responsive" alt="">
+								      </div>
+								         <div class="col-lg-11">
+									         <p class="Datepopup" id="annmodalDate"></p>
+									         <p id="annDetails"></p>
+									    </div>
+
+								      </div>
+								      </div>
+                         
+
+                                </div>
+
+                                <div class="modal-footer" style="text-align: left;padding: 10px;">
+                                <a id="annQuery" target="_blank" class="btn btn-CAP "onclick="Hide()">
+					??? ??????? </a>
+
+                                    <button type="button" class="btn btn-CAP " data-dismiss="modal">?????</button>
+                                    
+                               </div>
+                          </div>
+                     </div>
+               </div>
+          </div>
+
+
+<script>
+
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+var currentSiteCollection;
+jQuery(document).ready(function () {
+
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection
+	GetAnnouncements(); 
+	GetAnnouncementsHR(); 
+
+});
+window.onload = function () { 
+document.getElementById('inplaceSearchDiv_WPQ4_lsinput').placeholder = 'Ex: SMS12345';
+
+document.getElementById('inplaceSearchDiv_WPQ4_lsinput').value= 'Ex: SMS12345';
+}
+
+
+
+function GetAnnouncementsHR()
+{	
+	var today= new Date();
+
+ 	//Ajax function to fetch data
+    var getAnnouncements = jQuery.ajax({
+		url: currentSiteCollection + "/_api/web/lists/getbytitle('Announcements')/Items?&$top=4&$orderby=Start_x0020_Date desc&$filter=Start_x0020_Date le datetime'" + today.toISOString() + "' and Publish eq 1 and Is_x0020_HR_x0020_Announcement eq 1 and Expires gt datetime'" + today.toISOString() + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getAnnouncements.done(announcementHRSuccess);
+    getAnnouncements.fail(AnnouncementHRFail);
+
+}
+
+function announcementHRSuccess(data) {
+    var announcementResults = data.d.results;
+    var link;
+	var announcementsHtml="";
+    for (var i = 0; i < announcementResults.length; i++) {
+        var _announcementTitle = announcementResults[i]["Title"];
+       	var _aitemID = announcementResults[i]["ID"];
+		var _adetailLink= "/Lists/Announcements/DispForm.aspx?ID=" + _aitemID;
+
+		announcementsHtml+="<div class='follow-grid'><div class='flw-pic'><img src='https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/Announcement.jpg' class='img-responsive img-Announcement' alt=''></div><a style='cursor:pointer;' onclick='OpenAnnouncementPopup("+ _aitemID +")'>"+_announcementTitle+"</h4></a><div class='clearfix'></div></div>";    
+    }
+
+	$("#announcementsLinksHR").append(announcementsHtml);
+}
+
+function AnnouncementHRFail(sender, args) {
+            console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+
+function GetAnnouncements()
+{	
+	var today= new Date();
+
+ 	//Ajax function to fetch data
+    var getAnnouncements = jQuery.ajax({
+		url: currentSiteCollection + "/_api/web/lists/getbytitle('Announcements')/Items?&$top=4&$orderby=Start_x0020_Date desc&$filter=Start_x0020_Date le datetime'" + today.toISOString() + "' and Publish eq 1 and Is_x0020_HR_x0020_Announcement eq 0 and Expires gt datetime'" + today.toISOString() + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getAnnouncements.done(announcementSuccess);
+    getAnnouncements.fail(AnnouncementFail);
+
+}
+
+function announcementSuccess(data) {
+    var announcementResults = data.d.results;
+    var link;
+	var announcementsHtml="";
+    for (var i = 0; i < announcementResults.length; i++) {
+        var _announcementTitle = announcementResults[i]["Title"];
+       	var _aitemID = announcementResults[i]["ID"];
+		var _adetailLink= "/Lists/Announcements/DispForm.aspx?ID=" + _aitemID;
+
+		announcementsHtml+="<div class='follow-grid'><div class='flw-pic'><img src='https://cabjo.sharepoint.com/sites/CAB/_catalogs/masterpage/CABbranding/images/Announcement.jpg' class='img-responsive img-Announcement' alt=''></div><a style='cursor:pointer;' onclick='OpenAnnouncementPopup("+ _aitemID +")'>"+_announcementTitle+"</h4></a><div class='clearfix'></div></div>";    
+    }
+
+	$("#announcementsLinks").append(announcementsHtml);
+}
+
+function AnnouncementFail(sender, args) {
+            console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+
+
+function OpenAnnouncementPopup(itemId)
+{
+	announcementsUrl=currentSiteCollection + "/_api/lists/getbytitle('Announcements')/items?&$filter=ID eq " + itemId ;
+	
+	//Ajax function to fetch data
+    var getAnnouncementsDetail = jQuery.ajax({
+        url: announcementsUrl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    
+    getAnnouncementsDetail.done(getAnnouncementDetailsSuccess);
+    getAnnouncementsDetail.fail(AnnouncementFail);
+}
+
+
+function getAnnouncementDetailsSuccess(anndata) {
+    var announcementItemresult = anndata.d.results;
+   
+	var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+   
+	for (var i = 0; i < announcementItemresult.length; i++) {
+
+    		var _announcementTitle = announcementItemresult[i]["Title"];
+			var _itemDate= new Date(announcementItemresult[i]["Start_x0020_Date"]);
+		    var _itemID = announcementItemresult[i]["ID"];
+			var _anndescription = announcementItemresult[i]["Body"];
+		
+			var _annDate = month[_itemDate.getMonth()] + " " + _itemDate.getDate()+ ", " + _itemDate.getFullYear(); 
+			
+			
+			$('#annmodalTitle').text(_announcementTitle);
+			$('#annmodalDate').text(_annDate);
+			$('#annDetails').text(_anndescription);
+            $("#annQuery").attr("href","https://cabjo.sharepoint.com/sites/CAB/Pages/AllAnnouncements.aspx?AnnId="+ _itemID);
+
+
+
+			$('#ann_modal_form_horizontal').modal('show');
+    }	
+}
+
+</script>
+
+<script>
+function IsCurrentUserMemberOfGroupAnnouncements()
+{ debugger;
+             var grpName="AnnouncementsManagement";
+             var userInGroup;
+        var currentContext = new SP.ClientContext.get_current();
+        var currentWeb = currentContext.get_web();
+
+        var currentUser = currentContext.get_web().get_currentUser();
+        currentContext.load(currentUser);
+
+        var allGroups = currentWeb.get_siteGroups();
+        currentContext.load(allGroups);
+
+        var group = allGroups.getByName(grpName);
+        currentContext.load(group);
+
+        var groupUsers = group.get_users();
+        currentContext.load(groupUsers);
+
+        currentContext.executeQueryAsync(OnSuccessAnnouncements, OnFailureAnnouncements);
+
+        function OnSuccessAnnouncements(sender, args)
+         {
+
+            var groupUserEnumerator = groupUsers.getEnumerator();
+            while (groupUserEnumerator.moveNext()) 
+            {
+                var groupUser = groupUserEnumerator.get_current();
+                if (groupUser.get_id() == currentUser.get_id()) 
+                {
+                    userInGroup = true;
+                    break;
+                }
+            }
+            if (userInGroup) 
+            {
+            $(".announcementsAdmin").show();
+                       }
+
+            else
+             {
+                  $(".announcementsAdmin").hide();
+           }
+            
+        }
+
+        function OnFailureAnnouncements(sender, args)
+         {
+
+        }
+    }
+
+</script>
+<script>
+$(document).ready(function ()
+       {
+       ExecuteOrDelayUntilScriptLoaded(IsCurrentUserMemberOfGroupAnnouncements, "sp.js");
+         
+});
+</script>
+
+</body>
+</html></div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>                                          
+            </div>
+            <div class="col-md-6 content-middle middle-zone">
+            <div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ5" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="c340e7f7-cf04-4c94-ab95-f75000a02202" HasPers="false" id="WebPartWPQ5" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field">
+<script type="text/javascript">
+var currentSiteCollection;
+jQuery(document).ready(function () {
+    currentSiteCollection = document.location.protocol + "//" + document.location.host; //Getting the root site collection
+	GetNews();
+});
+
+function GetNews()
+{
+ 	//Ajax function to fetch data
+    var getNews = jQuery.ajax({
+		url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent("http://www.cab.jo/ar/rsscab"),
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getNews.done(NewsSuccess);
+    getNews.fail(NewsFail);
+
+}
+
+function NewsSuccess(data) {
+    var result = data.responseData.feed.entries;
+    var link;
+	var newsHtml="";
+    for (var count = 0; count < 4; count++) {
+       	
+       	var image = result[count].content;
+       	var _newsTitle=result[count].title;
+       	var _newsLink=result[count].link;
+        var regexExpression = /<img[^>]+src="http:\/\/([^">]+)/g;
+        var results = regexExpression.exec(image);
+        if (results == null) {
+        image= "https://cabjo.sharepoint.com/sites/Intranet/_catalogs/masterpage/assets/Images/1450119104_news.png";
+        } else {
+        image= "http://" + results[1];
+        }
+
+		newsHtml+="<div class='post-grid1 NewsItem'><div class='post-pic'><img src='"+image+"' class='img-responsive' alt=''></div><div class='post-pic-text'><a target='_blank' href='"+_newsLink+"' data-effect='mfp-zoom-in' class=''>"+_newsTitle+"</a></div><div class='clearfix'></div></div>";    
+    }
+
+	$("#newsItems").append(newsHtml);
+}
+
+function NewsFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+</script>
+
+<div class="NewsBox wow fadeInLeft animated" data-wow-delay="9.5s">
+  <div id="" class="follow-heading Newsheder">
+                    <h3>???????</h3>
+    </div>	
+      <div id="newsItems" >
+      
+      </div>	
+<div class="Newsfooter">
+                <a target="_blank" href="http://www.cab.jo/ar/news/">??? ????
+                 <i class="fa fa-hand-o-left" style="font-size: 15px;padding-right: 5px;"></i></a>
+
+</div>
+</div>
+
+</div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ3" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="8d163e7c-b9ad-4b79-b46a-1e0a8e72ebf4" HasPers="false" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field">    
+ <div class="OffersBox">
+        <div class="follow-heading Offersheder">
+            <h3>??????</h3>
+            <a target="_blank" href="../Lists/Offers/AllItems.aspx"  class="OffersAdmin" ><i class="fa fa-cog" aria-hidden="true"></i></a>
+        </div>
+        <div id="OffersMenu" class="contentOffers">
+          
+        </div>
+
+
+  
+    <div class="Offersfooter">
+      <a target="_blank" href="../Pages/AllOffers.aspx">
+      ??? ????
+       <i class="fa fa-hand-o-left" style="font-size: 15px;padding-right: 5px;"></i></a>
+      </div>
+    
+    </div>
+
+<div id="Offers_modal_form_horizontal" style="direction: rtl;" class="modal fadeInUp animated homepagepou">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title" id="OffermodalTitle"></h3>
+                            </div>
+
+                            <div action="#" class="form-horizontal">
+                                <div class="modal-body" style="min-height: 175px;">
+								      <div class="col-lg-12">
+								      <div class="row">
+								      <div class="col-lg-1">
+								      <img  id="OfferImage" class="img-responsive" alt="">
+								      </div>
+								         <div class="col-lg-11">
+									         <p id="offerDescription"></p>
+									    </div>
+
+								      </div>
+								      </div>
+                         
+
+                                </div>
+
+                                <div class="modal-footer" style="text-align: left;padding: 10px;">
+                                	<a id="OffersQuery" target="_blank" onclick="Hide()"  class="btn btn-CAP">
+					??? </a>
+
+                                    <button type="button" class="btn btn-CAP " data-dismiss="modal">?????</button>
+                                    
+                               </div>
+                          </div>
+                     </div>
+               </div>
+          </div>
+
+
+
+<script type="text/javascript">
+
+var currentSiteCollection;
+jQuery(document).ready(function () {
+
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection
+	GetOffers();
+});
+
+function GetOffers()
+{	
+debugger;
+
+ 	//Ajax function to fetch data
+ 	     
+
+    var getOffers = jQuery.ajax({
+		url: currentSiteCollection + "/_api/web/lists/getbytitle('Offers')/Items?&$top=4&$orderby=Start_x0020_Date desc&$filter=Start_x0020_Date le datetime'" + today.toISOString() + "' and Expires gt datetime'" + today.toISOString() + "'",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getOffers.done(offerSuccess);
+    getOffers.fail(offerFail);
+
+}
+
+
+/*
+Function to display Offers if ajax call is successful
+*/
+function offerSuccess(data) {
+debugger;
+    var offerResults = data.d.results;
+	var offerHtml="";
+    for (var i = 0; i < offerResults.length; i++) {
+        var _offerTitle = offerResults[i]["Title"];
+       	var _offerDescription = offerResults[i]["Description"];
+       	if ( offerResults[i]["OfferPicture"].Url != null){
+       	var _offerPicture =  offerResults[i]["OfferPicture"].Url;
+       	}
+       	
+     	var _headerColor =  offerResults[i]["color"];
+		var _detailOfferLink= "/Lists/Offers/DispForm.aspx?ID=" + offerResults[i]["ID"];
+        //offerHtml+= "<div class='col-lg-4'><div class='ribbon'><h3 class='ribbon"+_headerColor+"'><a style='cursor:pointer;' onclick='OpenOfferPopup("+ offerResults[i]["ID"]+")'>"+_offerTitle+"</a></h3><img src='"+_offerPicture+"'> <p>"+_offerDescription+"</p> </div></div>"
+offerHtml+= "<div class='follow-grid'><div class='flw-pic'><img src='"+_offerPicture+"' class='img-responsive img-Announcement' alt=''></div><a style='cursor:pointer;' onclick='OpenOfferPopup("+offerResults[i]["ID"] +")'>"+_offerTitle+"</h4></a><div class='clearfix'></div></div>";
+ 
+ }
+
+	$("#OffersMenu").append(offerHtml);
+}
+
+/*
+Fail function called when ajax call fails.
+It logs the error to the console.
+*/
+function offerFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+
+function OpenOfferPopup(itemId)
+{
+    currentSiteCollection = document.location.protocol + "//" + document.location.host+_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection
+
+	offerUrl=currentSiteCollection + "/_api/lists/getbytitle('Offers')/items?&$filter=ID eq " + itemId ;
+	
+	//Ajax function to fetch data
+    var getOfferDetail = jQuery.ajax({
+        url: offerUrl,
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    
+    getOfferDetail.done(getOffersDetailsSuccess);
+    getOfferDetail.fail(offerFail);
+}
+
+
+function getOffersDetailsSuccess(data) {
+
+    var offerResults = data.d.results;
+	var offerHtml="";
+	debugger;
+    for (var i = 0; i < offerResults.length; i++) {
+        var _offerTitle = offerResults[i]["Title"];
+        var _OfferitemID= offerResults[i]["ID"];
+
+       	var _offerDescription = offerResults[i]["Description"];
+       	var _offerPicture =  offerResults[i]["OfferPicture"].Url;
+       		$('#OffermodalTitle').text(_offerTitle);
+			$('#OfferImage').attr('src',_offerPicture);
+			$('#offerDescription').text(_offerDescription);
+            $("#OffersQuery").attr("href", "https://cabjo.sharepoint.com/sites/CAB/Pages/AllOffers.aspx?OffId="+ _OfferitemID);
+			$('#Offers_modal_form_horizontal').modal('show');     	
+ }		
+}
+</script>
+
+<script>
+function IsCurrentUserMemberOfGroupOffer()
+{ 
+             var grpName="OffersManagement";
+             var userInGroup;
+        var currentContext = new SP.ClientContext.get_current();
+        var currentWeb = currentContext.get_web();
+
+        var currentUser = currentContext.get_web().get_currentUser();
+        currentContext.load(currentUser);
+
+        var allGroups = currentWeb.get_siteGroups();
+        currentContext.load(allGroups);
+
+        var group = allGroups.getByName(grpName);
+        currentContext.load(group);
+
+        var groupUsers = group.get_users();
+        currentContext.load(groupUsers);
+
+        currentContext.executeQueryAsync(OnSuccessOffer, OnFailureOffer);
+
+        function OnSuccessOffer(sender, args)
+         {
+
+            var groupUserEnumerator = groupUsers.getEnumerator();
+            while (groupUserEnumerator.moveNext()) 
+            {
+                var groupUser = groupUserEnumerator.get_current();
+                if (groupUser.get_id() == currentUser.get_id()) 
+                {
+                    userInGroup = true;
+                    break;
+                }
+            }
+            if (userInGroup) 
+            {
+            $(".OffersAdminw").show();
+                       }
+
+            else
+             {
+                  $(".OffersAdminw").hide();
+           }
+            
+        }
+
+        function OnFailureOffer(sender, args)
+         {
+
+        }
+    }
+
+</script>
+<script>
+$(document).ready(function ()
+       {
+       ExecuteOrDelayUntilScriptLoaded(IsCurrentUserMemberOfGroupOffer, "sp.js");
+         
+});
+function Hide(){
+$('.modal').modal('hide');
+}
+</script>
+</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+            </div>
+                 <div class="col-md-12 UnderWebPart">
+            <menu id="MSOMenu_WebPartMenu" class="ms-hide">
+	<ie:menuitem title="Collapse this web part." id="MSOMenu_Minimize" onmenuclick="javascript:MSOLayout_MinimizeRestore(MenuWebPart)" text="Minimize" type="option">
+
+	</ie:menuitem><ie:menuitem title="Expand this web part." id="MSOMenu_Restore" onmenuclick="javascript:MSOLayout_MinimizeRestore(MenuWebPart)" text="Restore" type="option">
+
+	</ie:menuitem><ie:menuitem title="Close this Web Part. You can still find it under closed Web Parts section in the insert ribbon. These changes will apply to all users." id="MSOMenu_Close" onmenuclick="javascript:MSOLayout_RemoveWebPart(MenuWebPart)" text="Close" type="option">
+
+	</ie:menuitem><ie:menuitem title="Delete this Web Part from the page. These changes will apply to all users." id="MSOMenu_Delete" iconsrc="/_layouts/15/images/DelItem.gif" onmenuclick="if(confirm('You are about to permanently delete this Web Part. Are you sure you want to do this?')) {MSOWebPartPage_partDeleted = MenuWebPartID;MSOWebPartPage_MenuDoPostBack('ctl00$ctl36', MenuWebPartID + ';MSOMenu_Delete');}" text="Delete" type="option">
+
+	</ie:menuitem><ie:menuitem type="separator"></ie:menuitem><ie:menuitem title="Change properties of this shared Web Part. These changes will apply to all users." id="MSOMenu_Edit" iconsrc="/_layouts/15/images/EditItem.gif" onmenuclick="javascript:MSOTlPn_ShowToolPane2Wrapper('Edit', 16, MenuWebPartID)" text="Edit Web Part" type="option">
+
+	</ie:menuitem><ie:menuitem title="Show connections options for this Web Part. These changes will apply to all users." id="MSOMenu_Connections" onmenuclick="" text="Connections" type="option">
+
+	</ie:menuitem><ie:menuitem type="separator"></ie:menuitem><ie:menuitem title="Export this Web Part. These changes will apply to all users." id="MSOMenu_Export" onmenuclick="javascript:MSOWebPartPage_ExportCheckWarning(&#39;\u002fsites\u002fCAB\u002f_vti_bin\u002fexportwp.aspx?pageurl=https\u00253A\u00252F\u00252Fcabjo\u00252Esharepoint\u00252Ecom\u00252Fsites\u00252FCAB\u00252FPages\u00252FCAB\u00252Easpx\u0026guidstring=&#39;+ escape(MenuWebPartID), MenuWebPart.getAttribute(&#39;HasPers&#39;) == &#39;true&#39;)" text="Export..." type="option">
+
+	</ie:menuitem><ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu>
+            </div>
+   
+            </div>
+            
+             <div class="col-md-3 content-left left-zone">      
+                           <div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ8" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="6561d6c9-41cc-4b1c-8ae4-485d3f26df97" HasPers="false" id="WebPartWPQ8" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><script type="text/javascript">// <![CDATA[
+
+        $(document).ready(function() {
+       
+            $('#bootstrapModalFullCalendar').fullCalendar({
+                header: {
+                    left: 'prev',
+                    center: 'title  ',
+                    right: 'next'
+                },
+               eventMouseout: function(event, jsEvent, view) {
+               $('.tooltiptopicevent').remove();
+               }, 
+                eventMouseover:  function(event, jsEvent, view) {
+                 debugger;
+                  tooltip = '<div class="tooltiptopicevent" style="width:auto;height:auto;background: #fff;text-align: right;color:#37944E;font-weight: 600;border: 5px solid #399348;border-radius: 10px;position:absolute;z-index:10001;padding:10px 10px 10px 10px ;  line-height: 200%;">' + event.title + '</br>'+                       "?????? :"
++event._start._d.getHours()+":"+event._start._d.getMinutes()+'</br>'+ event.Description + '</div>'
+                //    $('#eventTitle').html(event.title);
+                //    $('#eventDescription').html(event.Description);
+                //    $('#startDate').html(event.Start);
+                //    $('#eventUrl').attr('href',event.url);
+                   
+                //    return false;
+                  $("body").append(tooltip);
+              $(this).mouseover(function (e) {
+                $(this).css('z-index', 10000);
+                $('.tooltiptopicevent').fadeIn('5000');
+                $('.tooltiptopicevent').fadeTo('10', 1.9);
+              }).mousemove(function (e) {
+                $('.tooltiptopicevent').css('top', e.pageY + 10);
+                $('.tooltiptopicevent').css('left', e.pageX + 20);
+              });
+                }
+             
+                
+                
+                          });
+        });
+
+            $(document).ready(function() {          
+                ExecuteOrDelayUntilScriptLoaded(getWebData, "sp.js");
+                var context = null;
+                var web = null;
+                var currentUser = null; 
+                   
+            }); 
+              function getWebData()
+              { 
+              debugger;
+              //CAML query to get last 5 items created in list
+                var myQueryString = '<View><Query><OrderBy><FieldRef Name="Created" Ascending="false" /></OrderBy></Query><RowLimit>5</RowLimit></View>';
+                context = new SP.ClientContext.get_current();
+                web = context.get_web();   
+             //Replace Calendar list name to your own in the following row          
+                var list = web.get_lists().getByTitle('Event Calendar');
+                var myquery = new SP.CamlQuery();
+                myquery.set_viewXml(myQueryString);
+                myItems = list.getItems(myquery);   
+                //specify the columns you want to get from the list in this next line -
+                context.load(myItems, 'Include(ID,Title,EventDate,Description,EndDate)');
+                context.executeQueryAsync(Function.createDelegate(this, this.success),Function.createDelegate(this, this.failed));
+             }
+                    function success()
+                    {
+                    debugger;
+                    var myID = 0;
+                    var Stime= new Date();      
+                    var Title = "";
+                    var ListEnumerator = this.myItems.getEnumerator();
+                    var i = 1;          
+                    while(ListEnumerator.moveNext())
+                    {
+                    var currentItem = ListEnumerator.get_current();
+                    myID = currentItem.get_item('ID') ;
+                    Title = currentItem.get_item('Title') ;
+                    Stime = currentItem.get_item('EventDate') ;
+                    Etime = currentItem.get_item('EndDate') ;
+ 
+                    EDescription= currentItem.get_item('Description') ;
+                    Stime.toString('yyyy-MM-dd');
+                    //Buildig Event div including the data we got from our list
+                    itemsString="<div class='TimeLabel'>"+Stime+"</div><div class='eventTitle'><a href='javascript:NewItem2(event,\"/sites/MAEU/MATeam/Lists/MACalendar/DispForm.aspx?ID="+myID+"?isdlg=2)\")'>"+Title+"</a></div>";
+                       var myevent = {title: Title,start: Stime,end:Etime,Description: EDescription};
+                     $('#bootstrapModalFullCalendar').fullCalendar( 'renderEvent', myevent, true);  
+                     var EventHTMLsHtml=""; 
+                     var mounthDate = parseInt(Stime.getMonth())+1 ;
+                     var EventDate=(Stime.getDate()+"/"+mounthDate +"/"+Stime.getFullYear());
+                     
+                     var d = new Date();
+                     var TodayDate = (d.getDate()+"/"+ (parseInt(d.getMonth())+1)+"/"+d.getFullYear());
+                     var EventTime = (Stime .getHours()+":"+Stime.getMinutes());
+
+                     if (EventDate == TodayDate ) {
+                      EventHTMLsHtml+="<div class='EventBox'><a><h5 class='EventTitle'>" +Title +" - "+EventTime  +"</h5></a><p class='EDescription'>"+EDescription+"</p><p class='EventTime'>"+"</p></div><hr class='horizantlLine'>"; 
+
+                         }
+                      else{
+                      EventHTMLsHtml+="<center><span class='EventColor'>?? ???? ?????</span></center>"
+                      }
+                       
+         
+                                    
+                                   $(".Cal-Event").append(EventHTMLsHtml);
+                                    
+
+   
+                    i++;            
+                    }
+                   
+                    }
+                    function failed(sender, args)
+                    {       
+                    alert("failed. Message:" + args.get_message());
+                    }     
+                    
+   
+$(document).on('click', '.fc-center', function () {
+    // your function here
+
+window.location.replace("https://cabjo.sharepoint.com/sites/CAB/Lists/Event%20Calendar/calendar.aspx");
+
+});
+         
+</script>
+<!-- The html we append our coded html to: -->
+  <div class="calendar-Box"  id="bootstrapModalFullCalendar">
+                                <div class="Cal-Event">
+                                    <a id="eventUrl">
+                                        <h5 id="eventTitle"></h5>
+                                    </a>
+                                  <span id="startDate"></span>
+                                    <p id="eventDescription"></p>
+
+                                </div>
+                            </div>
+</div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ7" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="22761d56-951b-4e97-afb0-677ddd7a2873" HasPers="false" id="WebPartWPQ7" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field">
+<script type="text/javascript">
+var currentSiteCollection;
+jQuery(document).ready(function () {
+debugger;
+
+    currentSiteCollection = document.location.protocol + "//" + document.location.host +_spPageContextInfo.siteServerRelativeUrl; //Getting the root site collection 	
+   	GetQuickLinks();
+});
+
+
+function GetQuickLinks()
+{
+
+var userId = _spPageContextInfo.userId;
+ 	//Ajax function to fetch data
+    var getQuickLinks = jQuery.ajax({
+        url: currentSiteCollection + "/_api/lists/getbytitle('Quick Links')/items?&$filter=AuthorId  eq " + userId +" &$top=5&$orderby=Created desc",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        dataType: "json"
+    });
+    getQuickLinks.done(QuickLinksSuccess);
+    getQuickLinks.fail(QuickLinksFail);
+
+}
+function QuickLinksSuccess(data) {
+debugger;
+    var result = data.d.results;
+    var link;
+	var quickLinksHtml="";
+	if(result.length != 0)
+	{
+    for (var i = 0; i < result.length; i++) {
+        var _linkUrl = result[i]["URL"].Url ;
+		var _linkDescription = result[i]["URL"].Description ;
+		    
+		quickLinksHtml+="<li><a  target='_blank' href='"+_linkUrl+"'>"+" <i class='fa fa-link' style='float: right;padding-left: 11px;'"+"></i>"+_linkDescription+"</a></li>";    
+    
+ 
+    }
+    }
+    else{
+    quickLinksHtml+= "<center style='padding-top:10px;padding-bottom: 20px;'>?? ??? ?????? ?? ????</center>";
+    }
+
+	$("#quickLinks").append(quickLinksHtml);
+}
+function QuickLinksFail(sender, args) {
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+</script>
+
+<div class="">
+<div class="follow-heading circularheder">
+<h3>????? ?????</h3>
+ <a target="_blank" href="../Lists/Quick Links/AllItems.aspx" ><i class="fa  fa-cog" aria-hidden="true"></i></a>
+</div>
+</div>
+
+<div class="QuicKLink">
+<div class="menu_simple">
+
+<ul id="quickLinks">
+
+</ul>
+</div>
+
+</div>
+
+</div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ6" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="139d55dd-8aee-4950-b6cf-5984d8f45091" HasPers="false" id="WebPartWPQ6" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><div class="SurveyBox">
+	<div class="circularBox">
+		<div class="follow-heading circularheder">
+            <h4>???????</h4>
+        </div>	
+        <div class="survey-questions">
+			<div class="question-box" style="display:none">
+				<div class="Qustion">
+					<span></span>
+				</div>		                
+				<div class="SurveyAnswer">
+			   	</div>
+			</div>
+		</div>
+   <div class="Sarvaycontrol">
+              <input type="button" class="btn btn-success" id="next" value="??????">
+              <input type="button" class="btn btn-success" id="prev" value="??????" style="display:none;">
+        </div>
+
+
+                                 </div>
+                </div>
+
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>?? ??? ?????? ????? </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">?????</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <script src="../_catalogs/masterpage/Survey/js/survey_home.js"></script>
+<head><title></title></head></div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+            </div>
+         </div>
+				</div>
+                <div style='display:none' id='hidZone'></div>
+                                    </span>
+                                    
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="footer">
+                        <span>???? ?????? ?????? © 2016
+                        
+                        
+                        
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+             
+        </div>
+    <div id="DeltaFormDigest">
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/WebResource.axd?d=loCOC27l-NQVDYAvjnMsSTEF4NVUDCX1F14vu7yjDH0f8qZ2g_K3Lni7exqm0EU3bgcx4XVxIiQ9gfls2khqAKkD_7CiUTcSIoKrA8S6VdU1&t=636288702966629520';
+WebForm_InitCallback();var _spFormDigestRefreshInterval = 1440000;window.SPThemeUtils && SPThemeUtils.ApplyCurrentTheme(true); IsSPSocialSwitchEnabled = function() { return true; };var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: true,isEditMode: false,allowWebPartAdder: false,listId: "{f6fd8518-559a-4a6b-9f80-48a4b9679cca}",itemId: 2,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fsites\u002fCAB\u002fPages",itemPermissions:{High:2147483647,Low:4294967295}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';g_spPreFetchKeys.push('sp.core.js');g_SpoSuiteNavSettings = { 'FallbackCss': '\x2f_layouts\x2f15\x2f1033\x2fshell\x2fshell15.css\x3frev\x3duC\x252Byq6DahOWA0gYO8qDACg\x253D\x253DTAG630', 'FallbackJsKey': 'shell\x2fshell15.js' };
+RenderSuiteLinksFromShellData('suiteBarTop', 2);
+
+ExecuteOrDelayUntilScriptLoaded(
+function()
+{
+var initInfo = 
+{
+itemPermMasks: {High:2147483647,Low:4294967295},
+listPermMasks: {High:2147483647,Low:4294967295},
+listId: "f6fd8518-559a-4a6b-9f80-48a4b9679cca",
+itemId: 2,
+workflowsAssociated: false,
+editable: true,
+doNotShowProperties: false,
+enableVersioning: true
+};
+SP.Ribbon.DocLibAspxPageComponent.registerWithPageManager(initInfo);
+},
+"sp.ribbon.js");
+var g_disableCheckoutInEditMode = false;
+var _spWebPermMasks = {High:2147483647,Low:4294967295};var _spPageStateActionControlId='ctl00_ctl52_PageStateActionButton';var PageState = {};var PageStateEnabledHandler = {};var PageStateCommandHandler = {};PageState ={'ItemIsDefaultPage':'1','ItemIsInLibrary':'1','ItemIsCheckedOutToOtherUser':'1','UserHasManageWebRights':'1','ItemHasCustomizableZones':'1','UserHasEnumeratePermissionsRights':'1','ItemIsMinorVersion':'1','UserHasOverrideCheckoutRights':'1','UserHasViewVersionsRights':'1','DocLibMinorVersionsEnabled':'1','ItemHasCheckedInVersion':'1','UserHasApproverRights':'1','ItemIsPublishingPage':'1','WebIsPublishingSite':'1','UserHasDeleteRights':'1','DocLibVersioningEnabled':'1','ItemIsInSharedView':'1','DocLibCheckoutRequired':'1','ItemHasFieldControls':'1','ItemHasPersonalizableZones':'1','UserHasContributorRights':'1'};PageStateEnabledHandler = {'PageStateGroupSave':'SP.Ribbon.PageState.Handlers.isSaveEnabled\u0028\u0029;','PageStateSaveBeforeNavigate':'','PageStateGroupSaveAndStop':'SP.Ribbon.PageState.Handlers.isSaveAndStopEditEnabled\u0028\u0029;','PageStateGroupEdit':'SP.Ribbon.PageState.Handlers.isEditEnabled\u0028\u0029;','PageStateGroupDontSaveAndStop':'SP.Ribbon.PageState.Handlers.isDontSaveAndStopEnabled\u0028\u0029;','PageStateGroupCheckin':'SP.Ribbon.PageState.Handlers.isCheckinEnabled\u0028\u0029;','PageStateGroupCheckout':'SP.Ribbon.PageState.Handlers.isCheckoutEnabled\u0028\u0029;','PageStateGroupOverrideCheckout':'SP.Ribbon.PageState.Handlers.isOverrideCheckoutEnabled\u0028\u0029;','PageStateGroupDiscardCheckout':'SP.Ribbon.PageState.Handlers.isDiscardCheckoutEnabled\u0028\u0029;','PageStateGroupSubmitForApproval':'SP.Ribbon.PageState.Handlers.isSubmitForApprovalEnabled\u0028\u0029;','PageStateGroupCancelApproval':'SP.Ribbon.PageState.Handlers.isCancelApprovalEnabled\u0028\u0029;','PageStateGroupPublish':'SP.Ribbon.PageState.Handlers.isPublishEnabled\u0028\u0029;','PageStateGroupUnpublish':'Pub.Ribbon.PubCommands.unpublishEnabled\u0028\u0029;','PageStateGroupApprove':'SP.Ribbon.PageState.Handlers.isApproveEnabled\u0028\u0029;','PageStateGroupReject':'SP.Ribbon.PageState.Handlers.isRejectEnabled\u0028\u0029;','DeletePage':'SP.Ribbon.PageState.Handlers.isDeleteEnabled\u0028\u0029;','PageStateUpdatePageState':'true;','PageStateGroupSaveAndPublish':'SP.Ribbon.PageState.Handlers.isSaveAndPublishEnabled\u0028\u0029;'};PageStateCommandHandler = {'PageStateGroupSave':'SP.SOD.executeFunc\u0028\u0027sp.ui.pub.ribbon.js\u0027, \u0027Pub.Ribbon.PubCommands\u0027, function\u0028\u0029 {Pub.Ribbon.PubCommands.notifyProgress\u0028SP.Publishing.Resources.notificationMessageSaving\u0029;__doPostBack\u0028\u0027ctl02\u0027,\u0027PageStateGroupSave\u0027\u0029}\u0029;','PageStateSaveBeforeNavigate':'__theFormPostData = \u0022\u0022;__theFormPostCollection=new Array\u0028\u0029; WebForm_OnSubmit\u0028\u0029;WebForm_InitCallback\u0028\u0029;_spResetFormOnSubmitCalledFlag\u0028\u0029;WebForm_DoCallback\u0028\u0027ctl03\u0027,\u0027PageStateSaveBeforeNavigate\u0027,SP.Ribbon.PageState.PageStateHandler.SaveBeforeNavigateCallback,SP.Ribbon.PageState.SaveBeforeNavigateCallback,null,true\u0029','PageStateGroupSaveAndStop':'SP.SOD.executeFunc\u0028\u0027sp.ui.pub.ribbon.js\u0027, \u0027Pub.Ribbon.PubCommands\u0027, function\u0028\u0029 {Pub.Ribbon.PubCommands.notifyProgress\u0028SP.Publishing.Resources.notificationMessageSaving\u0029;__doPostBack\u0028\u0027ctl04\u0027,\u0027PageStateGroupSaveAndStop\u0027\u0029}\u0029;','PageStateGroupEdit':'SP.SOD.executeFunc\u0028\u0027sp.ui.pub.ribbon.js\u0027, \u0027Pub.Ribbon.PubCommands\u0027, function\u0028\u0029 {Pub.Ribbon.PubCommands.notifyProgress\u0028SP.Publishing.Resources.notificationMessageLoading\u0029;if \u0028document.forms[\u0027aspnetForm\u0027][\u0027MSOLayout_InDesignMode\u0027] != null\u0029 document.forms[\u0027aspnetForm\u0027][\u0027MSOLayout_InDesignMode\u0027].value = 1;if \u0028document.forms[\u0027aspnetForm\u0027][\u0027MSOAuthoringConsole_FormContext\u0027] != null\u0029 document.forms[\u0027aspnetForm\u0027][\u0027MSOAuthoringConsole_FormContext\u0027].value = 1;if \u0028document.forms[\u0027aspnetForm\u0027][\u0027MSOSPWebPartManager_DisplayModeName\u0027] != null\u0029 document.forms[\u0027aspnetForm\u0027][\u0027MSOSPWebPartManager_DisplayModeName\u0027].value = \u0027Design\u0027;__doPostBack\u0028\u0027ctl05\u0027,\u0027edit\u0027\u0029}\u0029;','PageStateGroupDontSaveAndStop':'SP.SOD.executeFunc\u0028\u0027sp.ui.pub.ribbon.js\u0027, \u0027Pub.Ribbon.PubCommands\u0027, function\u0028\u0029 {Pub.Ribbon.PubCommands.notifyProgress\u0028SP.Publishing.Resources.notificationMessageReverting\u0029;__doPostBack\u0028\u0027ctl06\u0027,\u0027PageStateGroupDontSaveAndStop\u0027\u0029}\u0029;','PageStateGroupCheckin':'__doPostBack\u0028\u0027ctl07\u0027,\u0027PageStateGroupCheckin\u0027\u0029','PageStateGroupCheckout':'__doPostBack\u0028\u0027ctl08\u0027,\u0027PageStateGroupCheckout\u0027\u0029','PageStateGroupOverrideCheckout':'__doPostBack\u0028\u0027ctl09\u0027,\u0027PageStateGroupOverrideCheckout\u0027\u0029','PageStateGroupDiscardCheckout':'if \u0028confirm\u0028\u0027Are you sure you want to exit without saving? Any unsaved data will be lost.\u0027\u0029\u0029 {__doPostBack\u0028\u0027ctl10\u0027,\u0027PageStateGroupDiscardCheckout\u0027\u0029}','PageStateGroupSubmitForApproval':'__doPostBack\u0028\u0027ctl11\u0027,\u0027PageStateGroupSubmitForApproval\u0027\u0029','PageStateGroupCancelApproval':'WebForm_DoCallback\u0028\u0027ctl12\u0027,\u0027PageStateGroupCancelApproval\u0027,SP.Ribbon.PageState.Handlers.GenericCompleteHandler,SP.Ribbon.PageState.Handlers.GenericError,null,true\u0029','PageStateGroupPublish':'__doPostBack\u0028\u0027ctl13\u0027,\u0027PageStateGroupPublish\u0027\u0029','PageStateGroupUnpublish':'__doPostBack\u0028\u0027ctl14\u0027,\u0027PageStateGroupUnpublish\u0027\u0029','PageStateGroupApprove':'__doPostBack\u0028\u0027ctl15\u0027,\u0027PageStateGroupApprove\u0027\u0029','PageStateGroupReject':'SP.Ribbon.PageState.PageStateHandler.popupWaitScreen\u0028\u0027Page State\u0027,\u0027Rejecting page\u0027\u0029;__theFormPostData = \u0022\u0022;__theFormPostCollection=new Array\u0028\u0029; WebForm_OnSubmit\u0028\u0029;WebForm_InitCallback\u0028\u0029;_spResetFormOnSubmitCalledFlag\u0028\u0029;WebForm_DoCallback\u0028\u0027ctl16\u0027,\u0027PageStateGroupReject\u0027,SP.Ribbon.PageState.Handlers.GenericCompleteHandler,SP.Ribbon.PageState.Handlers.GenericError,null,true\u0029','DeletePage':'if \u0028confirm\u0028\u0027Are you sure you want to send this page to the site Recycle Bin?\u0027\u0029\u0029 {__doPostBack\u0028\u0027ctl17\u0027,\u0027DeletePage\u0027\u0029}','PageStateUpdatePageState':'SP.Ribbon.PageState.PageStateHandler.popupWaitScreen\u0028\u0027Schedule\u0027,\u0027Scheduling the page.\u0027\u0029;__theFormPostData = \u0022\u0022;__theFormPostCollection=new Array\u0028\u0029; WebForm_OnSubmit\u0028\u0029;WebForm_InitCallback\u0028\u0029;_spResetFormOnSubmitCalledFlag\u0028\u0029;WebForm_DoCallback\u0028\u0027ctl18\u0027,\u0027PageStateUpdatePageState\u0027,SP.Ribbon.PageState.Handlers.GenericCompleteHandler,SP.Ribbon.PageState.Handlers.GenericError,null,true\u0029','PageStateGroupSaveAndPublish':'if \u0028PageState[\u0027ViewModeIsEdit\u0027] != null\u0029 {SP.Ribbon.PageState.PageStateHandler.ignoreNextUnload = true;__doPostBack\u0028\u0027ctl19\u0027,\u0027PageStateGroupSaveAndPublish\u0027\u0029}else{SP.Ribbon.PageState.PageStateHandler.popupWaitScreen\u0028\u0027Page State\u0027,\u0027Publishing page\u0027\u0029;__theFormPostData = \u0022\u0022;__theFormPostCollection=new Array\u0028\u0029; WebForm_OnSubmit\u0028\u0029;WebForm_InitCallback\u0028\u0029;_spResetFormOnSubmitCalledFlag\u0028\u0029;WebForm_DoCallback\u0028\u0027ctl19\u0027,\u0027PageStateGroupSaveAndPublish\u0027,SP.Ribbon.PageState.Handlers.GenericCompleteHandler,SP.Ribbon.PageState.Handlers.GenericErrorHandler,null,true\u0029}'};var Notification = {};var PageErrorState = {};PageErrorState = { 'Message': '', 'Title' : '', 'ButtonCount' :0};
+function InitPageStateHandler()
+{
+    SP.Ribbon.PageState.ImportedNativeData = function SP_Ribbon_PageStateHandler_ImportedNativeData()
+    {
+    }
+    SP.Ribbon.PageState.NativeErrorState = function SP_Ribbon_PageStateHandler_NativeErrorState()
+    {
+    }
+    SP.Ribbon.PageState.ImportedNativeData.PageState = PageState;
+    SP.Ribbon.PageState.ImportedNativeData.CommandHandlers = PageStateCommandHandler;
+    SP.Ribbon.PageState.ImportedNativeData.EnabledHandlers = PageStateEnabledHandler;
+    SP.Ribbon.PageState.NativeErrorState = PageErrorState;SP.Ribbon.PageState.ImportedNativeData.StatusTitle = ['Not published yet','Note:'];SP.Ribbon.PageState.ImportedNativeData.StatusBody = ['Visitors can\u0026#39;t see this page. \u003ca href=\u0022javascript:{}\u0022 onclick=\u0022var mgr = SP.Ribbon.PageManager.get_instance\u0028\u0029; if\u0028mgr \u0026\u0026 \u0028mgr.get_commandDispatcher\u0028\u0029\u0029.isCommandEnabled\u0028\u0027PageStateGroupPublish\u0027\u0029\u0029 \u0028mgr.get_commandDispatcher\u0028\u0029\u0029.executeCommand\u0028\u0027PageStateGroupPublish\u0027, null\u0029; return CancelEvent\u0028event\u0029;\u0022 style=\u0022text-decoration: underline\u0022\u003ePublish it\u003c\u002fa\u003e.','\u003cspan\u003e\u003cimg border=\u00220\u0022 height=\u002212\u0022 width=\u002212\u0022 src=\u0022\u002f_layouts\u002fimages\u002fimnhdr.gif\u0022 onload=\u0022IMNRC\u0028\u0027Ahmad.Hassan@CAB.Jo\u0027\u0029\u0022 ShowOfflinePawn=\u00221\u0022 alt=\u0022\u0022 id=\u0022MWP_pawn_ConsoleCheckoutPawn,type=smtp\u0022\u002f\u003e\u003c\u002fspan\u003e Ahmad Hassan has this page checked out. Until it\u0026#39;s checked in, you can\u0026#39;t see updates or make changes.'];SP.Ribbon.PageState.ImportedNativeData.StatusPriority = 'yellow';
+    SP.Ribbon.PageState.CallNativeFunction = function SP_Ribbon_PageState_PageStateHandler_CallNativeFunction(fnName)
+    {
+        return eval(fnName);
+    }
+    pm = SP.Ribbon.PageManager.get_instance();
+    var psh = new SP.Ribbon.PageState.PageStateHandler();
+    pm.addPageComponent(psh);
+    SP.Ribbon.PageState.Handlers.registerCommentsHandler();
+    pm.get_commandDispatcher().executeCommand(Commands.CommandIds.ApplicationStateChanged, null)
+}
+function DelayUntilRibbonLoaded()
+{
+    ExecuteOrDelayUntilScriptLoaded(InitPageStateHandler, "sp.ribbon.js");
+}
+_spBodyOnLoadFunctionNames.push("DelayUntilRibbonLoaded")
+
+            ExecuteOrDelayUntilScriptLoaded(
+                function() 
+                {                    
+                    Srch.ScriptApplicationManager.get_current().states = {"browserLanguage":1033,"webUILanguageName":"en-US","webDefaultLanguageName":"en-US","QueryDateTimeCulture":1033,"timeZoneOffsetInHours":-8,"contextUrl":"https://cabjo.sharepoint.com/sites/CAB","contextTitle":"Cairo Ammman Bank Portal","supportedLanguages":[{"id":1025,"label":"Arabic"},{"id":1093,"label":"Bangla"},{"id":1026,"label":"Bulgarian"},{"id":1027,"label":"Catalan"},{"id":2052,"label":"Chinese (Simplified)"},{"id":1028,"label":"Chinese (Traditional)"},{"id":1050,"label":"Croatian"},{"id":1029,"label":"Czech"},{"id":1030,"label":"Danish"},{"id":1043,"label":"Dutch"},{"id":1033,"label":"English"},{"id":1035,"label":"Finnish"},{"id":1036,"label":"French"},{"id":1031,"label":"German"},{"id":1032,"label":"Greek"},{"id":1095,"label":"Gujarati"},{"id":1037,"label":"Hebrew"},{"id":1081,"label":"Hindi"},{"id":1038,"label":"Hungarian"},{"id":1039,"label":"Icelandic"},{"id":1057,"label":"Indonesian"},{"id":1040,"label":"Italian"},{"id":1041,"label":"Japanese"},{"id":1099,"label":"Kannada"},{"id":1042,"label":"Korean"},{"id":1062,"label":"Latvian"},{"id":1063,"label":"Lithuanian"},{"id":1086,"label":"Malay"},{"id":1100,"label":"Malayalam"},{"id":1102,"label":"Marathi"},{"id":1044,"label":"Norwegian"},{"id":1045,"label":"Polish"},{"id":1046,"label":"Portuguese (Brazil)"},{"id":2070,"label":"Portuguese (Portugal)"},{"id":1094,"label":"Punjabi"},{"id":1048,"label":"Romanian"},{"id":1049,"label":"Russian"},{"id":3098,"label":"Serbian (Cyrillic)"},{"id":2074,"label":"Serbian (Latin)"},{"id":1051,"label":"Slovak"},{"id":1060,"label":"Slovenian"},{"id":3082,"label":"Spanish (Spain)"},{"id":2058,"label":"Spanish (Mexico)"},{"id":1053,"label":"Swedish"},{"id":1097,"label":"Tamil"},{"id":1098,"label":"Telugu"},{"id":1054,"label":"Thai"},{"id":1055,"label":"Turkish"},{"id":1058,"label":"Ukrainian"},{"id":1056,"label":"Urdu"},{"id":1066,"label":"Vietnamese"}],"navigationNodes":[{"id":1001,"name":"Everything","url":"{searchcenterurl}/results.aspx","promptString":"Search everything"},{"id":1002,"name":"People","url":"{searchcenterurl}/peopleresults.aspx","promptString":"Search people"},{"id":0,"name":"This Site","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Search this site"}],"webUILanguageDirectory":"en-US","showAdminDetails":true,"defaultPagesListName":"Pages","isSPFSKU":false,"defaultQueryProperties":{"culture":1033,"uiLanguage":1033,"summaryLength":180,"desiredSnippetLength":90,"enableStemming":true,"enablePhonetic":false,"enableNicknames":false,"trimDuplicates":true,"bypassResultTypes":false,"enableInterleaving":true,"enableQueryRules":true,"processBestBets":true,"enableOrderingHitHighlightedProperty":false,"hitHighlightedMultivaluePropertyLimit":-1,"processPersonalFavorites":true},"showSuggestions":true,"showPersonalResults":true,"openDocumentsInClient":false,"languages":[{"id":1033,"label":"English"}]};
+                    Srch.U.trace(null, 'SerializeToClient', 'ScriptApplicationManager state initialized.');
+                }, 'Search.ClientControls.js');
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+var ensureKey = scriptInfo[0];
+if (ensureKey == 'SP.Ribbon.js')
+{
+ensureKey = 'ribbon';
+}
+if (scriptInfo[2])
+{
+EnsureScript(ensureKey, defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(ensureKey, defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}
+function EnsurePublishingConsoleActionScripts()
+{
+EnsureScripts(
+[['SP.Ribbon.js', 'SP.Ribbon', true],
+['SP.Publishing.Resources.resx', 'SP.Publishing.Resources', false],
+['SP.UI.Pub.Ribbon.js', 'Pub.Ribbon', true]], PublishingRibbonUpdateRibbon);
+}
+if (_spBodyOnLoadFunctionNames != null && !_spBodyOnLoadCalled)
+{
+_spBodyOnLoadFunctionNames.push('EnsurePublishingConsoleActionScripts');
+}
+else
+{
+EnsurePublishingConsoleActionScripts();
+}var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+                function _ribbonInitFunc1()
+
+                {
+                    EnsureScriptParams('core.js', '_ribbonInitFunc1Wrapped', '', '', '\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fcommandui.ashx', '264002976', '1033', 'RibbonContainer', {'Ribbon.PublishTab':true,'Ribbon.Read':true,'Ribbon.WikiPageTab':true}, null, {'Ribbon.PublishTab.Variations':true,'Ribbon.EditingTools.CPEditTab.Layout.PageLayout':true,'Ribbon.PublishTab.Publishing.Approve':true,'Ribbon.WebPartInsert.InsertRelatedDataToListForm':true,'Ribbon.WikiPageTab.Manage.RenamePage':true,'Ribbon.PublishTab.Publishing.Schedule':true,'Ribbon.PublishTab.Workflow.ManageWorkflow':true,'Ribbon.WebPartPage':true,'Ribbon.WikiPageTab.PubPageActions.PreviewMenu':true,'Ribbon.EditingTools.CPEditTab.EditAndCheckout.SaveAndPublish':true,'Ribbon.WikiPageTab.EditAndCheckout.CopySharedPage':true,'Ribbon.PublishTab.Publishing.Reject':true,'Ribbon.WikiPageTab.Manage.DeleteFriendlyUrlPage':true,'Ribbon.WikiPageTab.Manage.PageUrls':true,'Ribbon.WikiPageTab.Manage.PageProperties.Menu.PageProperties.EditTermProperties':true,'Ribbon.WikiPageTab.PageActions':true,'Ribbon.PublishTab.Translation':true,'Ribbon.WikiPageTab.EditAndCheckout.SaveAndPublish':true,'Ribbon.PublishTab.Publishing.QuickDeploy':true,'Ribbon.VariationsTabGroup.VariationsDoclibTab.Translation':true,'Ribbon.VariationsListTabGroup.VariationsListTab.Translation':true,'Ribbon.VariationsTab.Translation':true,'Ribbon.PublishTab.Workflow':true},
+                                            {'PublishTabTrimmingVisibilityContext':true,'WSSPageStateVisibilityContext':true}, false, 0, false, 'SP.Ribbon.PageManager.get_instance()', false, null, null, null, '1083311155', 0, '.');
+                }
+                function _ribbonStartInit(initialTabId, buildMinimized, e)
+                {
+                    EnsureScriptParams('core.js', '_ribbonStartInitWrapped', initialTabId, buildMinimized, e, true, 'EnsureScriptParams("core.js", "RibbonControlInitWrapped");EnsureScriptFunc("ribbon", "SP.Ribbon.PageManager", function () { _registerCUIEComponentWrapped( "\u002fsites\u002fCAB\u002f_layouts\u002f15\u002fcommandui.ashx", "1033", "264002976");});EnsureScriptFunc("ribbon", "SP.Ribbon.PageManager", _ribbonInitFunc1);');
+                }
+                function _ribbonKeyboardTitleShortcut(e)
+                {
+                    EnsureScriptParams('core.js', '_ribbonKeyboardTitleShortcutWrapped', e, 'tff[', 'Ribbon.Read-title');
+                }
+                function _ribbonDataInit(p6, p7)
+                {
+                    _ribbon = new Object();
+                    _ribbon.initialTabId = p6;
+                    _ribbon.buildMinimized = p7;
+                    _ribbon.initStarted = false;
+                    _ribbon.initialTabSelectedByUser = false;
+                    _ribbon.launchedByKeyboard = false;
+                }
+                function _ribbonWaitForBodyEvent()
+                {
+                    if (false)
+                        _ribbonStartInit();
+                    
+                function _ribbonOnWindowResizeForHeaderScaling(evt)
+                {
+                    _ribbonOnWindowResizeForHeaderScalingWrapped(evt, 'RibbonContainer', false);
+                }
+                EnsureScriptParams('core.js', '_ribbonInitResizeHandlers', _ribbonOnWindowResizeForHeaderScaling, 'RibbonContainer', true, false);
+                
+                    EnsureScriptParams('core.js', '_ribbonAddEventListener', _ribbonKeyboardTitleShortcut);
+                }
+                _ribbonDataInit('Ribbon.Read', true);                
+                if (SP.SOD.get_prefetch() == 0 && _ribbon.buildMinimized == true)
+                {
+                    ExecuteOrDelayUntilScriptLoaded(_ribbonWaitForBodyEvent, 'sp.ribbon.js');
+                }
+                else
+                {
+                    EnsureScriptFunc('ribbon', 'SP.Ribbon.PageStateActionButton', _ribbonWaitForBodyEvent);
+                }
+                
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+Sys.Application.add_init(function() {
+    $create(Srch.SearchBox, {"delayLoadTemplateScripts":true,"messages":[],"queryGroupNames":["Default"],"renderTemplateId":"~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox.js","resultsPageAddress":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","showDataErrors":true,"states":{},"updatePageTitle":false}, null, null, $get("ctl00_ctl36_g_a79c3685_50ec_4f9d_9dcf_ab33cec7bc62_csr"));
+});
+//]]>
+</script>
+</form><span id="DeltaPlaceHolderUtilityContent"></span></body>
+</html><script type="text/javascript">
+	var g_duration = 1428;
+var g_iisLatency = 2;
+var g_requireJSDone = new Date().getTime();
+</script>
