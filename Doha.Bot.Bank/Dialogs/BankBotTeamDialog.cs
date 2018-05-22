@@ -336,17 +336,17 @@ namespace Doha.Bot.Bank.Dialogs
 
             //string[] AttchList = Attchpath.Split(',');
 
-            //foreach (string file in AttchList)
-            //{
-            //    string sourceFile = System.IO.Path.Combine(file, fileName);
-            //    string destFile = System.IO.Path.Combine(targetPath, fileName);
+           // foreach (string file in AttchList)
+           // {
+                string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
+                string destFile = System.IO.Path.Combine(targetPath, fileName);
 
-            //    fileName = System.IO.Path.GetFileName(file);
-            //    destFile = System.IO.Path.Combine(targetPath, fileName);
-            //    System.IO.File.Copy(file, destFile, true);
-            //    iUploadedCnt = iUploadedCnt + 1;
+                //fileName = System.IO.Path.GetFileName(Attchpath);
+                //destFile = System.IO.Path.Combine(targetPath, fileName);
+                //System.IO.File.Copy(Attchpath, destFile, true);
+                //iUploadedCnt = iUploadedCnt + 1;
 
-            //}
+           // }
             //// RETURN A MESSAGE.
             ////if (iUploadedCnt > 0)
             ////{
@@ -358,7 +358,7 @@ namespace Doha.Bot.Bank.Dialogs
             ////}
 
 
-            return targetPath;// fileName;
+            return sourceFile + "__" + destFile;
         }
 
         //private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
