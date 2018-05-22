@@ -327,38 +327,38 @@ namespace Doha.Bot.Bank.Dialogs
 
            string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
 
-            //--this is the local path we want to take to upload(try with your local path data)
-            // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
-            // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
+            ////--this is the local path we want to take to upload(try with your local path data)
+            //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
+            //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
 
-            //ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
-            //string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
+            ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
+            ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
 
-            string[] AttchList = Attchpath.Split(',');
+            //string[] AttchList = Attchpath.Split(',');
 
-            foreach (string file in AttchList)
-            {
-                string sourceFile = System.IO.Path.Combine(file, fileName);
-                string destFile = System.IO.Path.Combine(targetPath, fileName);
-
-                fileName = System.IO.Path.GetFileName(file);
-                destFile = System.IO.Path.Combine(targetPath, fileName);
-                System.IO.File.Copy(file, destFile, true);
-                iUploadedCnt = iUploadedCnt + 1;
-
-            }
-            // RETURN A MESSAGE.
-            //if (iUploadedCnt > 0)
+            //foreach (string file in AttchList)
             //{
-            //    return iUploadedCnt + " Files Uploaded Successfully";
+            //    string sourceFile = System.IO.Path.Combine(file, fileName);
+            //    string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+            //    fileName = System.IO.Path.GetFileName(file);
+            //    destFile = System.IO.Path.Combine(targetPath, fileName);
+            //    System.IO.File.Copy(file, destFile, true);
+            //    iUploadedCnt = iUploadedCnt + 1;
+
             //}
-            //else
-            //{
-            //    return "Upload Failed";
-            //}
+            //// RETURN A MESSAGE.
+            ////if (iUploadedCnt > 0)
+            ////{
+            ////    return iUploadedCnt + " Files Uploaded Successfully";
+            ////}
+            ////else
+            ////{
+            ////    return "Upload Failed";
+            ////}
 
 
-            return fileName;
+            return targetPath;// fileName;
         }
 
         //private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
