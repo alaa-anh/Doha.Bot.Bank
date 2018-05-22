@@ -118,19 +118,13 @@ namespace Common
                 SecureString passWord = new SecureString();
                 foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
                 ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-
-
                 List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
-
                 ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
                 ListItem oListItem = oList.AddItem(itemCreateInfo);
                 oListItem["Title"] = Title;
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
-
-
                 oListItem.Update();
-
                 ctx.ExecuteQuery();
                 AnswerRecordID = oListItem.Id;
             }
@@ -140,21 +134,15 @@ namespace Common
 
         public static void UpdateAnswer(int AnswerRecordID, string selectedFlowType , string Desc , string pdfPath , string Usertype , string SubmittedBy)
         {
-
             using (ClientContext ctx = new ClientContext(_serverURL))
             {
                 SecureString passWord = new SecureString();
                 foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
                 ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-
-
                 List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
-
                 ListItem oListItem = oList.GetItemById(AnswerRecordID);
-
                 if(Desc != "")
                     oListItem["Description"] = Desc;
-
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
                 oListItem.Update();
@@ -165,12 +153,9 @@ namespace Common
 
         public static void addAttachmentToListItem(int itemID, string filePath, string filename)
         {
-
             var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/small-image.png");
            // var imageData = Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath));
             FileStream fs = new FileStream(imagePath, FileMode.Open);
-
-
             SecureString passWord = new SecureString();
             foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
 
@@ -179,10 +164,8 @@ namespace Common
             var list = Context.Web.Lists.GetByTitle("Submitted Data");
             Context.Load(list);
             Context.ExecuteQuery();
-
             ListItem oListItem = list.GetItemById(itemID);
             Context.Load(oListItem);
-
 
             AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
             attInfo.FileName = fs.Name;
@@ -190,8 +173,6 @@ namespace Common
             oListItem.AttachmentFiles.Add(attInfo);
             oListItem.Update();
             Context.ExecuteQuery();
-
-
         }
 
         //public static void addAttachmentToListItem(int itemID, string filePath , string filename)
