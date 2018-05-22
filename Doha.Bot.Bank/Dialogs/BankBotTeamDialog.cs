@@ -14,6 +14,7 @@ using System.Security.Cryptography;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Linq;
+using System.Reflection;
 
 namespace Doha.Bot.Bank.Dialogs
 {
@@ -233,8 +234,9 @@ namespace Doha.Bot.Bank.Dialogs
                 else if (InputQuestionType == "Attachment")
                 {
                     string filename = UploadFiles(response);
-                  if (filename != "")
-                        Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
+                    await context.PostAsync(filename);
+                    //if (filename != "")
+                    //      Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
 
                     //Microsoft.Bot.Connector.Attachment attachment = new HeroCard
                     //{
@@ -321,40 +323,42 @@ namespace Doha.Bot.Bank.Dialogs
             //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
             //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
 
-            string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
+            string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
 
-            //--this is the local path we want to take to upload(try with your local path data)
-            // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
-           // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
+           // //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
 
-            //ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
-            //string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
+           // //--this is the local path we want to take to upload(try with your local path data)
+           // // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
+           //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
 
-            string[] AttchList = Attchpath.Split(',');
+           // //ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
+           // //string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
 
-            foreach (string file in AttchList)
-            {
-                string sourceFile = System.IO.Path.Combine(file, fileName);
-                string destFile = System.IO.Path.Combine(targetPath, fileName);
+           // string[] AttchList = Attchpath.Split(',');
 
-                fileName = System.IO.Path.GetFileName(file);
-                destFile = System.IO.Path.Combine(targetPath, fileName);
-                System.IO.File.Copy(file, destFile, true);
-                iUploadedCnt = iUploadedCnt + 1;
+           // foreach (string file in AttchList)
+           // {
+           //     string sourceFile = System.IO.Path.Combine(file, fileName);
+           //     string destFile = System.IO.Path.Combine(targetPath, fileName);
 
-            }
-            // RETURN A MESSAGE.
-            //if (iUploadedCnt > 0)
-            //{
-            //    return iUploadedCnt + " Files Uploaded Successfully";
-            //}
-            //else
-            //{
-            //    return "Upload Failed";
-            //}
+           //     fileName = System.IO.Path.GetFileName(file);
+           //     destFile = System.IO.Path.Combine(targetPath, fileName);
+           //     System.IO.File.Copy(file, destFile, true);
+           //     iUploadedCnt = iUploadedCnt + 1;
+
+           // }
+           // // RETURN A MESSAGE.
+           // //if (iUploadedCnt > 0)
+           // //{
+           // //    return iUploadedCnt + " Files Uploaded Successfully";
+           // //}
+           // //else
+           // //{
+           // //    return "Upload Failed";
+           // //}
 
 
-            return fileName;
+            return targetPath;// fileName;
         }
 
         //private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
