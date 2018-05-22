@@ -323,9 +323,9 @@ namespace Doha.Bot.Bank.Dialogs
             //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
             //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
 
-            string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
+            //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
 
-           // //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
+           string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
 
            // //--this is the local path we want to take to upload(try with your local path data)
            // // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
