@@ -151,10 +151,14 @@ namespace Common
         }
 
 
-        public static void addAttachmentToListItem(int itemID, string filePath, string filename)
+        public static void addAttachmentToListItem(int itemID, string filename)
         {
-            var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/small-image.png");
-           // var imageData = Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath));
+
+          // string strFileName = System.IO.Path.GetFileName(filePath);
+          //  MyFile.PostedFile.SaveAs(Server.MapPath("servername/files") + strFileName);
+
+
+            var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + filename);
             FileStream fs = new FileStream(imagePath, FileMode.Open);
             SecureString passWord = new SecureString();
             foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);

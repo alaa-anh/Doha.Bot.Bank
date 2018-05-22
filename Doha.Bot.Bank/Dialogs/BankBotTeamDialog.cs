@@ -11,6 +11,9 @@ using Microsoft.SharePoint.Client;
 
 using System.IO;
 using System.Security.Cryptography;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using System.Linq;
 
 namespace Doha.Bot.Bank.Dialogs
 {
@@ -229,7 +232,38 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                    Common.Sharepoint.addAttachmentToListItem(AnswerRecordID , InputAttachmentPath, response);
+                    string filename = UploadFiles(response);
+                  if (filename != "")
+                        Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
+
+                    //Microsoft.Bot.Connector.Attachment attachment = new HeroCard
+                    //{
+                    //    Title = "Click to download Report",
+                    //    Buttons = new List<CardAction>()
+                    //        {
+                    //            new CardAction()
+                    //            {
+                    //                Title = "Get Started",
+                    //                Type = ActionTypes.OpenUrl,
+                    //                Value = "C:\\Alaa\\New Text Document.txt"
+                    //            }
+                    //         }
+                    //}.ToAttachment();
+
+                    //var reply = context.MakeMessage();
+                    //reply.Attachments.Add(attachment);
+                    //await context.PostAsync(reply);
+
+                    //StackTraceGathered(context);
+                    //var replymes = context.MakeMessage();
+
+                    //Microsoft.Bot.Connector.Attachment attachmentsend = null;
+                    //attachmentsend = await GetUploadedAttachmentAsync(replymes.ServiceUrl, replymes.Conversation.Id);
+
+                    //replymes.Attachments.Add(attachment);
+
+                    //await context.PostAsync(replymes);
+
                 }
             }
 
@@ -277,7 +311,115 @@ namespace Doha.Bot.Bank.Dialogs
 
                 }
             }
-        }      
+        }
+
+
+        public static string UploadFiles(string Attchpath)
+        {
+            int iUploadedCnt = 0;
+            string fileName = "";
+            //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
+            //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
+
+            string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
+
+            //--this is the local path we want to take to upload(try with your local path data)
+            // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
+           // string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
+
+            //ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
+            //string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
+
+            string[] AttchList = Attchpath.Split(',');
+
+            foreach (string file in AttchList)
+            {
+                string sourceFile = System.IO.Path.Combine(file, fileName);
+                string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+                fileName = System.IO.Path.GetFileName(file);
+                destFile = System.IO.Path.Combine(targetPath, fileName);
+                System.IO.File.Copy(file, destFile, true);
+                iUploadedCnt = iUploadedCnt + 1;
+
+            }
+            // RETURN A MESSAGE.
+            //if (iUploadedCnt > 0)
+            //{
+            //    return iUploadedCnt + " Files Uploaded Successfully";
+            //}
+            //else
+            //{
+            //    return "Upload Failed";
+            //}
+
+
+            return fileName;
+        }
+
+        //private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
+        //{
+        //    var imagePath = System.Web.HttpContext.Current.Server.MapPath("~/AttachmentFiles/small-image.png");
+
+        //    using (var connector = new ConnectorClient(new Uri(serviceUrl)))
+        //    {
+        //        var attachments = new Attachments(connector);
+        //        var response = await attachments.Client.Conversations.UploadAttachmentAsync(
+        //            conversationId,
+        //            new AttachmentData
+        //            {
+        //                Name = "Results.csv",
+        //                OriginalBase64 = System.IO.File.ReadAllBytes(imagePath),
+        //                Type = "text/csv"
+        //            });
+
+        //        var attachmentUri = attachments.GetAttachmentUri(response.Id);
+
+        //        return new Microsoft.Bot.Connector.Attachment
+        //        {
+        //            Name = "Results.csv",
+        //            ContentType = "text/csv",
+        //            ContentUrl = attachmentUri
+        //        };
+        //    }
+        //}
+        //public virtual async Task StackTraceGathered(IDialogContext context, IAwaitable<IMessageActivity> argument)
+        //{
+        //    var message = await argument;
+        //  //  FileName = message.Attachments[0].Name;
+        //    HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
+
+        //    string filePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + file.FileName);
+        //    file.SaveAs(filePath);
+
+        //    if (message.Attachments != null && message.Attachments.Any())
+        //    {
+        //        var attachment = message.Attachments.First();
+        //        using (HttpClient httpClient = new HttpClient())
+        //        {
+        //            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+        //            if ((message.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || message.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
+        //                && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
+        //            {
+        //                var token = await new MicrosoftAppCredentials().GetTokenAsync();
+        //                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        //            }
+
+        //            var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
+
+        //            var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+
+        //            await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
+        //    }
+        //    PromptDialog.Text(context, ProblemStartDuration, "How long has this been an issue? (Provide answer in days, if issue has been occurring for less than one day put 1).");
+
+        //    context.Wait(this.StackTraceGathered);
+        //}
 
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
@@ -288,7 +430,7 @@ namespace Doha.Bot.Bank.Dialogs
                 NextQ = NextQYes;
                 PromptDialog.Text(
                     context: context,
-                    resume: ResumeAfterConfirmationAttachmentName,
+                    resume: ResomeLoadAnswers,
                     prompt: "Please add the file path");
             }
             else
@@ -299,18 +441,18 @@ namespace Doha.Bot.Bank.Dialogs
         }
 
 
-        public virtual async Task ResumeAfterConfirmationAttachmentName(IDialogContext context, IAwaitable<string> answer)
-        {
+        //public virtual async Task ResumeAfterConfirmationAttachmentName(IDialogContext context, IAwaitable<string> answer)
+        //{
 
-            var filename = await answer;
+        //    var filename = await answer;
 
-            InputAttachmentPath = filename;
+        //    InputAttachmentPath = filename;
 
-            PromptDialog.Text(
-                    context: context,
-                    resume: ResomeLoadAnswers,
-                    prompt: "Please add the file name");
-        }
+        //    PromptDialog.Text(
+        //            context: context,
+        //            resume: ResomeLoadAnswers,
+        //            prompt: "Please add the file name");
+        //}
 
         private void ResomeLoadAnswers2(IDialogContext context)
         {
