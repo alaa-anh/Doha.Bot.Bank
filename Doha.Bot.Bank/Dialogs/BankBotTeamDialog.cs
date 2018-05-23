@@ -8,13 +8,16 @@ using System.Web;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using Microsoft.SharePoint.Client;
-
+using Microsoft.Azure;
 using System.IO;
 using System.Security.Cryptography;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Linq;
 using System.Reflection;
+using Microsoft.WindowsAzure.Storage.File;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace Doha.Bot.Bank.Dialogs
 {
@@ -318,47 +321,66 @@ namespace Doha.Bot.Bank.Dialogs
 
         public static string UploadFiles(string Attchpath)
         {
-            int iUploadedCnt = 0;
+            string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
+            string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+            string destContainer = ConfigurationManager.AppSettings["destContainer"];
+
+            CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+            CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+            CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+            blobContainer.CreateIfNotExists();
+            string[] fileEntries = Directory.GetFiles(SourceFolder);
+            foreach(string filepath in fileEntries)
+            {
+                string key = Path.GetFileName(filepath);
+                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+                using (var fs = System.IO.File.Open(filepath, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                    blockBlob.UploadFromStream(fs);
+                }
+            }
+
+            // int iUploadedCnt = 0;
             string fileName = "";
-            //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
-            //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
+           // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
+           // //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
 
-            //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
+           // //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
 
-           string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
+           //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
 
-            ////--this is the local path we want to take to upload(try with your local path data)
-            //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
-            //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
+           // ////--this is the local path we want to take to upload(try with your local path data)
+           // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
+           // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
 
-            ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
-            ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
+           // ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
+           // ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
 
-            //string[] AttchList = Attchpath.Split(',');
+           // //string[] AttchList = Attchpath.Split(',');
 
-            // foreach (string file in AttchList)
-            // {
-            //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
+           // // foreach (string file in AttchList)
+           // // {
+           // //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
 
-            fileName = "ss.doc";
+           // fileName = "ss.doc";
 
-                //fileName = System.IO.Path.GetFileName(Attchpath);
-                string destFile = System.IO.Path.Combine(targetPath, fileName);
+           //     //fileName = System.IO.Path.GetFileName(Attchpath);
+           //     string destFile = System.IO.Path.Combine(targetPath, fileName);
 
-            //destFile = System.IO.Path.Combine(targetPath, fileName);
-                System.IO.File.Copy(Attchpath, destFile, true);
-            //iUploadedCnt = iUploadedCnt + 1;
+           // //destFile = System.IO.Path.Combine(targetPath, fileName);
+           //     System.IO.File.Copy(Attchpath, destFile, true);
+           // //iUploadedCnt = iUploadedCnt + 1;
 
-            // }
-            //// RETURN A MESSAGE.
-            ////if (iUploadedCnt > 0)
-            ////{
-            ////    return iUploadedCnt + " Files Uploaded Successfully";
-            ////}
-            ////else
-            ////{
-            ////    return "Upload Failed";
-            ////}
+           // // }
+           // //// RETURN A MESSAGE.
+           // ////if (iUploadedCnt > 0)
+           // ////{
+           // ////    return iUploadedCnt + " Files Uploaded Successfully";
+           // ////}
+           // ////else
+           // ////{
+           // ////    return "Upload Failed";
+           // ////}
 
 
             return fileName;
