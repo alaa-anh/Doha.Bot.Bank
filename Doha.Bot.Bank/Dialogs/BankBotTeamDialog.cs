@@ -237,69 +237,69 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                    //  string filename = UploadFiles(response);
-                    // await context.PostAsync(filename);
-                    //if (filename != "")
-                    //      Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
+                      string filename = UploadFiles(response);
+                    ////// await context.PostAsync(filename);
+                    //////if (filename != "")
+                    //////      Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
 
-                    Microsoft.Bot.Connector.Attachment attachment = new HeroCard
-                    {
-                        Title = "Click to download Report",
-                        Buttons = new List<CardAction>()
-                            {
-                                new CardAction()
-                                {
-                                    Title = "Get Started",
-                                    Type = ActionTypes.OpenUrl,
-                                    Value = "C:\\Alaa\\New Text Document.txt"
-                                }
-                             }
-                    }.ToAttachment();
+                    ////Microsoft.Bot.Connector.Attachment attachment = new HeroCard
+                    ////{
+                    ////    Title = "Click to download Report",
+                    ////    Buttons = new List<CardAction>()
+                    ////        {
+                    ////            new CardAction()
+                    ////            {
+                    ////                Title = "Get Started",
+                    ////                Type = ActionTypes.OpenUrl,
+                    ////                Value = "C:\\Alaa\\New Text Document.txt"
+                    ////            }
+                    ////         }
+                    ////}.ToAttachment();
 
-                    var reply = context.MakeMessage();
-                    reply.Attachments.Add(attachment);
-                    //HttpPostedFileBase file = (HttpPostedFileBase)reply.Attachments[0].Content;
+                    ////var reply = context.MakeMessage();
+                    ////reply.Attachments.Add(attachment);
+                    //////HttpPostedFileBase file = (HttpPostedFileBase)reply.Attachments[0].Content;
 
-                    //string filePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + file.FileName);
-                    //file.SaveAs(filePath);
+                    //////string filePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + file.FileName);
+                    //////file.SaveAs(filePath);
 
-                    if (reply.Attachments != null && reply.Attachments.Any())
-                    {
-                        var attachmentfile = reply.Attachments.First();
-                        using (HttpClient httpClient = new HttpClient())
-                        {
-                            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
-                            if ((reply.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || reply.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
-                                && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
-                            {
-                                var token = await new MicrosoftAppCredentials().GetTokenAsync();
-                                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                            }
+                    ////if (reply.Attachments != null && reply.Attachments.Any())
+                    ////{
+                    ////    var attachmentfile = reply.Attachments.First();
+                    ////    using (HttpClient httpClient = new HttpClient())
+                    ////    {
+                    ////        // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+                    ////        if ((reply.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || reply.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
+                    ////            && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
+                    ////        {
+                    ////            var token = await new MicrosoftAppCredentials().GetTokenAsync();
+                    ////            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                    ////        }
 
-                            var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
+                    ////        var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
 
-                            var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+                    ////        var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
 
-                            await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
-                        }
-                    }
-                    else
-                    {
-                        await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
-                    }
-                    //  PromptDialog.Text(context, ProblemStartDuration, "How long has this been an issue? (Provide answer in days, if issue has been occurring for less than one day put 1).");
+                    ////        await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+                    ////    }
+                    ////}
+                    ////else
+                    ////{
+                    ////    await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
+                    ////}
+                    //////  PromptDialog.Text(context, ProblemStartDuration, "How long has this been an issue? (Provide answer in days, if issue has been occurring for less than one day put 1).");
 
-                    context.Wait(this.StackTraceGathered);
+                    ////context.Wait(this.StackTraceGathered);
 
-                    //StackTraceGathered(context);
-                    //var replymes = context.MakeMessage();
+                    //////StackTraceGathered(context);
+                    //////var replymes = context.MakeMessage();
 
-                    //Microsoft.Bot.Connector.Attachment attachmentsend = null;
-                    //attachmentsend = await GetUploadedAttachmentAsync(replymes.ServiceUrl, replymes.Conversation.Id);
+                    //////Microsoft.Bot.Connector.Attachment attachmentsend = null;
+                    //////attachmentsend = await GetUploadedAttachmentAsync(replymes.ServiceUrl, replymes.Conversation.Id);
 
-                    //replymes.Attachments.Add(attachment);
+                    //////replymes.Attachments.Add(attachment);
 
-                    //await context.PostAsync(replymes);
+                    //////await context.PostAsync(replymes);
 
                 }
             }
@@ -357,27 +357,27 @@ namespace Doha.Bot.Bank.Dialogs
            
 
             string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
-         //   string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+            string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
             string destContainer = ConfigurationManager.AppSettings["destContainer"];
 
             CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
             CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
             CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
             blobContainer.CreateIfNotExists();
-          //  string[] fileEntries = Directory.GetFiles(SourceFolder);
-           // foreach(string filepath in fileEntries)
-           // {
-                //string key = Path.GetFileName(Attchpath);
-                //CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-                //using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
-                //{
-                //    blockBlob.UploadFromStream(fs);
-                
-                //}
-           // }
+            string[] fileEntries = Directory.GetFiles(SourceFolder);
+            foreach (string filepath in fileEntries)
+            {
+                string key = Path.GetFileName(Attchpath);
+                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+                using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                    blockBlob.UploadFromStream(fs);
+
+                }
+            }
 
 
-            
+
             // int iUploadedCnt = 0;
             string fileName = "";
            // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
