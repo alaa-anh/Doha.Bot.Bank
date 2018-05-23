@@ -336,19 +336,20 @@ namespace Doha.Bot.Bank.Dialogs
 
             //string[] AttchList = Attchpath.Split(',');
 
-           // foreach (string file in AttchList)
-           // {
-              //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
-               
+            // foreach (string file in AttchList)
+            // {
+            //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
 
-                fileName = System.IO.Path.GetFileName(Attchpath);
-            //string destFile = System.IO.Path.Combine(targetPath, fileName);
+            fileName = "ss.doc";
+
+                //fileName = System.IO.Path.GetFileName(Attchpath);
+                string destFile = System.IO.Path.Combine(targetPath, fileName);
 
             //destFile = System.IO.Path.Combine(targetPath, fileName);
             //    System.IO.File.Copy(Attchpath, destFile, true);
-                //iUploadedCnt = iUploadedCnt + 1;
+            //iUploadedCnt = iUploadedCnt + 1;
 
-           // }
+            // }
             //// RETURN A MESSAGE.
             ////if (iUploadedCnt > 0)
             ////{
