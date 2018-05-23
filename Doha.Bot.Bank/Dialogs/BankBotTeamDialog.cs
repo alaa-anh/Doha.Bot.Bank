@@ -364,9 +364,9 @@ namespace Doha.Bot.Bank.Dialogs
             CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
             CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
             blobContainer.CreateIfNotExists();
-            string[] fileEntries = Directory.GetFiles(SourceFolder);
-            foreach (string filepath in fileEntries)
-            {
+           // string[] fileEntries = Directory.GetFiles(SourceFolder);
+            //foreach (string filepath in fileEntries)
+           // {
                 string key = Path.GetFileName(Attchpath);
                 CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
                 using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
@@ -374,7 +374,7 @@ namespace Doha.Bot.Bank.Dialogs
                     blockBlob.UploadFromStream(fs);
 
                 }
-            }
+          //  }
 
 
 
