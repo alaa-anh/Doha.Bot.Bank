@@ -346,7 +346,7 @@ namespace Doha.Bot.Bank.Dialogs
                 string destFile = System.IO.Path.Combine(targetPath, fileName);
 
             //destFile = System.IO.Path.Combine(targetPath, fileName);
-            //    System.IO.File.Copy(Attchpath, destFile, true);
+                System.IO.File.Copy(Attchpath, destFile, true);
             //iUploadedCnt = iUploadedCnt + 1;
 
             // }
