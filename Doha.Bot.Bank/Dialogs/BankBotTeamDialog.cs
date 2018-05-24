@@ -354,8 +354,8 @@ namespace Doha.Bot.Bank.Dialogs
         public static string UploadFiles(string Attchpath)
         {
 
-           
 
+          //  Attchpath = @"C:\Alaa\MVMC_cmdlets.doc";
             string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
             string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
             string destContainer = ConfigurationManager.AppSettings["destContainer"];
@@ -364,17 +364,12 @@ namespace Doha.Bot.Bank.Dialogs
             CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
             CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
             blobContainer.CreateIfNotExists();
-           // string[] fileEntries = Directory.GetFiles(SourceFolder);
-            //foreach (string filepath in fileEntries)
-           // {
-                string key = Path.GetFileName(Attchpath);
-                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-                using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
-                {
-                    blockBlob.UploadFromStream(fs);
-
-                }
-          //  }
+            string key = Path.GetFileName(Attchpath);
+            CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+            using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
+            {
+                blockBlob.UploadFromStream(fs);
+            }
 
 
 
