@@ -355,7 +355,7 @@ namespace Doha.Bot.Bank.Dialogs
         {
 
 
-          //  Attchpath = @"C:\Alaa\MVMC_cmdlets.doc";
+          Attchpath = @"C:\Alaa\MVMC_cmdlets.doc";
             string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
             string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
             string destContainer = ConfigurationManager.AppSettings["destContainer"];
