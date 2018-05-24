@@ -237,7 +237,7 @@ namespace Doha.Bot.Bank.Dialogs
                     Common.Sharepoint.UpdateAnswer(AnswerRecordID, selectedOption, response, "", "", "");
                 else if (InputQuestionType == "Attachment")
                 {
-                      string filename = UploadFiles(response);
+                      UploadFiles(response);
                     ////// await context.PostAsync(filename);
                     //////if (filename != "")
                     //////      Common.Sharepoint.addAttachmentToListItem(AnswerRecordID, filename);
@@ -351,7 +351,7 @@ namespace Doha.Bot.Bank.Dialogs
         }
 
 
-        public static string UploadFiles(string Attchpath)
+        public static void  UploadFiles(string Attchpath)
         {
 
 
@@ -374,7 +374,7 @@ namespace Doha.Bot.Bank.Dialogs
 
 
             // int iUploadedCnt = 0;
-            string fileName = "";
+          //string fileName = "";
            // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
            // //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
 
@@ -416,7 +416,7 @@ namespace Doha.Bot.Bank.Dialogs
            // ////}
 
 
-            return fileName;
+            //return fileName;
         }
 
         //private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
