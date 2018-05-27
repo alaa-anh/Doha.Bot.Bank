@@ -185,8 +185,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BankBotTeamCRMController.cs" />
     <Compile Include="Controllers\BankBotTeamController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialogs\BankBotTeamCRMDialog.cs" />
     <Compile Include="Dialogs\BankBotTeamDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Global.asax.cs">
