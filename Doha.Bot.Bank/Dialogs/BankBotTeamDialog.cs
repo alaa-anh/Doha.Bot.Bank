@@ -29,7 +29,7 @@ namespace Doha.Bot.Bank.Dialogs
         private string UserLoggedInName;
         private int currentQ = 0;
         private int NextQ = 0;
-        private string InputTitle = string.Empty;
+        private string InputListTitle = string.Empty;
         private string InputDesc = string.Empty;
         private string InputAttachmentPath = string.Empty;
         private string InputQuestionType = string.Empty;        
@@ -230,7 +230,7 @@ namespace Doha.Bot.Bank.Dialogs
            // InputTitle = response;
 
             if (currentQ == 0)
-                InputTitle = response;
+                InputListTitle = response;
             else
             {
                 if (InputQuestionType == "Text")
@@ -448,7 +448,7 @@ namespace Doha.Bot.Bank.Dialogs
                 }
             }
 
-            Common.Sharepoint.SaveNewAnswer(InputSelectedOption,InputTitle,InputDesc,InputUsertype,InputSubmittedBy , InputAttachmentPath);
+            Common.Sharepoint.SaveNewAnswer(InputSelectedOption, InputListTitle, InputDesc,InputUsertype,InputSubmittedBy , InputAttachmentPath);
             await context.PostAsync("Your " + InputSelectedOption + " has Been Submitted");
 
         }

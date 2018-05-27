@@ -124,7 +124,7 @@ namespace Common
                 oListItem["Title"] = Title;
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
-                oListItem["Description"] = Title;
+                oListItem["Description"] = Desc;
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
