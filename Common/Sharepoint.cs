@@ -142,7 +142,6 @@ namespace Common
                     //    oListItem.AttachmentFiles.Add(attInfo);
                     //}
                 }
-
                 oListItem.Update();
                 ctx.ExecuteQuery();
             }
