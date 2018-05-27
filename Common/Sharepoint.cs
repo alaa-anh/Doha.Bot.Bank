@@ -121,10 +121,10 @@ namespace Common
                 List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
                 ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
                 ListItem oListItem = oList.AddItem(itemCreateInfo);
-                oListItem["Title"] = Title;
+               // oListItem["Title"] = Title;
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
-                oListItem["Description"] = Desc;
+                oListItem["Description"] = Title;
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
