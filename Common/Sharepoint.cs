@@ -110,7 +110,7 @@ namespace Common
 
         }
 
-        public static void SaveNewAnswer(string selectedFlowType , string NewTitle , string Desc , bool Usertype , string SubmittedBy , string filename)
+        public static void SaveNewAnswer(string selectedFlowType , string NewTitle, string InputTit, string Desc , bool Usertype , string SubmittedBy , string filename)
         {
            // int AnswerRecordID = 0;
             using (ClientContext ctx = new ClientContext(_serverURL))
@@ -122,7 +122,7 @@ namespace Common
                 ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
                 ListItem oListItem = oList.AddItem(itemCreateInfo);
                 oListItem["New_x0020_Title"] = NewTitle;
-                oListItem["Title"] = Desc;
+                oListItem["Title"] = InputTit;
 
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
