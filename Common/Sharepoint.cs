@@ -122,6 +122,8 @@ namespace Common
                 ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
                 ListItem oListItem = oList.AddItem(itemCreateInfo);
                 oListItem["New_x0020_Title"] = NewTitle;
+                oListItem["Title"] = NewTitle;
+
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
                 oListItem["Description"] = Desc;
