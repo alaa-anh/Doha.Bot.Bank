@@ -28,10 +28,6 @@ namespace Doha.Bot.Bank
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }
-        //internal static IDialog<SPFormFlow> MakeRootDialog()
-        //{
-        //    return Chain.From(() => FormDialog.FromForm(SPFormFlow.BuildForm));
-        //}
         private Activity HandleSystemMessage(Activity message)
         {
             if (message.Type == ActivityTypes.DeleteUserData)
