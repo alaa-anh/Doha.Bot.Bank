@@ -112,7 +112,7 @@ namespace Common
 
         public static void SaveNewAnswer(string selectedFlowType , string Title , string Desc , bool Usertype , string SubmittedBy , string filename)
         {
-            int AnswerRecordID = 0;
+           // int AnswerRecordID = 0;
             using (ClientContext ctx = new ClientContext(_serverURL))
             {
                 SecureString passWord = new SecureString();
@@ -124,7 +124,7 @@ namespace Common
                 oListItem["Title"] = Title;
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
-                oListItem["Description"] = Desc;
+               // oListItem["Description"] = Desc;
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
 
