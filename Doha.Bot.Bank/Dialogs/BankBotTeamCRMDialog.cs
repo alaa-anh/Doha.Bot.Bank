@@ -227,7 +227,7 @@ namespace Doha.Bot.Bank.Dialogs
         public virtual async Task ResomeLoadAnswers(IDialogContext context, IAwaitable<string> answer)
         {
             string response = await answer;
-            InputTitle = response;
+           // InputTitle = response;
 
             if (currentQ == 0)
                 InputTitle = response;
