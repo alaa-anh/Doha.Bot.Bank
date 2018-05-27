@@ -110,7 +110,7 @@ namespace Common
 
         }
 
-        public static int SaveNewAnswer(string selectedFlowType , string Title)
+        public static void SaveNewAnswer(string selectedFlowType , string Title , string Desc , bool Usertype , string SubmittedBy , string filename)
         {
             int AnswerRecordID = 0;
             using (ClientContext ctx = new ClientContext(_serverURL))
@@ -124,60 +124,61 @@ namespace Common
                 oListItem["Title"] = Title;
                 oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
                 oListItem["Source"] = "Bot";
-                oListItem.Update();
-                ctx.ExecuteQuery();
-                AnswerRecordID = oListItem.Id;
-            }
-            return AnswerRecordID;
-        }
-
-
-        public static void UpdateAnswer(int AnswerRecordID, string selectedFlowType , string Desc , string pdfPath , string Usertype , string SubmittedBy)
-        {
-            using (ClientContext ctx = new ClientContext(_serverURL))
-            {
-                SecureString passWord = new SecureString();
-                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-                ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-                List oList = ctx.Web.Lists.GetByTitle("Submitted Data");
-                ListItem oListItem = oList.GetItemById(AnswerRecordID);
-                if(Desc != "")
-                    oListItem["Description"] = Desc;
+                oListItem["Description"] = Desc;
                 oListItem["Anonymous"] = Usertype;
                 oListItem["Submitted_x0020_By"] = SubmittedBy;
+
+                if (filename != "")
+                {
+                    //string[] multifiles = filename.Split(',');
+                    //foreach (string file in multifiles)
+                    //{
+                    //    var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + file);
+                    //    FileStream fs = new FileStream(imagePath, FileMode.Open);
+
+                    //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                    //    attInfo.FileName = fs.Name;
+                    //    attInfo.ContentStream = fs;
+                    //    oListItem.AttachmentFiles.Add(attInfo);
+                    //}
+                }
+
                 oListItem.Update();
                 ctx.ExecuteQuery();
             }
         }
 
 
-        public static void addAttachmentToListItem(int itemID, string filename)
-        {
-
-          // string strFileName = System.IO.Path.GetFileName(filePath);
-          //  MyFile.PostedFile.SaveAs(Server.MapPath("servername/files") + strFileName);
+      
 
 
-            var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + filename);
-            FileStream fs = new FileStream(imagePath, FileMode.Open);
-            SecureString passWord = new SecureString();
-            foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+        //public static void addAttachmentToListItem(int itemID, string filename)
+        //{
 
-            ClientContext Context = new ClientContext(_serverURL);
-            Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-            var list = Context.Web.Lists.GetByTitle("Submitted Data");
-            Context.Load(list);
-            Context.ExecuteQuery();
-            ListItem oListItem = list.GetItemById(itemID);
-            Context.Load(oListItem);
+        //  // string strFileName = System.IO.Path.GetFileName(filePath);
+        //  //  MyFile.PostedFile.SaveAs(Server.MapPath("servername/files") + strFileName);
 
-            AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-            attInfo.FileName = fs.Name;
-            attInfo.ContentStream = fs;
-            oListItem.AttachmentFiles.Add(attInfo);
-            oListItem.Update();
-            Context.ExecuteQuery();
-        }
+
+        //    var imagePath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/" + filename);
+        //    FileStream fs = new FileStream(imagePath, FileMode.Open);
+        //    SecureString passWord = new SecureString();
+        //    foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+
+        //    ClientContext Context = new ClientContext(_serverURL);
+        //    Context.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+        //    var list = Context.Web.Lists.GetByTitle("Submitted Data");
+        //    Context.Load(list);
+        //    Context.ExecuteQuery();
+        //    ListItem oListItem = list.GetItemById(itemID);
+        //    Context.Load(oListItem);
+
+        //    AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+        //    attInfo.FileName = fs.Name;
+        //    attInfo.ContentStream = fs;
+        //    oListItem.AttachmentFiles.Add(attInfo);
+        //    oListItem.Update();
+        //    Context.ExecuteQuery();
+        //}
 
         //public static void addAttachmentToListItem(int itemID, string filePath , string filename)
         //{
