@@ -122,11 +122,11 @@ namespace Common
                 ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
                 ListItem oListItem = oList.AddItem(itemCreateInfo);
                 oListItem["Title"] = Title;
-                oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
-                oListItem["Source"] = "Bot";
-               // oListItem["Description"] = Desc;
-                oListItem["Anonymous"] = Usertype;
-                oListItem["Submitted_x0020_By"] = SubmittedBy;
+               // oListItem["Type_x0020_of_x0020_Submition"] = selectedFlowType;
+               // oListItem["Source"] = "Bot";
+               //oListItem["Description"] = Desc;
+               // oListItem["Anonymous"] = Usertype;
+               // oListItem["Submitted_x0020_By"] = SubmittedBy;
 
                 if (filename != "")
                 {
