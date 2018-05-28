@@ -234,18 +234,17 @@ namespace Doha.Bot.Bank.Dialogs
             string response = await answer;
             // InputTitle = response;
 
-            //if (currentQ == 0)
-            //{
-            //    InputListTitle = response;
-            //    InputTit = response;
-            //}
-            //else
-            //{
-            if (InputQuestionType == "Text")
+            if (currentQ == 0)
             {
-                if (InputQuestion.Contains("Title?"))
-                    InputListTitle = response;
-                else if (InputQuestion.Contains("description?"))
+                InputListTitle = response;
+            }
+            else if (InputQuestionType == "Text")
+            {
+            //    if (InputQuestionType == "Text")
+            //{
+                //if (InputQuestion.Contains("Title?"))
+                //    InputListTitle = response;
+                //else if (InputQuestion.Contains("description?"))
                     InputDesc = response;
             }
             else if (InputQuestionType == "Attachment")
@@ -460,7 +459,7 @@ namespace Doha.Bot.Bank.Dialogs
                 }
             }
 
-            Common.Sharepoint.SaveNewAnswer(InputSelectedOption, InputListTitle , InputTit, InputDesc,InputUsertype,InputSubmittedBy , InputAttachmentPath);
+            Common.Sharepoint.SaveNewAnswer(InputSelectedOption, InputListTitle, InputDesc,InputUsertype,InputSubmittedBy , InputAttachmentPath);
             await context.PostAsync("Your " + InputSelectedOption + " has Been Submitted");
 
         }
