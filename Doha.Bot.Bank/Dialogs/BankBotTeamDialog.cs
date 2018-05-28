@@ -31,6 +31,7 @@ namespace Doha.Bot.Bank.Dialogs
         private int NextQ = 0;
         private string InputListTitle = string.Empty;
         private string InputTit = string.Empty;
+        private string InputQuestion = string.Empty;
 
         private string InputDesc = string.Empty;
         private string InputAttachmentPath = string.Empty;
@@ -179,7 +180,9 @@ namespace Doha.Bot.Bank.Dialogs
                 if (collListItem.Count > 0)
                 {
                     var Question1 = collListItem[0]["Title"].ToString();
+                    InputQuestion = Question1;
                     string strNextQuestionID = string.Empty;
+                    InputQuestionType = collListItem[0]["Question_x0020_Type"].ToString();
                     if (collListItem[0]["NextQuestionID"] != null)
                     {
                         if (collListItem[0]["NextQuestionID"].ToString() != string.Empty)
@@ -231,23 +234,26 @@ namespace Doha.Bot.Bank.Dialogs
             string response = await answer;
             // InputTitle = response;
 
-            if (currentQ == 0)
+            //if (currentQ == 0)
+            //{
+            //    InputListTitle = response;
+            //    InputTit = response;
+            //}
+            //else
+            //{
+            if (InputQuestionType == "Text")
             {
-                InputListTitle = response;
-                InputTit = response;
-            }
-            else
-            {
-                if (InputQuestionType == "Text")
-                {
+                if (InputQuestion.Contains("Title?"))
+                    InputListTitle = response;
+                else if (InputQuestion.Contains("description?"))
                     InputDesc = response;
-                }
-                else if (InputQuestionType == "Attachment")
-                {
-                    InputAttachmentPath = InputAttachmentPath + "," + response;
-                    UploadFiles(response);
-                }
             }
+            else if (InputQuestionType == "Attachment")
+            {
+                InputAttachmentPath = InputAttachmentPath + "," + response;
+                UploadFiles(response);
+            }
+           // }
 
             currentQ = NextQ;
             ListItem question = Common.Sharepoint.GetQuestion(currentQ);
@@ -258,6 +264,7 @@ namespace Doha.Bot.Bank.Dialogs
                 var Question1 = question["Title"].ToString();
                 string strNextQuestionID = string.Empty;
                 InputQuestionType = question["Question_x0020_Type"].ToString();
+                InputQuestion = Question1;
                 if (question["NextQuestionID"] != null)
                 {
                     if (question["NextQuestionID"].ToString().Contains(","))
