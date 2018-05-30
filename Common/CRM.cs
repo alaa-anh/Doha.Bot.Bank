@@ -21,18 +21,18 @@ namespace Common
         private static string _userPasswordAdmin = ConfigurationManager.AppSettings["DomainAdminPassword"];
 
 
-        public static string checkAuthorizedUser(string name, string upassword)
-        {
+        //public static string checkAuthorizedUser(string name, string upassword)
+        //{
 
-            var connection = CrmConnection.Parse("Authentication Type=Passport; Server=https://port.crm4.dynamics.com; Username=poc@kbschatbot.onmicrosoft.com; Password=Demo1234");// ; DeviceID=xxx-ws00001; DevicePassword=xxxx");
-            var service = new OrganizationService(connection);
-            var context = new CrmOrganizationServiceContext(connection);
-            IOrganizationService _service = (IOrganizationService)service;
+        //    var connection = CrmConnection.Parse("Authentication Type=Passport; Server=https://port.crm4.dynamics.com; Username=poc@kbschatbot.onmicrosoft.com; Password=Demo1234");// ; DeviceID=xxx-ws00001; DevicePassword=xxxx");
+        //    var service = new OrganizationService(connection);
+        //    var context = new CrmOrganizationServiceContext(connection);
+        //    IOrganizationService _service = (IOrganizationService)service;
 
 
            
-            return UserLoggedInName;
-        }
+        //    return UserLoggedInName;
+        //}
 
         public static ListItemCollection GetSelectedTypeQuestions( string selectedFlowType)
         {
@@ -86,47 +86,34 @@ namespace Common
 
         //}
 
-        public static void SaveNewAnswer(string selectedFlowType , string NewTitle, string InputTit, string Desc , bool Usertype , string SubmittedBy , string filename)
+        public static void SaveNewAnswer(string selectedFlowType , string InputTit, string Desc , bool Usertype , string SubmittedBy , string filename)
         {
             try
             {
-                //BEGIN CONNECTION STUFF
-                var connection = CrmConnection.Parse("Authentication Type=Passport; Server=https://port.crm4.dynamics.com; Username=poc@kbschatbot.onmicrosoft.com; Password=Demo1234");// ; DeviceID=xxx-ws00001; DevicePassword=xxxx");
-                var service = new OrganizationService(connection);
-                var context = new CrmOrganizationServiceContext(connection);
-                IOrganizationService _service = (IOrganizationService)service;
+                var connection = CrmConnection.Parse("Url=https://kbschatbot.crm4.dynamics.com; Username=poc@kbschatbot.onmicrosoft.com; Password=Demo1234;");// ; DeviceID=xxx-ws00001; DevicePassword=xxxx");
+                OrganizationService _Service = new OrganizationService(connection);
+
+                Entity account = new Entity("account");
+                account["name"] = "BotName";
+                Guid _AccountId = _Service.Create(account);
+
+                //Create new Case  for the above account
+                Entity case1 = new Entity("incident");
+                case1["title"] = InputTit;
+                case1["description"] = Desc;
+                case1["caseorigincode"] = new OptionSetValue(100000001);// "Chatbot";               
+                case1["new_casetype"] = new OptionSetValue(100000000); //selectedFlowType;
+                case1["new_submittedby"] = SubmittedBy;
+                case1["new_anonymous"] = Usertype;
+                if(Usertype == true)
+                    case1["new_an"] = new OptionSetValue(100000001); 
+                else
+                    case1["new_an"] = new OptionSetValue(100000000); 
 
 
-                //BEGIN LATE BOUND CREATION SAMPLE
-                Entity incident = new Entity();
-                incident.LogicalName = "incident";
-                incident["title"] = "Test Case Creation";
-                incident["description"] = "This is a test incident";
-
-                //Set customerid with an existing contact guid 
-                Guid customerid = new Guid("9BA22E13-1149-E211-8BE3-78E3B5107E67");     //the actual contact GUID.
-
-                //Set customerid as contact to field customerid 
-                EntityReference CustomerId = new EntityReference("contact", customerid);
-                incident["customerid"] = CustomerId;
-
-                //create the incident
-                _service.Create(incident);
-
-
-                //BEGIN EARLY BOUND CREATION SAMPLE
-
-                //create a contact and assign the id to the Id above
-                //Contact newContact = new Contact();
-                //newContact.Id = customerid;
-
-                //Incident newIncident = new Incident();
-                //newIncident.Title = "Test Created With Proxy";                    //set the title
-                //newIncident.Description = "This is a test incident";               //set the description
-                //newIncident.CustomerId = newContact.ToEntityReference(); //set the Customer Id to the Entity Reference of the Contact
-
-                ////create the incident
-                //_service.Create(newIncident);
+                EntityReference primaryContactId = new EntityReference("account" ,_AccountId);
+                case1["customerid"] = primaryContactId;
+                Guid _CaseId = _Service.Create(case1);
             }
             catch (Exception e)
             {
@@ -134,12 +121,9 @@ namespace Common
             }
         }
 
-
-      
-
-
-        
-
-
+        private static object EntityReference(object entityLogicalName, Guid accountId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

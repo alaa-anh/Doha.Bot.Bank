@@ -108,22 +108,22 @@ namespace Doha.Bot.Bank.Dialogs
             password = response;
 
 
-            string UserLoggedInName = Common.CRM.checkAuthorizedUser(userName, password);
+            string UserLoggedInName = userName; //Common.CRM.checkAuthorizedUser(userName, password);
 
-            //if (UserLoggedInName != string.Empty)
-            //{
-            //    context.UserData.SetValue("UserName", userName);
-            //    context.UserData.SetValue("Password", password);
-            //    context.UserData.SetValue("UserLoggedInName", UserLoggedInName);
-            //    var message = $"You are currently Logged In. Please Enjoy Using our App. **{UserLoggedInName}**.";
-            //    await context.PostAsync(message);
-            //    PromptDialog.Choice(context, this.AfterSelectOption, new string[] { "Idea", "Suggestion", "Complaint", "Incident", "Exit" }, "Hello, How can I help you today?Do you want to submit:");
-            //}
-            //else
-            //{
-            //    PromptDialog.Confirm(context, ResumeAfterConfirmation, "The User Don't have permission , do you want to try another cridentials?");
+            if (UserLoggedInName != string.Empty)
+            {
+                context.UserData.SetValue("UserName", userName);
+                context.UserData.SetValue("Password", password);
+                context.UserData.SetValue("UserLoggedInName", UserLoggedInName);
+                var message = $"You are currently Logged In. Please Enjoy Using our App. **{UserLoggedInName}**.";
+                await context.PostAsync(message);
+                PromptDialog.Choice(context, this.AfterSelectOption, new string[] { "Idea", "Suggestion", "Complaint", "Incident", "Exit" }, "Hello, How can I help you today?Do you want to submit:");
+            }
+            else
+            {
+                PromptDialog.Confirm(context, ResumeAfterConfirmation, "The User Don't have permission , do you want to try another cridentials?");
 
-            //}
+            }
         }
 
         private async Task ResumeAfterConfirmation(IDialogContext context, IAwaitable<bool> result)
@@ -173,40 +173,11 @@ namespace Doha.Bot.Bank.Dialogs
 
             if (InputSelectedOption != "Exit")
             {
-                ListItemCollection collListItem = Common.Sharepoint.GetSelectedTypeQuestions(InputSelectedOption);
-                if (collListItem.Count > 0)
-                {
-                    var Question1 = collListItem[0]["Title"].ToString();
-                    string strNextQuestionID = string.Empty;
-                    if (collListItem[0]["NextQuestionID"] != null)
-                    {
-                        if (collListItem[0]["NextQuestionID"].ToString() != string.Empty)
-                        {
-                            if (collListItem[0]["NextQuestionID"].ToString().Contains(","))
-                            {
-                                string[] strsplit = collListItem[0]["NextQuestionID"].ToString().Split(',');
-                                NextQYes = int.Parse(strsplit[0]);
-                                NextQNo = int.Parse(strsplit[1]);
-                            }
-                            else
-                            {
-                                strNextQuestionID = collListItem[0]["NextQuestionID"].ToString();
-                                NextQ = int.Parse(strNextQuestionID);
-                            }
-                        }
-                    }
-
-                    if (collListItem[0]["Question_x0020_Type"].ToString() == "Text")//Options
-                    {
-
-                        PromptDialog.Text(
-                            context: context,
-                            resume: ResomeLoadAnswers,
-                            prompt: Question1
-                            );
-                    }
-
-                }
+                PromptDialog.Text(
+                    context: context,
+                    resume: ResomeLoadDesc,
+                    prompt: "What is the Idea Title?"
+                    );
             }
             else
             {
@@ -224,76 +195,34 @@ namespace Doha.Bot.Bank.Dialogs
             }
         }
 
-        public virtual async Task ResomeLoadAnswers(IDialogContext context, IAwaitable<string> answer)
+
+
+        public virtual async Task ResomeLoadDesc(IDialogContext context, IAwaitable<string> answer)
         {
             string response = await answer;
-            // InputTitle = response;
-
-            if (currentQ == 0)
-                InputListTitle = response;
-            else
-            {
-                if (InputQuestionType == "Text")
-                {
-                    InputDesc = response;
-                }
-                else if (InputQuestionType == "Attachment")
-                {
-                    InputAttachmentPath = InputAttachmentPath + "," + response;
-                  //  UploadFiles(response);
-                }
-            }
-
-            currentQ = NextQ;
-            ListItem question = Common.Sharepoint.GetQuestion(currentQ);
+            InputListTitle = response;
 
 
-            if (question != null)
-            {
-                var Question1 = question["Title"].ToString();
-                string strNextQuestionID = string.Empty;
-                InputQuestionType = question["Question_x0020_Type"].ToString();
-                if (question["NextQuestionID"] != null)
-                {
-                    if (question["NextQuestionID"].ToString().Contains(","))
-                    {
-                        string[] strsplit = question["NextQuestionID"].ToString().Split(',');
-                        NextQYes = int.Parse(strsplit[0]);
-                        NextQNo = int.Parse(strsplit[1]);
-                    }
-                    else
-                    {
-                        strNextQuestionID = question["NextQuestionID"].ToString();
-                        NextQ = int.Parse(strNextQuestionID);
-                    }
-                }
-                if (question["Question_x0020_Type"].ToString() == "Text")//Options
-                {
-                    PromptDialog.Text(
-                     context: context,
-                     resume: ResomeLoadAnswers,
-                     prompt: Question1);
-                }
-                else if (question["Question_x0020_Type"].ToString() == "Attachment")//Options
-                {
-
-                    PromptDialog.Confirm(context, ResumeAfterConfirmationAttachment, Question1);
-
-                }
-
-                else if (question["Question_x0020_Type"].ToString() == "UserInfo")//Options
-                {
-
-                    PromptDialog.Confirm(context, ResumeAfterConfirmationUserInfo, Question1);
-
-                }
-            }
+            PromptDialog.Text(
+                          context: context,
+                          resume: ResomeLoadAttachments,
+                          prompt: "What is the description?"
+                          );
         }
 
 
-       
 
+        public virtual async Task ResomeLoadAttachments(IDialogContext context, IAwaitable<string> answer)
+        {
+            string response = await answer;
+            InputDesc = response;
 
+            PromptDialog.Confirm(
+                context: context,
+                resume: ResumeAfterConfirmationAttachment,
+                prompt: "Do you want to Upload Attachment ?"
+                );
+        }
 
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
@@ -304,66 +233,43 @@ namespace Doha.Bot.Bank.Dialogs
                 NextQ = NextQYes;
                 PromptDialog.Text(
                     context: context,
-                    resume: ResomeLoadAnswers,
+                    resume: ResomeLoadMoreAttachments,
                     prompt: "Please add the file path");
             }
             else
             {
-                currentQ = NextQNo;
-                ResomeLoadAnswers2(context);
+                ResumeLoadUserInfo(context);
             }
         }
 
-        private void ResomeLoadAnswers2(IDialogContext context)
+        private void ResumeLoadUserInfo(IDialogContext context)
         {
-            string response = string.Empty;
-            ListItem question = Common.Sharepoint.GetQuestion(currentQ);
-            if (question != null)
-            {
-                var Question1 = question["Title"].ToString();
-                string strNextQuestionID = string.Empty;
-                InputQuestionType = question["Question_x0020_Type"].ToString();
-                if (question["NextQuestionID"] != null)
-                {
-                    if (question["NextQuestionID"].ToString().Contains(","))
-                    {
-                        string[] strsplit = question["NextQuestionID"].ToString().Split(',');
-                        NextQYes = int.Parse(strsplit[0]);
-                        NextQNo = int.Parse(strsplit[1]);
-                    }
-                    else
-                    {
-                        strNextQuestionID = question["NextQuestionID"].ToString();
-                        NextQ = int.Parse(strNextQuestionID);
-                    }
-                }
-                if (question["Question_x0020_Type"].ToString() == "Text")//Options
-                {
-                    PromptDialog.Text(
-                     context: context,
-                     resume: ResomeLoadAnswers,
-                     prompt: Question1);
-                }
-                else if (question["Question_x0020_Type"].ToString() == "Attachment")//Options
-                {
+           
 
-                    PromptDialog.Confirm(context, ResumeAfterConfirmationAttachment, Question1);
-
-                }
-
-                else if (question["Question_x0020_Type"].ToString() == "UserInfo")//Options
-                {
-
-                    PromptDialog.Confirm(context, ResumeAfterConfirmationUserInfo, Question1);
-
-                }
-            }
-
+            PromptDialog.Confirm(
+                context: context,
+                resume: ResumeAfterConfirmationUserInfo,
+                prompt: "Do you want to submit the idea as anonymous ?"
+                );
         }
+
+        public virtual async Task ResomeLoadMoreAttachments(IDialogContext context, IAwaitable<string> answer)
+        {
+            string response = await answer;
+            InputAttachmentPath = InputAttachmentPath + response + ",";
+
+            PromptDialog.Confirm(
+                context: context,
+                resume: ResumeAfterConfirmationAttachment,
+                prompt: "Do you want to Upload more Attachment ?"
+                );
+        } 
 
         private async Task ResumeAfterConfirmationUserInfo(IDialogContext context, IAwaitable<bool> result)
         {
             var confirmation = await result;
+           // InputAttachmentPath = InputAttachmentPath + ",";
+
             if (confirmation == true)
             {
                 if (context.UserData.TryGetValue<string>("UserName", out userName))
@@ -382,7 +288,7 @@ namespace Doha.Bot.Bank.Dialogs
                 }
             }
 
-          //  Common.CRM.SaveNewAnswer(InputSelectedOption, InputListTitle, InputDesc, InputUsertype, InputSubmittedBy, InputAttachmentPath);
+            Common.CRM.SaveNewAnswer(InputSelectedOption, InputListTitle, InputDesc, InputUsertype, InputSubmittedBy, InputAttachmentPath);
             await context.PostAsync("Your " + InputSelectedOption + " has Been Submitted");
 
         }

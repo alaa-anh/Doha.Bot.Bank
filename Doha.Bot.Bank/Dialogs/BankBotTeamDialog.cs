@@ -371,7 +371,47 @@ namespace Doha.Bot.Bank.Dialogs
             //return fileName;
         }
 
-        
+        //private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
+        //{
+        //    var message = await result as Activity;
+
+        //    if (message.Attachments != null)
+        //    {
+        //        var attachment = message.Attachments[0];
+        //        using (HttpClient httpClient = new HttpClient())
+        //        {
+        //            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+
+        //            var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
+
+        //            var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+        //            string filename = attachment.Name;
+        //            string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
+
+        //            string file = dir + "Uploads" + "\\" + filename;
+
+        //            FileStream fs = new FileStream(file, FileMode.Create, FileAccess.Write, FileShare.None);
+
+        //            await responseMessage.Content.CopyToAsync(fs).ContinueWith(
+        //                (copyTask) =>
+        //                {
+        //                    fs.Close();
+
+        //                });
+
+
+        //            await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
+        //    }
+
+        //    context.Wait(this.MessageReceivedAsync);
+        //}
+
+
 
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
