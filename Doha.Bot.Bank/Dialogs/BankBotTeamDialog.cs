@@ -307,112 +307,70 @@ namespace Doha.Bot.Bank.Dialogs
         {
 
 
-         // Attchpath = @"C:\Alaa\MVMC_cmdlets.doc";
-            //string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
-            //string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
-            //string destContainer = ConfigurationManager.AppSettings["destContainer"];
+            Attchpath = @"C:\Alaa\ReadMe.txt";
+            string StorageConnectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
+            string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+            string destContainer = ConfigurationManager.AppSettings["destContainer"];
 
-            //CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
-            //CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-            //CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
-            //blobContainer.CreateIfNotExists();
-            //string key = Path.GetFileName(Attchpath);
-            //CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-            //using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
-            //{
-            //    blockBlob.UploadFromStream(fs);
-            //}
+            CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+            CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+            CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+            blobContainer.CreateIfNotExists();
+            string key = Path.GetFileName(Attchpath);
+            CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+            using (var fs = System.IO.File.Open(Attchpath, FileMode.Open, FileAccess.Read, FileShare.None))
+            {
+                blockBlob.UploadFromStream(fs);
+            }
 
 
 
             // int iUploadedCnt = 0;
-          //string fileName = "";
-           // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
-           // //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
+            //string fileName = "";
+            // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
+            // //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
 
-           // //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
+            // //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
 
-           //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
+            //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
 
-           // ////--this is the local path we want to take to upload(try with your local path data)
-           // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
-           // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
+            // ////--this is the local path we want to take to upload(try with your local path data)
+            // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
+            // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
 
-           // ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
-           // ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
+            // ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
+            // ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
 
-           // //string[] AttchList = Attchpath.Split(',');
+            // //string[] AttchList = Attchpath.Split(',');
 
-           // // foreach (string file in AttchList)
-           // // {
-           // //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
+            // // foreach (string file in AttchList)
+            // // {
+            // //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
 
-           // fileName = "ss.doc";
+            // fileName = "ss.doc";
 
-           //     //fileName = System.IO.Path.GetFileName(Attchpath);
-           //     string destFile = System.IO.Path.Combine(targetPath, fileName);
+            //     //fileName = System.IO.Path.GetFileName(Attchpath);
+            //     string destFile = System.IO.Path.Combine(targetPath, fileName);
 
-           // //destFile = System.IO.Path.Combine(targetPath, fileName);
-           //     System.IO.File.Copy(Attchpath, destFile, true);
-           // //iUploadedCnt = iUploadedCnt + 1;
+            // //destFile = System.IO.Path.Combine(targetPath, fileName);
+            //     System.IO.File.Copy(Attchpath, destFile, true);
+            // //iUploadedCnt = iUploadedCnt + 1;
 
-           // // }
-           // //// RETURN A MESSAGE.
-           // ////if (iUploadedCnt > 0)
-           // ////{
-           // ////    return iUploadedCnt + " Files Uploaded Successfully";
-           // ////}
-           // ////else
-           // ////{
-           // ////    return "Upload Failed";
-           // ////}
+            // // }
+            // //// RETURN A MESSAGE.
+            // ////if (iUploadedCnt > 0)
+            // ////{
+            // ////    return iUploadedCnt + " Files Uploaded Successfully";
+            // ////}
+            // ////else
+            // ////{
+            // ////    return "Upload Failed";
+            // ////}
 
 
             //return fileName;
         }
-
-        //private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
-        //{
-        //    var message = await result as Activity;
-
-        //    if (message.Attachments != null)
-        //    {
-        //        var attachment = message.Attachments[0];
-        //        using (HttpClient httpClient = new HttpClient())
-        //        {
-        //            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
-
-        //            var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
-
-        //            var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
-        //            string filename = attachment.Name;
-        //            string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
-
-        //            string file = dir + "Uploads" + "\\" + filename;
-
-        //            FileStream fs = new FileStream(file, FileMode.Create, FileAccess.Write, FileShare.None);
-
-        //            await responseMessage.Content.CopyToAsync(fs).ContinueWith(
-        //                (copyTask) =>
-        //                {
-        //                    fs.Close();
-
-        //                });
-
-
-        //            await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
-        //    }
-
-        //    context.Wait(this.MessageReceivedAsync);
-        //}
-
-
-
+                
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
             var confirmation = await result;
