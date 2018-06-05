@@ -251,7 +251,7 @@ namespace Doha.Bot.Bank.Dialogs
             else if (InputQuestionType == "Attachment")
             {
                 InputAttachmentPath = InputAttachmentPath + "," + response;
-                UploadFiles(response);
+               // UploadFiles(response);
             }
            // }
 
