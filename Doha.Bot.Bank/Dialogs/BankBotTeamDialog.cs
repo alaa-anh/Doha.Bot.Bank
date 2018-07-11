@@ -232,15 +232,6 @@ namespace Doha.Bot.Bank.Dialogs
         public virtual async Task ResomeLoadAnswers(IDialogContext context, IAwaitable<string> answer)
         {
             string response = await answer;
-            // InputTitle = response;
-
-            //if (currentQ == 0)
-            //{
-            //    InputListTitle = response;
-            //    InputTit = response;
-            //}
-            //else
-            //{
             if (InputQuestionType == "Text")
             {
                 if (InputQuestion.Contains("Title?"))
@@ -251,14 +242,11 @@ namespace Doha.Bot.Bank.Dialogs
             else if (InputQuestionType == "Attachment")
             {
                 InputAttachmentPath = InputAttachmentPath + "," + response;
-               // UploadFiles(response);
+                 UploadFiles(response, context);
+                //context.Wait(AttachmentReceivedAsync);
             }
-           // }
-
             currentQ = NextQ;
             ListItem question = Common.Sharepoint.GetQuestion(currentQ);
-
-
             if (question != null)
             {
                 var Question1 = question["Title"].ToString();
@@ -288,22 +276,85 @@ namespace Doha.Bot.Bank.Dialogs
                 }
                 else if (question["Question_x0020_Type"].ToString() == "Attachment")//Options
                 {
-
                     PromptDialog.Confirm(context, ResumeAfterConfirmationAttachment, Question1);
-
                 }
 
                 else if (question["Question_x0020_Type"].ToString() == "UserInfo")//Options
                 {
-
                     PromptDialog.Confirm(context, ResumeAfterConfirmationUserInfo, Question1);
-
                 }
             }
         }
 
+        //private async Task AttachmentReceivedAsync(IDialogContext context, IAwaitable<object> result)
+        //{
 
-        public static void  UploadFiles(string Attchpath)
+
+        //    var message = await result as Activity;
+
+        //    if (message.Attachments != null)
+        //    {
+        //        var attachment = message.Attachments[0];
+        //        using (HttpClient httpClient = new HttpClient())
+        //        {
+        //            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+
+        //            var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
+
+        //            var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+        //            string filename = attachment.Name;
+        //            string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
+
+        //            string file = dir + "Uploads";
+
+        //            if (!Directory.Exists(file))
+        //            {
+        //                DirectoryInfo di = Directory.CreateDirectory(file);
+        //                //return;
+        //            }
+
+        //            // Try to create the directory.
+
+        //            string file1 = dir + "Uploads" + "\\" + filename;
+
+        //            FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
+
+        //            await responseMessage.Content.CopyToAsync(fs).ContinueWith(
+        //                (copyTask) =>
+        //                {
+        //                    fs.Close();
+
+        //                });
+
+        //            string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
+        //            //string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+        //            string destContainer = ConfigurationManager.AppSettings["destContainer"];
+
+        //            CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+        //            Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+        //            CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+        //            blobContainer.CreateIfNotExists();
+        //            string key = Path.GetFileName(file1);
+        //            CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+        //            using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
+        //            {
+        //                blockBlob.UploadFromStream(fis);
+        //            }
+
+
+        //            await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
+        //    }
+
+        //    context.Wait(this.MessageReceivedAsync);
+
+        //}
+
+        public static void UploadFiles(string Attchpath, IDialogContext context)
         {
 
 
@@ -322,55 +373,34 @@ namespace Doha.Bot.Bank.Dialogs
             {
                 blockBlob.UploadFromStream(fs);
             }
-
-
-
-            // int iUploadedCnt = 0;
-            //string fileName = "";
-            // //string sourcePath = @"C:\Users\Bijin\Desktop\Images\";
-            // //string targetPath = System.Web.Hosting.HostingEnvironment.MapPath("~/UploadedFiles/");
-
-            // //string targetPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"AttachmentFiles");
-
-            //string targetPath = HttpContext.Current.Server.MapPath("~/AttachmentFiles/");
-
-            // ////--this is the local path we want to take to upload(try with your local path data)
-            // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.png,C:\\Users\\Bijin\\Desktop\\Images\\edit.jpg,C:\\Users\\Bijin\\Desktop\\Images\\Refernce links.txt");
-            // //// string Attchpath = ("C:\\Users\\Bijin\\Desktop\\Images\\delete.pn");
-
-            // ////ProcessedFiles = Server.MapPath(@"~\godurian\sth100\ProcessedFiles");
-            // ////string ProcessedFiles = Directory.GetFiles("\\Archive\\*.zip"); //Server.MapPath(@"~\ProcessedFiles");
-
-            // //string[] AttchList = Attchpath.Split(',');
-
-            // // foreach (string file in AttchList)
-            // // {
-            // //  string sourceFile = System.IO.Path.Combine(Attchpath, fileName);
-
-            // fileName = "ss.doc";
-
-            //     //fileName = System.IO.Path.GetFileName(Attchpath);
-            //     string destFile = System.IO.Path.Combine(targetPath, fileName);
-
-            // //destFile = System.IO.Path.Combine(targetPath, fileName);
-            //     System.IO.File.Copy(Attchpath, destFile, true);
-            // //iUploadedCnt = iUploadedCnt + 1;
-
-            // // }
-            // //// RETURN A MESSAGE.
-            // ////if (iUploadedCnt > 0)
-            // ////{
-            // ////    return iUploadedCnt + " Files Uploaded Successfully";
-            // ////}
-            // ////else
-            // ////{
-            // ////    return "Upload Failed";
-            // ////}
-
-
-            //return fileName;
         }
-                
+
+        private static async Task<Microsoft.Bot.Connector.Attachment> GetUploadedAttachmentAsync(string serviceUrl, string conversationId)
+        {
+            var imagePath = System.Web.HttpContext.Current.Server.MapPath(@"~\AttachmentFiles\small-image.png");
+
+            using (var connector = new ConnectorClient(new Uri(serviceUrl)))
+            {
+                var attachments = new Attachments(connector);
+                var response = await attachments.Client.Conversations.UploadAttachmentAsync(
+                    conversationId,
+                    new AttachmentData
+                    {
+                        Name = "small-image.png",
+                        OriginalBase64 = System.IO.File.ReadAllBytes(imagePath),
+                        Type = "text/csv"
+                    });
+
+                var attachmentUri = attachments.GetAttachmentUri(response.Id);
+
+                return new Microsoft.Bot.Connector.Attachment
+                {
+                    Name = "small-image.png",
+                    ContentType = "text/csv",
+                    ContentUrl = attachmentUri
+                };
+            }
+        }
         private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         {
             var confirmation = await result;

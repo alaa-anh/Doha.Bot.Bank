@@ -112,7 +112,6 @@ namespace Common
 
         public static void SaveNewAnswer(string selectedFlowType , string NewTitle, string InputTit, string Desc , bool Usertype , string SubmittedBy , string filename)
         {
-           // int AnswerRecordID = 0;
             using (ClientContext ctx = new ClientContext(_serverURL))
             {
                 SecureString passWord = new SecureString();
