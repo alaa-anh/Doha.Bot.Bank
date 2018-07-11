@@ -243,7 +243,7 @@ namespace Doha.Bot.Bank.Dialogs
             {
                 InputAttachmentPath = InputAttachmentPath + "," + response;
                  UploadFiles(response, context);
-                //context.Wait(AttachmentReceivedAsync);
+               // //context.Wait(AttachmentReceivedAsync);
             }
             currentQ = NextQ;
             ListItem question = Common.Sharepoint.GetQuestion(currentQ);
