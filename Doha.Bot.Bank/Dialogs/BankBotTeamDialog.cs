@@ -110,20 +110,20 @@ namespace Doha.Bot.Bank.Dialogs
                         });
 
 
-                    string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
-                    //string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
-                    string destContainer = ConfigurationManager.AppSettings["destContainer"];
+                    //string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
+                    ////string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+                    //string destContainer = ConfigurationManager.AppSettings["destContainer"];
 
-                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
-                    Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                    CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
-                    blobContainer.CreateIfNotExists();
-                    string key = Path.GetFileName(file1);
-                    CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-                    using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
-                    {
-                        blockBlob.UploadFromStream(fis);
-                    }
+                    //CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+                    //Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                    //CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+                    //blobContainer.CreateIfNotExists();
+                    //string key = Path.GetFileName(file1);
+                    //CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+                    //using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
+                    //{
+                    //    blockBlob.UploadFromStream(fis);
+                    //}
 
 
                     await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
