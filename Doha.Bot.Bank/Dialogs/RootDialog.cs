@@ -8,6 +8,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using System.IO;
 using System.Net.Http;
 
+
 namespace Doha.Bot.Bank.Dialogs
 {
     [Serializable]
