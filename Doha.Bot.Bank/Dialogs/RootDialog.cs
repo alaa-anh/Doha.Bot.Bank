@@ -35,7 +35,6 @@ namespace Doha.Bot.Bank.Dialogs
                         // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
 
                         var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
-
                         var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
                         string filename = attachment.Name;
                         string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
