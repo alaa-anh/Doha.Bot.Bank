@@ -1,23 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using Microsoft.SharePoint.Client;
-using Microsoft.Azure;
 using System.IO;
-using System.Security.Cryptography;
-using System.Net.Http.Headers;
 using System.Net.Http;
-using System.Linq;
-using System.Reflection;
-using Microsoft.WindowsAzure.Storage.File;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
 using System.Security;
 
 namespace Doha.Bot.Bank.Dialogs
@@ -134,7 +122,7 @@ namespace Doha.Bot.Bank.Dialogs
                 await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
             }
 
-           // context.Wait(this.MessageReceivedAsync);
+           context.Wait(this.MessageReceivedAsync);
 
         }
 
