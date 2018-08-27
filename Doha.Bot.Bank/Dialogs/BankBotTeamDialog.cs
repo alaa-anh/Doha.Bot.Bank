@@ -14,39 +14,39 @@ namespace Doha.Bot.Bank.Dialogs
     public class BankBotTeamDialog : IDialog<object>
     {
 
-        private static string _userName;
-        private static string _userPassword;
-        private static string UserLoggedInName;
+        //private static string _userName;
+        //private static string _userPassword;
+        //private static string UserLoggedInName;
 
 
-        private static string _serverURL = ConfigurationManager.AppSettings["ServerURL"];
+       // private static string _serverURL = ConfigurationManager.AppSettings["ServerURL"];
 
-        private static string _userNameAdmin = ConfigurationManager.AppSettings["DomainAdmin"];
-        private static string _userPasswordAdmin = ConfigurationManager.AppSettings["DomainAdminPassword"];
+       // private static string _userNameAdmin = ConfigurationManager.AppSettings["DomainAdmin"];
+       // private static string _userPasswordAdmin = ConfigurationManager.AppSettings["DomainAdminPassword"];
 
-        private string userName;
-        private string password;
-       // private string UserLoggedInName;
-        private int currentQ = 0;
-        private int NextQ = 0;
-        private string InputListTitle = string.Empty;
-        private string InputTit = string.Empty;
-        private string InputQuestion = string.Empty;
+       // private string userName;
+       // private string password;
+       //// private string UserLoggedInName;
+       // private int currentQ = 0;
+       // private int NextQ = 0;
+       // private string InputListTitle = string.Empty;
+       // private string InputTit = string.Empty;
+       // private string InputQuestion = string.Empty;
 
-        private string InputDesc = string.Empty;
-        private string InputAttachmentPath = string.Empty;
-        private string InputQuestionType = string.Empty;        
-        private bool InputUsertype = true;
-        private string InputSubmittedBy = string.Empty;
+       // private string InputDesc = string.Empty;
+       // private string InputAttachmentPath = string.Empty;
+       // private string InputQuestionType = string.Empty;        
+       // private bool InputUsertype = true;
+       // private string InputSubmittedBy = string.Empty;
 
 
-        private int NextQYes = 0;
-        private int NextQNo = 0;
+       // private int NextQYes = 0;
+       // private int NextQNo = 0;
 
-        private int AnswerRecordID = -1;
-        private DateTime msgReceivedDate;
-        protected int count = 1;
-        string InputSelectedOption = "";
+       // private int AnswerRecordID = -1;
+       // private DateTime msgReceivedDate;
+       // protected int count = 1;
+       // string InputSelectedOption = "";
 
 
         public Task StartAsync(IDialogContext context)
@@ -71,31 +71,31 @@ namespace Doha.Bot.Bank.Dialogs
 
                     var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
 
-                   var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
-                  //  string filename = attachment.Name;
-                  //  string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
+                    //var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+                    //  string filename = attachment.Name;
+                    //  string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
 
-                  //  string file = dir + "Uploads";
+                    //  string file = dir + "Uploads";
 
-                  //  if (!Directory.Exists(file))
-                  //  {
-                  //      DirectoryInfo di = Directory.CreateDirectory(file);
-                  //      //return;
-                  //  }
+                    //  if (!Directory.Exists(file))
+                    //  {
+                    //      DirectoryInfo di = Directory.CreateDirectory(file);
+                    //      //return;
+                    //  }
 
-                  //  // Try to create the directory.
+                    //  // Try to create the directory.
 
-                  //  string file1 = dir + "Uploads" + "\\" + filename;
+                    //  string file1 = dir + "Uploads" + "\\" + filename;
 
-                  //  FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
-                  ////  FileStream fs = new FileStream(file1, FileMode.Open);
-                  ////  SaveAttchments(fs, filename);
-                  //  await responseMessage.Content.CopyToAsync(fs).ContinueWith(
-                  //      (copyTask) =>
-                  //      {
-                  //          fs.Close();
+                    //  FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
+                    ////  FileStream fs = new FileStream(file1, FileMode.Open);
+                    ////  SaveAttchments(fs, filename);
+                    //  await responseMessage.Content.CopyToAsync(fs).ContinueWith(
+                    //      (copyTask) =>
+                    //      {
+                    //          fs.Close();
 
-                  //      });
+                    //      });
 
 
                     //string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
@@ -114,7 +114,8 @@ namespace Doha.Bot.Bank.Dialogs
                     //}
 
 
-                    await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+                    //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+                    await context.PostAsync($"Attachment of {attachment.ContentType} type and size of bytes received.");
                 }
             }
             else
@@ -126,28 +127,28 @@ namespace Doha.Bot.Bank.Dialogs
 
         }
 
-        public static void SaveAttchments(FileStream fsAttachment , string NewTitle)
-        {
-            using (ClientContext ctx = new ClientContext(_serverURL))
-            {
-                SecureString passWord = new SecureString();
-                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
-                ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
-                List oList = ctx.Web.Lists.GetByTitle("BotTestAttachments");
-                ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
-                ListItem oListItem = oList.AddItem(itemCreateInfo);
-                oListItem["Title"] = NewTitle;
-                oListItem.Update();
-                ctx.ExecuteQuery();
-                ListItem item = oList.GetItemById(oListItem.Id);
-                AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
-                attInfo.FileName = fsAttachment.Name;
-                attInfo.ContentStream = fsAttachment;
-                item.AttachmentFiles.Add(attInfo);
-                item.Update();
-                ctx.ExecuteQuery();
-            }            
-        }
+        //public static void SaveAttchments(FileStream fsAttachment , string NewTitle)
+        //{
+        //    using (ClientContext ctx = new ClientContext(_serverURL))
+        //    {
+        //        SecureString passWord = new SecureString();
+        //        foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+        //        ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+        //        List oList = ctx.Web.Lists.GetByTitle("BotTestAttachments");
+        //        ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
+        //        ListItem oListItem = oList.AddItem(itemCreateInfo);
+        //        oListItem["Title"] = NewTitle;
+        //        oListItem.Update();
+        //        ctx.ExecuteQuery();
+        //        ListItem item = oList.GetItemById(oListItem.Id);
+        //        AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+        //        attInfo.FileName = fsAttachment.Name;
+        //        attInfo.ContentStream = fsAttachment;
+        //        item.AttachmentFiles.Add(attInfo);
+        //        item.Update();
+        //        ctx.ExecuteQuery();
+        //    }            
+        //}
 
 
         //public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
