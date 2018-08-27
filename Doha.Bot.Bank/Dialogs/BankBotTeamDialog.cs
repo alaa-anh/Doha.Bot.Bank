@@ -134,7 +134,7 @@ namespace Doha.Bot.Bank.Dialogs
                 await context.PostAsync("Hi there! I'm a bot created to show you how I can receive message attachments, but no attachment was sent to me. Please, try again sending a new message including an attachment.");
             }
 
-            context.Wait(this.MessageReceivedAsync);
+           // context.Wait(this.MessageReceivedAsync);
 
         }
 
