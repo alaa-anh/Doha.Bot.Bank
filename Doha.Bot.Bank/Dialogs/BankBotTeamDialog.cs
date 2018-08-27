@@ -83,31 +83,31 @@ namespace Doha.Bot.Bank.Dialogs
 
                     var responseMessage = await httpClient.GetAsync(attachment.ContentUrl);
 
-                    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
-                    string filename = attachment.Name;
-                    string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
+                   var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+                  //  string filename = attachment.Name;
+                  //  string dir = AppDomain.CurrentDomain.BaseDirectory; // System.IO.Directory.GetCurrentDirectory();
 
-                    string file = dir + "Uploads";
+                  //  string file = dir + "Uploads";
 
-                    if (!Directory.Exists(file))
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(file);
-                        //return;
-                    }
+                  //  if (!Directory.Exists(file))
+                  //  {
+                  //      DirectoryInfo di = Directory.CreateDirectory(file);
+                  //      //return;
+                  //  }
 
-                    // Try to create the directory.
+                  //  // Try to create the directory.
 
-                    string file1 = dir + "Uploads" + "\\" + filename;
+                  //  string file1 = dir + "Uploads" + "\\" + filename;
 
-                    FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
-                  //  FileStream fs = new FileStream(file1, FileMode.Open);
-                  //  SaveAttchments(fs, filename);
-                    await responseMessage.Content.CopyToAsync(fs).ContinueWith(
-                        (copyTask) =>
-                        {
-                            fs.Close();
+                  //  FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
+                  ////  FileStream fs = new FileStream(file1, FileMode.Open);
+                  ////  SaveAttchments(fs, filename);
+                  //  await responseMessage.Content.CopyToAsync(fs).ContinueWith(
+                  //      (copyTask) =>
+                  //      {
+                  //          fs.Close();
 
-                        });
+                  //      });
 
 
                     //string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
