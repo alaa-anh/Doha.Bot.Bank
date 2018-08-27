@@ -99,9 +99,9 @@ namespace Doha.Bot.Bank.Dialogs
 
                     string file1 = dir + "Uploads" + "\\" + filename;
 
-                   // FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
-                    FileStream fs = new FileStream(file1, FileMode.Open);
-                    SaveAttchments(fs, filename);
+                    FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
+                  //  FileStream fs = new FileStream(file1, FileMode.Open);
+                  //  SaveAttchments(fs, filename);
                     await responseMessage.Content.CopyToAsync(fs).ContinueWith(
                         (copyTask) =>
                         {
@@ -109,21 +109,21 @@ namespace Doha.Bot.Bank.Dialogs
 
                         });
 
-                  
-                    //string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
-                    ////string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
-                    //string destContainer = ConfigurationManager.AppSettings["destContainer"];
 
-                    //CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
-                    //Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                    //CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
-                    //blobContainer.CreateIfNotExists();
-                    //string key = Path.GetFileName(file1);
-                    //CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-                    //using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
-                    //{
-                    //    blockBlob.UploadFromStream(fis);
-                    //}
+                    string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
+                    //string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+                    string destContainer = ConfigurationManager.AppSettings["destContainer"];
+
+                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+                    Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                    CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+                    blobContainer.CreateIfNotExists();
+                    string key = Path.GetFileName(file1);
+                    CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+                    using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
+                    {
+                        blockBlob.UploadFromStream(fis);
+                    }
 
 
                     await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
