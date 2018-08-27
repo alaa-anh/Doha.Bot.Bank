@@ -18,15 +18,27 @@ using System.Reflection;
 using Microsoft.WindowsAzure.Storage.File;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using System.Security;
 
 namespace Doha.Bot.Bank.Dialogs
 {
     [Serializable]
     public class BankBotTeamDialog : IDialog<object>
     {
+
+        private static string _userName;
+        private static string _userPassword;
+        private static string UserLoggedInName;
+
+
+        private static string _serverURL = ConfigurationManager.AppSettings["ServerURL"];
+
+        private static string _userNameAdmin = ConfigurationManager.AppSettings["DomainAdmin"];
+        private static string _userPasswordAdmin = ConfigurationManager.AppSettings["DomainAdminPassword"];
+
         private string userName;
         private string password;
-        private string UserLoggedInName;
+       // private string UserLoggedInName;
         private int currentQ = 0;
         private int NextQ = 0;
         private string InputListTitle = string.Empty;
@@ -49,9 +61,11 @@ namespace Doha.Bot.Bank.Dialogs
         string InputSelectedOption = "";
 
 
-        public async Task StartAsync(IDialogContext context)
+        public Task StartAsync(IDialogContext context)
         {
             context.Wait(MessageReceivedAsync);
+
+            return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
@@ -85,8 +99,9 @@ namespace Doha.Bot.Bank.Dialogs
 
                     string file1 = dir + "Uploads" + "\\" + filename;
 
-                    FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
-
+                   // FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None);
+                    FileStream fs = new FileStream(file1, FileMode.Open);
+                    SaveAttchments(fs, filename);
                     await responseMessage.Content.CopyToAsync(fs).ContinueWith(
                         (copyTask) =>
                         {
@@ -94,20 +109,21 @@ namespace Doha.Bot.Bank.Dialogs
 
                         });
 
-                    string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
-                    //string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
-                    string destContainer = ConfigurationManager.AppSettings["destContainer"];
+                  
+                    //string StorageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
+                    ////string SourceFolder = ConfigurationManager.AppSettings["SourceFolder"];
+                    //string destContainer = ConfigurationManager.AppSettings["destContainer"];
 
-                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
-                    Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                    CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
-                    blobContainer.CreateIfNotExists();
-                    string key = Path.GetFileName(file1);
-                    CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
-                    using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
-                    {
-                        blockBlob.UploadFromStream(fis);
-                    }
+                    //CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+                    //Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                    //CloudBlobContainer blobContainer = cloudBlobClient.GetContainerReference(destContainer);
+                    //blobContainer.CreateIfNotExists();
+                    //string key = Path.GetFileName(file1);
+                    //CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference(key);
+                    //using (var fis = System.IO.File.Open(file1, FileMode.Open, FileAccess.Read, FileShare.None))
+                    //{
+                    //    blockBlob.UploadFromStream(fis);
+                    //}
 
 
                     await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
@@ -121,6 +137,30 @@ namespace Doha.Bot.Bank.Dialogs
             context.Wait(this.MessageReceivedAsync);
 
         }
+
+        public static void SaveAttchments(FileStream fsAttachment , string NewTitle)
+        {
+            using (ClientContext ctx = new ClientContext(_serverURL))
+            {
+                SecureString passWord = new SecureString();
+                foreach (char c in _userPasswordAdmin) passWord.AppendChar(c);
+                ctx.Credentials = new SharePointOnlineCredentials(_userNameAdmin, passWord);
+                List oList = ctx.Web.Lists.GetByTitle("BotTestAttachments");
+                ListItemCreationInformation itemCreateInfo = new ListItemCreationInformation();
+                ListItem oListItem = oList.AddItem(itemCreateInfo);
+                oListItem["Title"] = NewTitle;
+                oListItem.Update();
+                ctx.ExecuteQuery();
+                ListItem item = oList.GetItemById(oListItem.Id);
+                AttachmentCreationInformation attInfo = new AttachmentCreationInformation();
+                attInfo.FileName = fsAttachment.Name;
+                attInfo.ContentStream = fsAttachment;
+                item.AttachmentFiles.Add(attInfo);
+                item.Update();
+                ctx.ExecuteQuery();
+            }            
+        }
+
 
         //public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
         //{
@@ -472,7 +512,7 @@ namespace Doha.Bot.Bank.Dialogs
         //private async Task ResumeAfterConfirmationAttachment(IDialogContext context, IAwaitable<bool> result)
         //{
         //    var confirmation = await result;
-           
+
         //    if (confirmation == true)
         //    {
         //        NextQ = NextQYes;
@@ -605,7 +645,7 @@ namespace Doha.Bot.Bank.Dialogs
         //    return p_sCipherText;
         //}
 
-        
+
 
 
     }
