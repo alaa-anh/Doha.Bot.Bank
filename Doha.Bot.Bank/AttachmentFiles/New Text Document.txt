@@ -1,8 +1,0 @@
-OLD
-LuisAPIKey : 9de5b283d9a3466aba5e41477ce6f912
-LuisAppId : 738de7a3-e25a-45a4-8ae5-9a792587ca44
-
-
-
-
-https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/490ae8b1-ed11-40b9-94a2-9dd45bfe035b?subscription-key=265e5a0680214147b594a0a2e48f7798&verbose=true&timezoneOffset=0&q= 
